@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Hikes Page</title>
+    <style>
+        body{
+             border: 2px solid black;
+             padding: 50px 30px;
+             background-color: bisque;    
+             }
+
+        h1{
+            color: rgb(227, 247, 9);
+            padding-top: 3%;
+            background-image:url("../Images/Snow-Lake_GettyImages-930956256.webp");
+            background-color: #cccccc;
+            height: 80px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-transform: uppercase;
+        }
+
+        h3{
+            text-align: justify;
+            border: 0px white;
+            padding-right: 70%;
+    
+        }
+
+        label{
+            color: brown;
+
+        }
+
+        input{
+              display: flex;
+              text-align: center;
+        }
+
+        #fname{
+                color: antiquewhite;
+
+        }
+
+        #description{
+                      text-align:center;
+        }
+
+        .button1{
+                 color:blue;
+                 width:fit-content;
+                 background-color: pink;
+                 text-align: center;
+        }
+
+        .button2{
+                color:blue;
+                width:fit-content;
+                background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <h1>Add and Share your favorite hikes</h1>
+        <h3>
+            This forum is a request to add a hike to our website.
+            Just fill out the information below and we will email 
+            you if we decide to feature a hike you suggested! Thank
+            you for taking the time to share!
+        </h3>
+
+        <form action="/Pages/action_page.php" target="_self" method="post" autocomplete="off" novalidate="false">
+
+            <label for="fname">Enter your first name</label>
+            <input type="text" id="fname" name="fname">
+            <br><br>
+            <label for="email">Please enter your email adress</label>
+            <input type="email" id="email" name="email">
+            <br><br>
+            <label for="hname">Enter the name of the hike</label>
+            <input type="text" id="hname" name="hname">
+            <br><br>
+            <label for="description">Please enter a description of the hike</label><br>
+            <textarea name="description" id="description" name="description" placeholder="description of hike/park"></textarea>
+            <br><br>
+            <label for="link">Enter the link of the hike/park</label>
+            <input type="url" id="url" name="url">
+            <br><br>
+            <label for="image">Please provide any image(s) you have of the hike here  </label>
+            <input type="file" id="image" name="image" multiple> 
+            <br><br>
+            <input class="button1" type="submit" value="Submit"><br>
+            <input class="button2" type="reset" value=" Reset ">
+        </form>
+    </body>
+</body>
+</html>

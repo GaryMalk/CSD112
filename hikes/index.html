@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Washington Hikes</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <style>
+       body{
+            background-image: url(/Images/backgroundImages.avif);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+       .container {
+            display:grid;
+            align-items: center; 
+            grid-template-columns: auto auto;
+            column-gap: 10px;
+        }
+
+        .text{
+          font-family: Copperplate, Papyrus, fantasy;
+          text-align:left;
+          color: rgb(102, 11, 64);
+          font-size: large;
+        }
+
+        .container img{
+            height: 100px;
+            width: 100px;
+        }
+        
+        
+        .button{
+            float: right;
+            background-color: rgb(241, 241, 233);
+            color:rgb(16, 37, 200);
+            text-align: center;
+            padding: 20px 20px;
+            text-decoration: none;
+        }
+        
+        .navbar {
+            display: flex;
+            background-color: #a4cbd3;
+        }
+
+        /* Style the navigation bar links */
+        .navbar a {
+        color: white;
+        padding: 20px 20px;
+        text-decoration: none;
+        text-align: center;
+
+        }
+        
+
+        
+        #footer{
+            text-align: center;
+            background-color: grey;
+            color: aliceblue;
+            position: fixed;
+            bottom: 0px;
+            width: 100%;
+            padding-left: 0px;
+            
+        }
+    </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <a href="http://127.0.0.1:5500/index.html">
+    <img src ="../Images/Logo.png" alt="Logo of website">
+    </a>
+    <div class="text">
+      <h1>We share the best hikes in Wahington State</h1>
+    </div>
+  </div>  
+  <div>
+    <a href="/Pages/gallery.html" class="button" target="_parent">Galley</a>
+  </div>    
+
+<div class="navbar">        
+        <a href="#navbar">Home</a>
+        <a href="/Pages/about.html" target="_parent">About Us</a>
+        <a href="/Pages/ShareHikes.html" target="_parent">Add Hikes</a>      
+</div>
+ 
+
+<div class="MainContainer">
+  <div class="slideshowContainer">
+    <div class="mySlides fade">
+        <a href="Pages/SnoqualmieFalls.html">
+        <img src="Images/SnoqulmieFalls.jpeg" alt="Snoqualmie Falls">
+        </a>
+        <div class="caption">Snoqulmie Falls, Snoqualmie</div>
+    </div>
+    
+    <div class="mySlides fade">
+        <a href="Pages/FortWarden.html">
+        <img src="Images/FortWarden.jpg" alt="Fort Warden">
+        </a>
+        <div class="caption">Fort Warden, Port Towsend</div>
+
+    </div>
+    
+    <div class="mySlides fade">
+        <a href="Pages/SnoqualmieTunnel.html">
+        <img src="Images/TunnelSnoqulmie.jpg" alt="Tunnel Snoqualmie"> 
+        </a>
+        <div class="caption">The Tunnel, Snoqulmie</div>
+
+    </div>
+
+    <div class="mySlides fade">
+      <a href="Pages/RattlesnakeLedges.html">
+      <img src="Images/RattlesnakeLedges.jpg" alt="Rattlesnake Ledges"> 
+      </a>
+      <div class="caption">Rattlesnake Ledges,North Bend</div>
+
+    </div>
+    
+    <button class="prev">Previous</button>
+    <button class="next">Next</button>
+  </div>
+</div>
+
+<div>
+  <script src="js/slideshow.js"></script>
+</div>
+    
+  
+  <div id="footer">
+    <p>&copy;Copyright CSS112 Final Project by Liam Shiley, Xulong Huang</p>
+  </div>
+</body>
+
+</html>
