@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iPhone 14 pro</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900"
+      rel="stylesheet"
+    />
+    <script src="js/index.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="block1">
+        <div class="link">
+          <a href="#block3">FEATURES</a>
+          <a href="pages/services.html">SERVICES</a>
+          <a href="#block5">ORDER</a>
+          <a href="pages/about.html">ABOUT US</a>
+        </div>
+        <img src="images/apple.png" alt="apple" />
+        <p>206-739-7746</p>
+      </div>
+      <div id="block2" class="block2">
+        <h1>IPHONE 14 PRO</h1>
+        <img src="images/Iphones.png" alt="iphone" />
+      </div>
+    </header>
+    <div class="container">
+      <div id="block3" class="block3">
+        <h2>FEATURES</h2>
+        <div class="block3-item">
+          <div class="block3-text">
+            <p class="block3-text-p">
+              All models are equipped with the A16 Bionic chip, a 48-megapixel
+              main camera, and ProMotion displays with Ceramic Shield protection
+              and a frequency range of 1 — 120 Hz, as well as accelerated LPDDR5
+              memory. The design of the lineup has been updated, with two
+              notches on the front panel of the smartphones.
+            </p>
+            <p class="block3-text-p">
+              All iPhone 14 models in the USA will be sold without a SIM card
+              tray: the manufacturer claims that the improved eSIM technology
+              will allow transferring old electronic SIM cards to new
+              smartphones.
+            </p>
+            <p class="block3-text-p">
+              The front camera has been updated (it is equipped with autofocus
+              and recognizes the user faster in low light conditions) as well as
+              the sensor of the main camera.
+            </p>
+            <p class="block3-text-p1">
+              The iPhone 14 Pro has been released in a new design — without the
+              signature "notch". Also, a new color has been added to the
+              assortment. Unlike the "regular" iPhone 14 models, the smartphone
+              is equipped with the A16 Bionic processor, which can perform 4
+              trillion operations with photos per second.
+            </p>
+            <a class="block3-text-a" href="pages/review.html">MORE -></a>
+          </div>
+          <img src="images/Apple-iPhone-14-Pro-Max 1.jpg" alt="iphone" />
+        </div>
+      </div>
+      <div id="block5" class="block5">
+        <form action="/php/data.php" method="post">
+          <div class="block5-item1">
+            <h2>WANT AN IPHONE 14 PRO?</h2>
+            <div class="block5-flex">
+              <input
+                class="block5-input1"
+                type="text"
+                name="name"
+                placeholder="Your name"
+                required
+              />
+              <input
+                class="block5-input1"
+                type="tel"
+                name="phone"
+                placeholder="Phone number"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                required
+              />
+            </div>
+            <div class="block5-email">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="block5-label">
+              <label for="message">Message:</label>
+              <textarea name="message" id="message" required></textarea>
+            </div>
+            <div class="block5-checkbox">
+              <label for="subscribe">Subscribe:</label>
+              <input
+                type="checkbox"
+                id="subscribe"
+                name="subscribe"
+                value="yes"
+              />
+            </div>
+            <p>Our manager will contact you shortly</p>
+            <input class="block5-input2" type="submit" value="ORDER" />
+          </div>
+        </form>
+        <div class="block5-item2">
+          <img src="images/Iphone14pro.jpg" alt="iphone" />
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="block6">
+        <div class="link">
+          <a href="pages/privacy.html">Privacy Policy</a>
+        </div>
+        <img src="images/apple.png" alt="apple" />
+        <p>206-739-7746</p>
+      </div>
+    </footer>
+  </body>
+</html>
