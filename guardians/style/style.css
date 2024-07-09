@@ -1,0 +1,422 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: Noto Sans;
+	src: url(../fonts/NotoSans-VariableFont_wdth\,wght.ttf);	
+}
+
+body{
+  font-family: Noto Sans;
+	background-color: #080d22;
+}
+
+.back{
+	width: 100%;
+	height: 100%;
+	background-image: url(../images/the-benatar-spaceship-in-the-mcu.avif);
+	background-size: cover;
+}
+
+
+.back:before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color:rgba(0, 0, 0, .5);
+}
+
+.back2{
+	width: 100%;
+	height: 100%;
+	background-image: url(../images/pexels-frank-cone-4233216.jpg);
+	background-size: cover;
+}
+
+
+.back2:before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color:rgba(0, 0, 0, .5);
+}
+
+.back3{
+	width: 100%;
+	height: 100%;
+	background-image: url(../images/pexels-johannes-plenio-3262249.jpg);
+	background-size: cover;
+}
+
+
+.back3:before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color:rgba(0, 0, 0, .5);
+}
+
+
+.back4{
+	width: 100%;
+	height: 100%;
+	background-image: url(../images/guardiansofthegalaxy2-babygroot-detonator1.webp);
+	background-size: cover;
+}
+
+
+.back4:before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color:rgba(0, 0, 0, .5);
+}
+
+
+.back5{
+	width: 100%;
+	height: 100%;
+	background-image: url(../images/guardiansV2.jpg);
+	background-size: cover;
+}
+
+
+.back5:before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color:rgba(0, 0, 0, .5);
+}
+
+/* =================================================== */
+
+
+.header{
+	background: rgb(0,0,0);
+	background: linear-gradient(180deg, rgba(0,0,0,1) 59%, rgba(0,212,255,0) 100%);
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	padding: 20px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 100;
+}
+
+.logo{
+	width: 20%;
+}
+
+.logo img{
+	width: 70%;
+}
+
+.navbar a{
+	position: relative;
+	font-size: 18px;
+	color: #fff;
+	font-weight: 500;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin-left: 40px
+}
+
+.navbar a::before{
+	content: '';
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 0;
+	height: 2px;
+	background: #fff;
+	transition: .3s;
+}
+
+.navbar a:hover::before{
+	width: 100%;
+}
+
+
+/* ==================================================================== */
+
+.theme{
+	text-align: center;
+	color: white;
+	padding-top: 20%;
+	height: 100vh;
+	position: relative;
+	font-size: 30px;
+}
+
+.theme2{
+	color: white;
+	padding-top: 20%;
+	padding-left: 23%;
+	height: 100vh;
+	position: relative;
+	font-size: 25px;
+}
+.theme2 p{
+	font-size: 15px;
+	padding-top: 10px;
+}
+.theme2 p a{
+	color: white;
+	text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+  width: 70%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd3b;
+}
+
+
+
+.wrapper{
+	margin-top: 5%;
+	margin-bottom: 10%;
+	padding: 20px 100px;
+	color: white;
+}
+
+.wrapper h1{
+	font-size: 30px;
+	margin-bottom: 50px;
+}
+
+.line{
+	display: flex;
+	justify-content: space-between;
+}
+
+
+
+.info p{
+	margin-left: 20%;
+	font-size: 19px;
+}
+
+.card-img{
+	width: 20%;
+	box-shadow: 20px 20px 0px #14256a;
+}
+.card-img2{
+	width: 20%;
+	box-shadow: 20px 20px 0px #044696;
+}
+.card-img3{
+	width: 20%;
+	box-shadow: 20px 20px 0px #9801b3;
+}
+.card-imgS{
+	width: 20%;
+	box-shadow: 20px 20px 0px #00711c;
+}
+
+.crad-ch{
+	width: 20%;
+	box-shadow: 20px 20px 0px #c6134b;
+}
+.crad-ch2{
+	width: 20%;
+	box-shadow: 20px 20px 0px #028602;
+}
+.crad-ch3{
+	width: 30%;
+	box-shadow: 20px 20px 0px #a2a2a2;
+}
+.crad-ch4{
+	width: 30%;
+	box-shadow: 20px 20px 0px #013701;
+}
+.crad-ch5{
+	width: 20%;
+	box-shadow: 20px 20px 0px #300397;
+}
+.crad-ch6{
+	width: 20%;
+	box-shadow: 20px 20px 0px #131577;
+}
+.crad-ch7{
+	width: 20%;
+	box-shadow: 20px 20px 0px #016e44;
+}
+/* ============================================================= */
+
+.trailers{
+	width: 100%;
+	height: 99vh;
+	padding-top: 8%;
+	text-align: center;
+	color: white;
+}
+
+.trailers h2{
+	font-size: 40px;
+}
+
+
+.videos{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding-top: 5%;
+}
+.videos iframe{
+	width: 500px;
+	height: 315px;
+}
+
+iframe{
+	padding-bottom: 20px;
+}
+
+
+.posters{
+	width: 100%;
+	height: 99vh;
+	padding-top: 10%;
+	text-align: center;
+	color: white;
+}
+
+.posters h2{
+	font-size: 40px;
+}
+
+.post{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding-top: 5%;
+	padding-bottom: 8%;
+}
+
+.post img{
+	padding: 20px;
+	width: 30%;
+}
+
+/* ============================================= */
+
+
+.block{
+	width: 600px;
+	height: 450px;
+	margin-left: 30%;
+	padding: 30px 100px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+
+.glass{
+	background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border-radius: 20px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+}
+
+.glass2{
+	padding-top: 10%;
+}
+.glass2 p{
+	padding-bottom: 10px;
+}
+
+.form{
+	font-size: 19px;
+}
+.form input{
+	margin-bottom: 15px;
+	border-radius: 10px;
+	background: none;
+	color: white;
+}
+
+.date{
+	padding: 1px 29px;
+}
+.button{
+	font-size: 15px;
+	padding: 7px 20px;
+	margin: 10px 20px;
+	cursor: pointer;
+}
+.reset{
+	font-size: 15px;
+	padding: 7px 20px;
+	cursor: pointer;
+	margin: 10px 20px;
+}
+
+/* ================================================== */
+
+.bottom{
+	width: 100%;
+	background-color: #000;
+	text-align: center;
+}
+
+.bottom p{
+	padding: 20px;
+	color: white;
+}
+
+.bottom p a{
+	text-decoration: none;
+	color: white;
+	padding-left: 7px;
+}
+
+.g2{
+	margin-top: 60%;
+}
