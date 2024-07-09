@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" class="font-0">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Blodgett Breadsticks</title>
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="../styles/normalize.css" />
+        <link rel="stylesheet" href="../styles/fonts.css" />
+        <link rel="stylesheet" href="../styles/index.css" />
+
+        <!-- Google Fonts: Madimi One -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+
+    <body>
+        <div id="top-bar">
+            <span id="logo">🥖 Blodgett Breadsticks</span>
+            <nav id="nav-main">
+                <a href="../index.html">Home</a>
+                <a href="#">Contact</a>
+                <a href="./gallery.html">Gallery</a>
+                <a href="./menu.html">Menu</a>
+                <a href="./about.html">About</a>
+            </nav>
+        </div>
+
+        <div id="contact_wrapper">
+            <h2 id="contact_heading">Feel free to contact us!</h2>
+            <h4 id="contact_subheading">
+                We are always looking forward to feedback or questions!
+            </h4>
+
+            <form id="contact_form">
+                <div class="contact_inputwrapper">
+                    <label for="contact_emailaddress">Email Address</label>
+                    <br />
+                    <input
+                        id="contact_emailaddress"
+                        type="email"
+                        placeholder="Enter your email address"
+                        required
+                    />
+                </div>
+
+                <div class="contact_inputwrapper">
+                    <label for="contact_phonenumber"
+                        >Phone Number (optional)</label
+                    >
+                    <br />
+                    <input
+                        id="contact_phonenumber"
+                        type="number"
+                        placeholder="Enter your phone number"
+                    />
+                </div>
+
+                <div class="contact_inputwrapper">
+                    <label for="contact_subject">Subject</label>
+                    <br />
+                    <input
+                        id="contact_subject"
+                        placeholder="Enter the subject"
+                        required
+                    />
+                </div>
+
+                <div class="contact_inputwrapper">
+                    <label for="contact_message">Message</label>
+                    <br />
+                    <textarea
+                        id="contact_message"
+                        placeholder="Enter the message"
+                        required
+                    ></textarea>
+                </div>
+
+                <div id="contact_buttonswrapper">
+                    <button
+                        type="submit"
+                        id="contact_submitbutton"
+                        onclick="alert('Email sent! Thank you for taking the time to fill the form out!')"
+                    >
+                        Submit
+                    </button>
+                    <button
+                        type="reset"
+                        id="contact_resetbutton"
+                        onclick="alert('Input form resetted!')"
+                    >
+                        Reset
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div id="footer"></div>
+    </body>
+</html>
