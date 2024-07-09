@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Code Forge - SIGNUP</title>
+
+    <style>
+
+    *{
+        box-sizing: border-box;
+    }
+
+    h1 {
+    border: 1px solid #051d40;  
+    margin: auto;
+    text-align: center;
+    color: #051d40;
+    font-size: 2.5rem;
+    background-color: #93BFCF;
+  }
+
+    .signup-container{
+        border-radius: 3px;
+        background-color: #BDCDD6;
+        padding: 15px;
+    }
+
+    .col-25{
+        float: left;
+        width: 25%;
+        margin-top: 6px;
+    }
+
+    .col-75 {
+        float: left;
+        width: 75%;
+        margin-top: 6px;
+    }
+
+    input {
+        width:auto;
+        padding: 5px;
+        border: 1px solid black;
+        border-radius: 4px;
+    }
+
+    input:focus {
+        border: 3px solid blue;
+    }
+
+    @media screen and (max-width: 600px){
+        .col-25, .col-75, input[type=submit]{
+            width: 25%;
+            margin-top: 0;
+        }
+    }
+        /*form {display: table; border-spacing: 10px;}
+        p    {display: table-row;}
+        input{
+            display: table-cell;
+        }
+        label{display: table-cell;}
+        input[type=submit] {
+            background-color: #b1d4e0;
+            border: none;
+            color: #051d40;
+            padding: 16px 32px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+        }*/
+    </style>
+</head>
+
+<header>
+    <div class="home-header flex">
+        <a href="../index.html"><img src="../images/code-forge.png" alt="Bookstore Logo" class="header-img"></a>
+        <nav class="flex-nav">
+            <a href="../index.html">HOME</a>
+            <a href="catalog.html">CATALOG</a>
+            <a href="signup.html">SIGN UP</a>
+            <a href="account.html">ACCOUNT</a>
+            <a href="cart.html">SHOPPING CART</a>
+            <a href="checkout.html">CHECKOUT</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+    </div>
+</header>
+
+<body>
+
+    <h1>Account Creation</h1>
+<div class="signup-container">
+<form action="account.html" target="_blank" method="POST" autocomplete="off">
+        <label for="user">Username:    </label>
+        <input type="text" id="user" name ="user" placeholder="Enter Username" autofocus required><br><br>
+
+        <label for="pwd">Password:   </label>
+        <input type="password" id="pwd" name="pwd" value="" placeholder="Enter a password" minlength="8" required><br><br>
+        
+        <label for="email">Email:    </label>
+        <input type="email" id="email" name ="email" placeholder="Enter Email" required><br><br>
+
+        <label for="bday">Birthday:    </label>
+        <input type="date" id="bday" name ="bday" value="" min="1970-01-01" max="2024-02-20" required><br><br>
+
+        <label for="phone">Phone:    </label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter Phone Number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+
+        <label for="promos">I don't want to receive promotional emails from Code Forge.</label>
+        <input type="checkbox" id="promos" name="promos" value="unwanted" > 
+
+        <p>Receive text promotions?</p>
+        <label for="yesText">Yes</label>
+        <input type="radio" id="yesText" name="yesText" value="Yes">
+        <br>
+        <label for="noText">No</label>
+        <input type="radio" id="noText" name="noText" value="No">
+
+        <br>
+        <br>
+    <input type="submit" value="Submit" class="button">
+    <input type="reset" value="Reset" class="button">
+    
+    <input type="button" onclick="myFunction()" value="Save Data" class="button">
+</form>
+</div>
+<script>
+    function myFunction(){
+        var userName = document.getElementById("user");
+        var user_value = userName.value;
+        localStorage.setItem("user", user_value);
+        
+        var passWord = document.getElementById("pwd");
+        var pass_value = passWord.value;
+        localStorage.setItem("pwd", pass_value);
+        
+        var email = document.getElementById("email");
+        var email_value = email.value;
+        localStorage.setItem("email", email_value);
+
+        var bday = document.getElementById("bday");
+        var bday_value = bday.value;
+        localStorage.setItem("bday", bday_value);
+
+        var phone = document.getElementById("phone");
+        var phone_Num = phone.value;
+        localStorage.setItem("phone", phone_Num);
+
+        var promos = document.getElementById("promos");
+        var promos_value = promos.value;
+        localStorage.setItem("promos", promos_value);
+
+        alert("Data successfully saved!");
+    }
+</script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,277 @@
+<!--
+    Until noted otherwise, let's make sure with notes 1), 2), 3) and 4) specified below
+    we do as such in our HTML Code for our Weekly Assignments
+
+    Doing 1), 2), 3) and 4) below will make for code that passed the W3CValidator
+
+    1) html specified in DOCTYPE tag
+
+    2) lang attribute specified in the html tag
+
+    3) charset attribute in the meta tag
+
+    4) specfying a title tag and its content
+-->
+
+<!DOCTYPE html>
+<html lang= "en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Forge - checkout</title> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/formStyle.css">
+</head>
+
+<body>
+  <header>
+    <div class="home-header flex">
+      <a href="../index.html"><img src="../images/code-forge.png" alt="Bookstore Logo" class="header-img"></a>
+        <nav class="flex-nav">
+            <a href="../index.html">HOME</a>
+            <a href="catalog.html">CATALOG</a>
+            <a href="signup.html">SIGN UP</a>
+            <a href="account.html">ACCOUNT</a>
+            <a href="cart.html">SHOPPING CART</a>
+            <a href="checkout.html">CHECKOUT</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+    </div>
+  </header>
+  
+  <div class="flex-container">
+    <div class="custom-container">
+      <h1>Code Forge - Checkout</h1>
+      <p>Welcome to our online bookstore checkout page, where literary adventures come to life! Your journey to acquiring captivating stories is just a few steps away.</p>
+      <p>Please review your selected items below and ensure your literary treasures are in order. If you need to make any adjustments, feel free to update quantities or remove items.</p>
+      <p>Next, provide your shipping information so we can send your books to their new home. Our seamless and secure payment process follows, ensuring your transaction is smooth and worry-free.</p>
+      <p>Select your preferred payment method, enter the necessary details, and voila – your order is complete!</p>
+      <p>Thank you for choosing our bookstore; we can't wait for you to dive into the worlds waiting within the pages of your chosen books. Happy reading!</p>
+    </div>
+
+    <form id="checkoutForm" action="../php/action_page.php" target="_blank" method="post" autocomplete="on">
+      <br>
+      <div>
+        <label for="fname">Full Name</label>
+        <input type="text" id="fname" name="firstname" autocomplete="name" placeholder="John M. Doe" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" autocomplete="email" placeholder="john@example.com">
+        <label for="phone">Phone:    </label>
+        <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="Enter Phone Number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
+        <label for="adr">Address</label>
+        <input type="text" id="adr" name="address" autocomplete="address-level1" placeholder="542 W. 15th Street" required>
+        <label for="city"> City</label>
+        <input type="text" id="city" name="city" autocomplete="address-level2" placeholder="New York" required>
+        <label for="state">State</label>
+        <input type="text" id="state" name="state" autocomplete="address-level1" placeholder="NY" required>
+        <label for="zip">Zip</label>
+        <input type="text" id="zip" name="zip" autocomplete="postal-code" placeholder="10001" required>
+      </div>
+
+      <div>
+        <h3>Payment</h3>
+        <label for="fname">Accepted Cards</label>
+          <div>
+            <p>Visa - Mastercard - ApplePay - GooglePay</p>
+          </div>
+          <label for="paymentType">Payment Type</label>
+                  <select id="paymentType" name="paymentType">
+                      <option value="creditCard">Visa</option>
+                      <option value="creditCard">Mastercard</option>
+                      <option value="applePay">Applepay</option>
+                      <option value="googlePay">GooglePay</option>
+                  </select>
+      </div>   
+
+        <div id="creditCardFields" class="paymentFields">
+          <br>
+          <label for="cname">Name on Card</label>
+          <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+          <label for="ccnum">Credit card number</label>
+          <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+          <label for="expmonth">Exp Month</label>
+          <input type="text" id="expmonth" name="expmonth" placeholder="September">
+          <label for="expyear">Exp Year</label>
+          <input type="text" id="expyear" name="expyear" placeholder="2018">
+          <label for="cvv">CVV</label>
+          <input type="text" id="cvv" name="cvv" placeholder="352">
+        </div>
+
+        <div id="googlePayFields" class="paymentFields">
+          <!-- GooglePay fields -->
+          <br>
+          <input type="email" name="googlePay" autocomplete="email" placeholder="GooglePay Email">
+        </div>
+
+      <div id="applePayFields" class="paymentFields">
+        <br>
+        <!-- ApplePay fields -->
+        <input type="email" name="applePay" autocomplete="email" placeholder="ApplePay Email">
+      </div>
+      
+      <div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+        <br>
+        <br>
+        <input type="submit" value="Submit" class="button">
+        <input type="reset" value="Reset" class="button">
+      </div>
+
+    </form> <!-- end form -->
+
+
+
+
+    <div id="cartItems">
+      <h4 id="cartName"># of Cart items
+        <span>
+          <b id="itemCount"></b>
+      </span>
+  </h4>
+  <!-- Item placeholders will be inserted here -->
+  
+  <p id="total">Total <span><b id="totalPrice"></b></span></p>
+  </div>
+
+
+</div> <!-- end flex container-->
+
+
+
+  <script>
+  document.getElementById("paymentType").addEventListener("change", function() {
+    var selectedPaymentType = this.value;
+
+    // Hide all payment fields
+    var allPaymentFields = document.getElementsByClassName("paymentFields");
+    for (var i = 0; i < allPaymentFields.length; i++) {
+        allPaymentFields[i].style.display = "none";
+    }
+
+    // Show the fields corresponding to the selected payment type
+    var selectedPaymentFields = document.getElementById(selectedPaymentType + "Fields");
+    if (selectedPaymentFields) {
+        selectedPaymentFields.style.display = "block";
+    }
+});
+document.getElementById("paymentType").dispatchEvent(new Event("change"));
+
+      // Retrieve items from local storage
+      var items = JSON.parse(localStorage.getItem('cartItems')) || [];
+      // Function to display items in the cart
+      function displayCartItems() {
+          var itemCount = items.length;
+          var totalPrice = 0;
+          var cartItemsDiv = document.getElementById('cartItems');
+          var cartName = document.getElementById('cartName');
+          var itemCountSpan = document.getElementById('itemCount');
+          var totalPriceSpan = document.getElementById('totalPrice');
+          var hr = document.createElement('hr');
+          var total = document.getElementById('total');
+
+          if(cartItemsDiv && itemCountSpan && totalPriceSpan){
+          // Clear previous content
+          cartItemsDiv.innerHTML = "";
+
+          
+          itemCountSpan.textContent = itemCount; 
+          cartName.append(itemCountSpan);  
+          cartItemsDiv.append(cartName);
+
+          items.forEach(function(item) {
+              var itemName = item.productName;
+              var itemPrice = parseFloat(item.price).toFixed(2);
+
+              totalPrice += parseFloat(item.price);
+
+              // Create HTML elements for each item
+              var itemParagraph = document.createElement('p');
+              var itemLink = document.createElement('a');
+              var itemPriceSpan = document.createElement('span');
+
+              itemLink.href = '#';
+              itemLink.textContent = itemName;
+              itemPriceSpan.classList.add('price');
+              itemPriceSpan.textContent = '$' + itemPrice;
+
+              itemParagraph.appendChild(itemLink);
+              itemParagraph.appendChild(itemPriceSpan);
+
+              cartItemsDiv.appendChild(itemParagraph);
+              
+          });
+
+          //cartItemsDiv.innerHTML = '<hr>';
+          totalPriceSpan.textContent = '$' + totalPrice.toFixed(2);
+          total.appendChild(totalPriceSpan);
+          cartItemsDiv.appendChild(hr);
+          cartItemsDiv.appendChild(total);
+          
+      } 
+      else {
+          console.error("One or more elements not found.");
+      }
+    }
+
+    
+      document.addEventListener("DOMContentLoaded", function() {
+          // Your code here
+          displayCartItems();
+
+          var formDataJSON = localStorage.getItem("formData");
+
+  if (formDataJSON) {
+      // Parse JSON string into form data
+      var formDataArray = JSON.parse(formDataJSON);
+
+      // Create a new FormData object and populate it with form data
+      var formData = new FormData();
+      formDataArray.forEach(function(item) {
+          formData.append(item[0], item[1]);
+      });
+      console.log(formData);
+      // Submit the form with the retrieved form data
+      fetch("../php/action_page.php", {
+          method: "POST",
+          body: formData
+      })
+      .then(response => {
+          if (!response.ok) {
+              throw new Error("Network response was not ok");
+          }
+          return response.text();
+      })
+      .then(data => {
+          // Handle successful form submission
+          console.log(data);
+
+          window.open("../php/action_page.php", "_blank");
+      })
+      .catch(error => {
+          // Handle error
+          console.error('There was a problem with the form submission:', error);
+          window.location.href = "error_page.html"; // Redirect to error page
+      });
+
+      // Clear form data from localStorage
+      localStorage.removeItem("formData");
+  }
+});
+
+
+  document.getElementById("checkoutForm").addEventListener("submit", function(event) {
+  event.preventDefault(); // Prevent default form submission
+
+  var formData = new FormData(this); // 'this' refers to the form element
+  var formDataJSON = JSON.stringify(Array.from(formData.entries()));
+  localStorage.setItem("formData", formDataJSON);
+  this.submit();
+  }); 
+
+</script>
+</body>
+</html>

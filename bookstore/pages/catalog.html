@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Code Forge - CATALOG</title>
+        <style>
+          
+          * {
+            box-sizing: border-box;
+          }
+          body {
+            background-color: #BDCDD6;
+          }
+
+        .card {
+          background-color: #93BFCF;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          max-width: 200px;
+          height: 550px;
+          text-align: center;
+          font-family: arial;
+          float: left;
+          margin: 30px 45px;
+          padding: 8px;
+          gap: 20px;
+        }
+
+        .card * {
+          margin: 0;
+          gap: 20px;
+        }
+
+        .card img {
+          display: inline-block;
+          border-radius: 5px;
+          width:100%;
+          height: 200px;
+          max-width: 300px;
+          max-height: 300px;
+          margin: auto;
+          padding-top: 8px;
+        }
+
+        .card *{
+          padding: 0 20px;
+        }
+        
+        .price {
+          color: #051d40;
+          font-size: 22px;
+        }
+        
+        .card button {
+          border: none;
+          outline: 0;
+          padding: 12px;
+          color: #051d40;
+          background-color: #b1d4e0;
+          text-align: center;
+          cursor: pointer;
+          width: 100%;
+          height: 10%;
+          font-size: 18px;
+        }
+        
+        .card button:hover {
+          opacity: 0.7;
+        }
+        </style>
+    </head>
+
+    <header>
+        <div class="home-header flex">
+            <a href="../index.html"><img src="../images/code-forge.png" alt="Bookstore Logo" class="header-img"></a>
+            <nav class="flex-nav">
+                <a href="../index.html">HOME</a>
+                <a href="catalog.html">CATALOG</a>
+                <a href="signup.html">SIGN UP</a>
+                <a href="account.html">ACCOUNT</a>
+                <a href="cart.html">SHOPPING CART</a>
+                <a href="checkout.html">CHECKOUT</a>
+                <a href="contact.html">CONTACT</a>
+            </nav>
+        </div>
+    </header>
+    <body>
+                
+        <div class="card">
+          <img class="itemImg" src="../images/Basic_Fundamental_CSS.jpg" alt="BasicFundamentalCSS">
+          <h4 class="productName">MG Martin - Basic Fundamental CSS</h4>
+          <p class="price">$14.99</p>
+          <p class="description">With this book, you can familiarize yourself with how CSS works.</p>
+          <button class="catalog-button" onclick="addToCart(this)">
+          <a href="cart.html" target="_blank">Add to Cart</a>
+          </button>
+        </div>
+                
+        <div class="card">
+          <img class="itemImg" src="../images/Beginners_Guideto_HTML.png" alt="BeginnersGuideToHTML">
+          <h4 class="productName">Michael Gabriel - Beginners Guide To HTML</h4>
+          <p class="price">$19.99</p>
+          <p class="description">Reading Beginner's Guide to HTML will get you some basic, but essential HTML knowledge. </p>
+          <button class="catalog-button" onclick="addToCart(this)">
+          <a href="cart.html" target="_blank">Add to Cart</a>
+          </button>
+        </div>
+                
+        <div class="card">
+          <img class="itemImg" src="../images/CSS_ForBeginners.jpg" alt="CSSForBeginners">
+          <h4 class="productName">Dr. Andy Williams - CSS For Beginners</h4>
+          <p class="price">$12.99</p>
+          <p class="description">This book will show you how to make formatting & layout changes to your own website</p>
+          <button class="catalog-button" onclick="addToCart(this)">
+          <a href="cart.html" target="_blank">Add to Cart</a>
+          </button>
+        </div>
+                
+        <div class="card">
+          <img class="itemImg" src="../images/Debugging_CSS.jpg" alt="Debugging CSS">
+          <h4 class="productName">Ahmad Shadeed - Debugging CSS</h4>
+          <p class="price">$32.99</p>
+          <p class="description">An ebook that will help you improve your debugging CSS skills.</p>
+          <button class="catalog-button" onclick="addToCart(this)">
+          <a href="cart.html" target="_blank">Add to Cart</a>
+          </button>
+        </div>   
+
+        <div class="card">
+          <img class="itemImg" src="../images/HTML_Black_Book.jpg" alt="HTML-BlackBook">
+          <h4 class="productName">Steven Holzner - HTML Black Book</h4>
+          <p class="price">$9.99</p>
+          <p class="description">Explain how to use HTML to create webpages.</p>
+          <button class="catalog-button" onclick="addToCart(this)">
+          <a href="cart.html" target="_blank">Add to Cart</a>
+          </button>
+        </div>
+
+        <div class="card">
+          <img class="itemImg" src="../images/HTML_FifthEdition.jpg" alt="HTML-FifthEdition">
+          <h4 class="productName">Wendy Willard - HTML Fifth Edition</h4>
+          <p class="price">$41.99</p>
+          <p class="description"> Shows you, step by step, how to create dynamic websites with HTML.</p>
+          <button class="catalog-button" onclick="addToCart(this)">
+          <a href="cart.html" target="_blank">Add to Cart</a>
+          </button>
+        </div>
+
+        <div class="card">
+          <img class="itemImg" src="../images/HTML_Programming.jpg" alt="ProgramingHTML">
+          <h4 class="productName">Ryshith Doyle - Programing For Beginners HTML</h4>
+          <p class="price">$39.99</p>
+          <p class="description">Answers all your question Step-by-Step.</p>
+          <button class="catalog-button" onclick="addToCart(this)">
+          <a href="cart.html" target="_blank">Add to Cart</a>
+          </button>
+        </div>
+
+        <div class="card">
+          <img class="itemImg" src="../images/Modern_CSS.jpg" alt="Moden CSS">
+          <h4 class="productName">Joe Attardi - Moden CSS</h4>
+          <p class="price">$19.99</p>
+          <p class="description">Modern CSS uses a logical and understandable approach to break down and clearly explain the ins and outs of CSS.</p>
+          <button class="catalog-button" onclick="addToCart(this)">
+          <a href="cart.html" target="_blank">Add to Cart</a>
+          </button>
+        </div>
+
+        <div class="card">
+          <img class="itemImg" src="../images/The_ComprehensiveGuide.jpg" alt="HTMLandCSS-The Comprehensive Guide">
+          <h4 class="productName">Jurgen Wolf - The Comprehensive Guide</h4>
+          <p class="price">$57.49</p>
+          <p class="description">Web developers, this is your all-in-one guide to HTML and CSS!</p>
+          <button class="catalog-button" onclick="addToCart(this)">
+          <a href="cart.html" target="_blank">Add to Cart</a>
+          </button>
+        </div>
+
+        <div class="card">
+          <img class="itemImg" src="../images/Web_Playground.jpg" alt="HTMLandCSS-WebPlayground">
+          <h4 class="productName">Paul McFedries - Web Playground</h4>
+          <p class="price">$39.99</p>
+          <p class="description">Web Design Playground takes you step by step from writing your first line of HTML.</p>
+          <button class="catalog-button" onclick="addToCart(this)">
+          <a href="cart.html" target="_blank">Add to Cart</a>
+          </button>
+        </div>
+        
+        <script>
+          function addToCart(button){
+
+            var card = button.closest('.card');
+            console.log(card);
+            var itemImageElement = card.querySelector('img');
+             if (itemImageElement) {
+            var itemImage = itemImageElement.getAttribute('src');
+            var productName = card.querySelector('h4').textContent;
+            var price_text = card.querySelector('.price').textContent;
+            var desc = card.querySelector('.description').textContent;
+             }
+
+             var price = parseFloat(price_text.replace('$', '')); // Remove '$' and parse as float
+            if (isNaN(price)) {
+                console.error("Invalid price:", priceText);
+                return; // Don't proceed if price is invalid
+            }
+
+
+            var cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+
+            var newItem = { imageURL: itemImage, productName: productName, price: price, desc: desc};
+            cartItems.push(newItem);
+
+            localStorage.setItem("cartItems", JSON.stringify(cartItems));
+
+            var cartURL = "cart.html";
+            window.open(cartURL,"_blank");
+          }
+        </script>
+    </body>
+</html>

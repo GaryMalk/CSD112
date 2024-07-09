@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Code Forge - CART</title>
+
+</head>
+
+<style>
+    body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #BDCDD6;
+    font-size: 1.2rem;
+  }
+  </style>
+
+<header>
+    <div class="home-header flex">
+        <a href="../index.html"><img src="../images/code-forge.png" alt="Bookstore Logo" class="header-img"></a>
+        <nav class="flex-nav">
+            <a href="../index.html">HOME</a>
+            <a href="catalog.html">CATALOG</a>
+            <a href="signup.html">SIGN UP</a>
+            <a href="account.html">ACCOUNT</a>
+            <a href="cart.html">SHOPPING CART</a>
+            <a href="checkout.html">CHECKOUT</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+    </div>
+</header>
+
+<body>
+    <h1 class="h1-pages">Your Cart</h1>
+
+    <div id="cart" class="grid-container">
+        
+    </div>
+    
+
+    <br><br><br>
+
+
+    <a href="checkout.html">
+        <button id="checkout" class="button">Proceed to Checkout</button>
+    </a>
+
+    <a href="catalog.html">
+        <button id="buyMore" class="button">Add more items?</button>
+    </a>
+    
+
+    <script>    
+
+    function checkCart(){
+        
+        var cart = document.querySelector('.grid-container');
+
+        if(cart.innerHTML == ''){
+            cart.innerHTML = '<h3>Your cart is empty!</h3>'
+        }
+    }
+
+    function renderCart(){
+
+        var cart = document.querySelector('.grid-container');
+
+        cart.innerHTML = '';
+
+        var cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+
+        cartItems.forEach(function(item, index){
+            const itemDiv = document.createElement('div');
+            itemDiv.classList.add('grid-item');
+            itemDiv.innerHTML = `
+            <img src="${item.imageURL}" alt="${item.productName}">
+                    <p class="description">
+                        <br>Title: ${item.productName}
+                        <br>Price: <b>$${item.price}</b><br>
+                        Book Details: ${item.desc}<br></p> 
+                <button onclick="removeFromCart(${index})" class="button">Remove from Cart</button>
+            `;
+            cart.appendChild(itemDiv);                                          
+        });
+
+    }
+
+    function removeFromCart(index) {
+        cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+        cartItems.splice(index, 1);
+        localStorage.setItem("cartItems", JSON.stringify(cartItems));
+        renderCart();
+        checkCart();
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        renderCart();
+        checkCart();
+    });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Code Forge - CONTACT</title>
+    
+    <style>
+                
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #BDCDD6;
+        font-size: 1.2rem;
+    }
+        
+    input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+    input[type=submit] {
+        background-color:  #051d40;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+        
+    input[type=submit] {
+        background-color: #b1d4e0;
+        border: none;
+        color: #051d40;
+        padding: 16px 32px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+    }  
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="home-header flex">
+            <a href="../index.html"><img src="../images/code-forge.png" alt="Bookstore Logo" class="header-img"></a>
+            <nav class="flex-nav">
+                <a href="../index.html">HOME</a>
+                <a href="catalog.html">CATALOG</a>
+                <a href="signup.html">SIGN UP</a>
+                <a href="account.html">ACCOUNT</a>
+                <a href="cart.html">SHOPPING CART</a>
+                <a href="checkout.html">CHECKOUT</a>
+                <a href="contact.html">CONTACT</a>
+            </nav>
+        </div>
+    </header>
+
+    <h1 class="h1-pages">Contact Form</h1>
+
+    <table>
+        <div class="container">
+            <form onsubmit="myFunction()">
+                <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    
+                <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    
+                <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                    </select>
+    
+                <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                <input type="submit" value="SUBMIT" class="button">
+            </form>
+            </div>
+        </table>
+                <script>
+                    function myFunction(){
+                    alert("The form was submitted successfully!");
+                    }
+                </script>
+        </div>
+</body>
+</html>
+    

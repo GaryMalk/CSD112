@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        body {
+            background-color: #BDCDD6;
+        }
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid #051d40;
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+    </style>
+
+    <script>
+        window.onload = function(){
+            var userName = localStorage.getItem("user");
+            var u_output = document.getElementById("uName");
+            u_output.innerText = userName;
+
+            var pass = localStorage.getItem("pwd");
+            var p_output = document.getElementById("pass");
+            p_output.innerText = pass;
+
+            var email = localStorage.getItem("email");
+            var e_output = document.getElementById("email");
+            e_output.innerText = email;
+
+            var bday = localStorage.getItem("bday");
+            var bd_output = document.getElementById("bday");
+            bd_output.innerText = bday;
+
+            var phone = localStorage.getItem("phone");
+            var phone_output = document.getElementById("phone");
+            phone_output.innerText = phone;
+
+            var promos = localStorage.getItem("promos");
+            var pr_output = document.getElementById("promos");
+            pr_output.innerText = promos;
+
+        }
+    </script>
+
+</head>
+
+
+<body>
+    <header>
+        <div class="home-header flex">
+            <a href="../index.html"><img src="../images/code-forge.png" alt="Bookstore Logo" class="header-img"></a>
+            <nav class="flex-nav">
+                <a href="../index.html">HOME</a>
+                <a href="catalog.html">CATALOG</a>
+                <a href="signup.html">SIGN UP</a>
+                <a href="account.html">ACCOUNT</a>
+                <a href="cart.html">SHOPPING CART</a>
+                <a href="checkout.html">CHECKOUT</a>
+                <a href="contact.html">CONTACT</a>
+            </nav>
+        </div>
+    </header>
+
+    <h1>User Account Information:</h1>
+
+    <table>
+        <tr>
+            <th>Field</th>
+            <th>Value</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Username</td>
+            <td><p id="uName"></p></td>
+            <td>The username of the user</td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><p id="pass"></p></td>
+            <td>The password of the user</td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><p id="email"></p></td>
+            <td>The email of the user</td>
+        </tr>
+        <tr>
+            <td>Birthday</td>
+            <td><p id="bday"></p></td>
+            <td>The birthday of the user (used to send coupons on birthday)</td>
+        </tr>
+        <tr>
+            <td>Phone Number</td>
+            <td><p id="phone"></p></td>
+            <td>The phone number of the user</td>
+        </tr>
+        <tr>
+            <td>Promotional emails</td>
+            <td><p id="promos"></p></td>
+            <td>Whether the user wishes to recieve promotional emails</td>
+        </tr>
+    </table>
+
+
+
+</body>
+
+</html>
