@@ -1,0 +1,353 @@
+/*unique properties used (35)
+font-family
+text-decoration
+writing-mode
+text-orientation
+text-transform
+list-style-type
+font-size
+color
+background-image
+background-repeat
+background-position
+display
+justify-content
+max-width
+margin
+flex-grow
+background-color
+border-style
+border-width
+border-color
+flex-direction
+grid-template-columns
+padding
+background-size
+justify-items
+align-items
+vertical-align
+border-radius
+text-align
+grid-template rows
+line-height
+overflow
+justify-self
+align-self
+min-width
+*/
+
+/*colors
+Black: 030904 rgba(003, 009, 004, 0.9)
+Light Grey: CAD0D5 rgba(202, 208, 213, 0.9)
+Dark Green: 46543B
+Light Green: 72907E
+Yellow: E9B91F*/
+
+/*font import*/
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*Fonts*/
+body, input, select, textarea {
+	font-family: "Bitter";
+}
+
+h1, h2, h3, .navlist li, #archivofontdemo {
+	font-family: "Archivo";
+}
+
+/*Font styling*/
+header a {
+	text-decoration: none;
+	writing-mode: vertical-lr;
+	text-orientation: upright;
+}
+
+h1, h2, .navlist li {
+	text-transform: uppercase;
+}
+
+.navlist {
+	/*removing bullets*/
+	list-style-type: none;
+}
+
+.navlist a {
+	/*removing underline*/
+	text-decoration: none
+}
+
+/*Font sizes*/
+body, input, select, textarea {
+	font-size: 18px;
+}
+
+h1 {
+	font-size: 36px;
+}
+
+h2, h3, .navlist li {
+	font-size: 32px;
+}
+
+#archivofontdemo, #bitterfontdemo {
+	font-size: 24px;
+}
+
+/*Font colors*/
+body, a, label {
+	color: #030904;
+}
+
+.navlist a {
+	color: #E9B91F;
+}
+
+h3, form, input, select, textarea {
+	color: #46543B;
+}
+
+input[type=submit], footer p {
+	color: #CAD0D5;
+}
+
+/*layout*/
+body {
+	background-image: url("../image/hall.jpg");
+	background-repeat: repeat;
+	background-position: 0px -680px;
+	
+	display: flex;
+	justify-content: center;
+}
+
+.center {
+	max-width: 900px;
+	margin: 0% 5%;
+	flex-grow: 1;
+	
+	background-color:rgba(202, 208, 213, 0.7);
+	
+	border-style: solid;
+	border-width: 0px 8px;
+	border-color: #46543B;
+	
+	display: flex;
+	flex-direction: column;
+}
+
+/*layout top*/
+.headernav {
+	display: grid;
+	grid-template-columns: 40% auto;
+}
+
+@media (max-width: 820px) {
+	/*stack h1 title on top of nav when they can't fit side by side,
+	remove margins from center block to give it */
+	.headernav {
+		display: block;
+	}	
+	.center {
+		margin: 0px;
+	}
+}
+
+header {
+	display: flex;
+	justify-content: center;
+}
+
+h1 {
+	padding: 24px;
+}
+
+nav {	
+	background-image: url("../image/building.jpg");
+	background-size: cover;
+	
+	display: grid;
+	justify-items: stretch; /*stretches the navlist background to fit the width*/
+	align-items: start; /*keeps navlist at top*/
+}
+
+.navlistbg {
+	background-color: rgba(003, 009, 004, 0.5);
+
+	display: flex;
+	justify-content: center; /*centers ul child*/
+}
+
+nav ul {	
+	display: grid;
+	
+	grid-template-columns: 150px auto;
+}
+
+.navlist {
+	padding: 0px;
+	margin: 0px;
+}
+
+@media (max-width: 530px) {
+	/*stack navlist items when they can't fit side by side*/	
+	nav ul {
+		display:block;			
+	}
+}
+
+nav ul li {
+	padding: 8px;	
+}
+
+/*layout page header & footer*/
+h2, footer {
+	text-align: center;
+	
+	padding: 32px;
+	margin: 0px;
+	
+	background-color: #72907E;
+}
+
+footer {	
+	background-color: #46543B;
+}
+
+/*layout content*/
+h3, p {
+	margin: 24px 24px;
+}
+
+li img {
+	vertical-align:middle;
+	
+	padding: 4px;
+	
+	width: 192px;
+	height: 192px;
+	border-radius: 20%;
+}
+
+/*index explore box*/
+#exploretext {
+	text-align: center;
+}
+
+.explorebox {
+	padding: 32px 0px;
+	
+	display: grid;
+	grid-template-columns: 50% auto;
+	justify-items: stretch;
+	
+	background-color: #72907E;
+}
+
+@media (max-width: 820px) {
+	/*stack explore list items when they don't fit side-by-side,
+	uses same px width as the navlist*/
+	.explorebox {
+		grid-template-columns: auto;
+		grid-template-rows: auto auto;
+	}
+}
+
+.explorebg {
+	background-size: cover;
+	
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#liliesbg {
+	background-image: url("../image/lilies.jpg");
+}
+
+#sunflowerbg {
+	background-image: url("../image/sunflower.jpg");
+	background-position: 0% 70%;
+}
+
+.circle {
+	text-align: center;
+	
+	margin: 8px;
+	line-height: 300px;
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	
+	background-color: #030904;
+}
+
+/*plants grid*/
+.plantsgrid {
+	display: grid;
+	grid-template-columns: 50% auto;
+}
+
+.plantimg {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	
+	height: 370px;
+}
+
+.planttext {
+	justify-self: center;
+	align-self: center;
+}
+
+.planttext:nth-child(2n) {	
+	text-align: right;
+}
+
+/*form styling*/
+form {
+	width: 70%;
+	min-width: 280x;
+	margin: auto;
+	
+	display: flex;
+	flex-direction:column;
+}
+
+form h3 {
+	margin: 24px 0px;
+}
+
+label {
+	margin: 8px 0px;
+	text-align: left;
+}
+
+input, select, textarea {
+	padding: 12px;
+	margin: 8px 0px;
+	width: 100%;
+	
+	background-color: rgba(202, 208, 213, 0.4);
+}
+
+textarea {
+	height: 200px;
+}
+
+input[type=submit] {
+	width: 200px;
+	background-color: #72907E;
+}
+
+.bumperimg {
+	height: 256px;
+	margin: 32px;
+	overflow: hidden;
+}
+
+.bumperimg img {
+	width: 100%;	
+}
