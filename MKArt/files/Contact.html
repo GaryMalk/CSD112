@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Contact</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+<style>
+    
+    main{
+        margin: 5%;
+    }
+    body{
+        background-image: url(../bg/Background3.jpg);
+        background-size:cover;
+    }
+    section.form{
+        margin-right: 20%;
+        margin-left: 20%;
+        align-self: center;
+        height: 800px;
+        display: grid;
+        grid-template-rows: 20% 50% 30%;
+        background-color: rgba(221, 167, 193, 0.7);
+        text-align: center;
+        border-style: double;
+        border-color:#F0E5F0;
+        border-width: 5px;
+    }
+    h1{
+        grid-column: 1;
+        grid-row: 1;
+        grid-row-end: 2;
+        text-align: center;
+        align-self: center;
+        font-size: 200%;
+    }
+    p{
+        grid-row: 3;
+        text-align: center;
+        align-self: center;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    form{
+        grid-column: 1;
+        grid-row: 2;
+        grid-row-end: 2;
+        line-height: 1.5;
+        font: inherit;
+        font-size: inherit;
+    }
+    label{
+        font-size: inherit;
+        font: inherit;
+        color:#262823;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #message{
+        width: 80%;
+        text-align: left;
+    }
+
+</style>
+</head>
+<body>
+    <nav id="container">
+        <ul>
+            <li id="li1"><a href="../Index.html">Home</a></li>
+            <li id="li2">
+                <div class="dropdown">
+                    <button class="dropbtn">Art</button>
+                    <div class="dropdown-content">
+                        <a href="Drawings.html">Drawings</a>
+                        <a href="Projects.html">Projects</a>
+                    </div>
+                </div></li>
+            <li id="li3"><a href="../Index.html"><img src="../logos/logo.png" alt= "MK handwritten Logo"></a></li>
+            <li id="li4"><a href="Biography.html">About</a></li> <!--this is the page you're on-->
+            <li id="li5"><a href="Contact.html" class="current">Contact</a></li>
+        </ul>
+    </nav>
+    <section>
+        <main>
+            <section class="form">
+                <h1>Contact</h1>
+                    <form>
+                        <label for="email">Your Email</label><br>
+                            <input type="text" id="email"><br><br>
+                        <label for="name">Preferred Name</label><br>
+                            <input type="text" id="name"><br><br>
+                        <label for="subject">Subject</label><br>
+                            <input type="text" id="subject"><br><br>
+                        <label for="message">Message</label><br>
+                            <textarea id="message" rows="10" placeholder="This is currently unavailable, sorry!"></textarea><br>
+                        <input type="submit" value="Send">
+                        </form>
+                    <p> You are welcome to send me a message if you have any questions about my practice, potential collaboration, commissions, 
+                        or anything else! Currently, this feature is non-functioning, and can't actually record information,
+                        but feel free to reach out using the email located in the footer at the bottom of the page.</p>
+            </section>
+        </main>
+    </section>
+    <footer>
+<footer>
+    <div class="text">&#169; Mark Van Cleave, 2024</p></div>
+    <div class="sm"><a href="https://www.instagram.com?art_mvc/">Instagram</a></div>
+    <div class="email"><p class="email">markvancleave29@gmail.com</p></div> 
+</footer>
+</body>
+</html>

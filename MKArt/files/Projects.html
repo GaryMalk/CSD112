@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Projects</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <style>
+        main{
+            margin-top: 5%;
+            margin-right: 5%;
+            margin-left: 5%;
+            margin-bottom: 100px;
+        }
+        h1{
+            text-align: center;
+        }
+        .first{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 5% 30% 17% 25% 12.5 10% 5%;
+        }
+        .first .img{
+            grid-column: 1;
+            grid-row: 1;
+            grid-row-end: 5;
+            height: 700px;
+            width: 500px;
+            margin: 0;
+        }
+        .first a{
+            grid-column: 1;
+            grid-row: 1;
+            grid-row-end: 5;
+            height: 700px;
+            width: 500px;
+            margin: 0;
+            text-decoration: none;
+        }
+        .first h1{
+            grid-column: 2;
+            grid-row:1;
+            grid-row-end: 1;
+            font-size: 35px;
+        }
+        .first p.firstpg{
+            grid-column: 2;
+            grid-row: 2;
+            grid-row-end: 8;
+            line-height: 1.4;
+            font-size: 25px;
+            margin-left: 8px;
+        }
+        .first h2{
+            grid-column: 2;
+            grid-row: 1;
+            align-items: center;
+            margin-left: 8px;
+        }
+
+        .second{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 5% 30% 17% 25% 12.5 10% 5%;
+        }
+        .second .img{
+            grid-column: 1;
+            grid-row: 1;
+            grid-row-end: 5;
+            height: 700px;
+            width: 500px;
+            margin: 0;
+        }
+        .second a{
+            grid-column: 1;
+            grid-row: 1;
+            grid-row-end: 5;
+            height: 700px;
+            width: 500px;
+            margin: 0;
+            text-decoration: none;
+        }
+        .second p.secondpg{
+            grid-column: 2;
+            grid-row: 2;
+            grid-row-end: 8;
+            line-height: 1.4;
+            font-size: 25px;
+            margin-left: 8px;
+        }
+        .second h1{
+            text-align: center;
+            text-justify: center;
+        }
+        .second h2{
+            grid-column: 2;
+            grid-row: 1;
+            align-items: center;
+            margin-left: 8px;
+        }
+
+
+
+
+    </style>
+</head>
+ 
+<body>
+    <nav id="container">
+        <ul>
+            <li id="li1"><a href="../Index.html">Home</a></li>
+            <li id="li2">
+                <div class="dropdown">
+                    <button class="dropbtn">Art</button>
+                    <div class="dropdown-content">
+                        <a href="Drawings.html">Drawings</a>
+                        <a href="Projects.html" class="current">Projects</a>
+                    </div>
+                </div></li>
+            <li id="li3"><a href="../Index.html"><img src="../logos/logo.png" alt= "MK handwritten Logo"></a></li>
+            <li id="li4"><a href="Biography.html">About</a></li> <!--this is the page you're on-->
+            <li id="li5"><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+<main>
+    <h1>Projects</h1><br><br>
+
+<section class="second">
+    <h2>I Keep Being Told That There Are Better Things</h2>
+    <a href="../Downloadables/I_Keep_Being_Told_That_There_Are_Better_Things_VanCleave.pdf" download><img src="../images/Projects2.jpg" class="img"></a>
+    <p class="secondpg">This is a more recent comic that I made on self identity and the conflicting ideas 
+        that you are only you as much as the you that people know versus the idea of a personal sense-of-self 
+        being the most you. As well, how both ideas can affect that same sense of self that they ask for 
+        refection on. 
+        <br>This has a lot more parallels to my more recent work as I created it early 2024. Around 
+        then, I was starting to put more of a focus on how I was delivering writing. As writing was becoming 
+        more important in my work, I decided that it needed to be examined more properly as a visual 
+        that could be used to convey thought and feeling just as much as traditional visuals.
+        <br>You can click on the image to download the comic.
+    </p>
+</section>
+<br><br><br>
+    <section class="first">
+    <h2>I Guess I Just Don't Owe You Anything Anymore</h2>
+    <a href="../Downloadables/I_Guess_That_I_Just_Dont_Owe_You_Anything_Anymore_VanCleave.pdf" download><img src="../images/Projects1_png.jpg" class="img"></a>
+    <p class="firstpg"> This is a comic that I made over 2022-2023. It covers feelings of transgender-based struggles with
+        identity. The main focus is the cycle of trying to figure out who you are exactly as a 
+        person and how other people see you. The feeling of coming back to the same place and 
+        the same conclusions every time, but not being ready to face what those conclusions
+        actually mean or externalize them as actionable steps to take to arrive somewhere new.
+        <br>Visually, I was just starting to really investigate how I could improve my use of color and panels/ 
+        sectioning to aid in telling story.
+        <a href="https://www.richard-mcguire.com/">Richard McGuire</a> was someone that I looked
+        to for a lot of inspiration when creating this piece.
+        <br>You can click on the image to download the comic.
+    </p>
+</section>
+
+</main>
+
+<footer>
+    <div class="text">&#169; Mark Van Cleave, 2024</p></div>
+    <div class="sm"><a href="https://www.instagram.com?art_mvc/">Instagram</a></div>
+    <div class="email"><p class="email">markvancleave29@gmail.com</p></div> 
+</footer>
+</body>
+</html>

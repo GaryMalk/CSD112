@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"> <!--content="width=device-width", initial-scale="1.0"-->
+    <title>About</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <style>
+        html, body{
+            margin: 0;
+            height: 100%;
+        }
+        body{
+            margin: 0;
+            margin-bottom: 100px;
+            background-image: url(../bg/Background4.jpg);
+        }
+        main{
+            display: grid;
+            grid-template-columns: 5% 90% 5%;
+            grid-template-areas: 10% 80% 10%;
+            margin-bottom: 100px;
+        }
+        #section1{
+            grid-column: 2;
+            grid-row: 2;
+            grid-row-end: 2;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 16% 42% 40% 2%;
+            background-color: rgba(221, 167, 193, 0.7);
+            border-style: double;
+            border-color:#F0E5F0;
+            border-width: 5px;
+            margin: 2%;
+            margin-bottom: 200px;
+            margin-top: 100px;
+            font-size: 1.5vw;
+        }
+        #section1 #img1{
+            grid-column: 1;
+            grid-row: 1;
+            grid-row-end: 4;
+            height: auto;
+            width: 100%;
+            min-width:480px;
+            min-height: 600px;
+        }
+        #section1 h1{
+            display: flex;
+            grid-column: 2;
+            grid-column-end: 3;
+            grid-row: 1;
+            grid-row-end: 2;
+            justify-self: center;
+            align-self: start;
+            font-size: 200%; 
+        }
+        #section1 #pear{
+            grid-column: 2;
+            grid-column-end: 3;
+            grid-row: 2;
+            grid-row-end: 4;
+        }
+        #section1 p{
+            font-size: 100%;
+            margin-left: 10%;
+            margin-right: 10%;
+            text-indent: 2%;
+            margin-bottom: 5%;
+        }
+        p.spacing{
+            grid-row: 4;
+        }
+        h2{
+            text-align: center;
+        }
+        #section3{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <nav id="container">
+        <ul>
+            <li id="li1"><a href="../Index.html">Home</a></li>
+            <li id="li2">
+                <div class="dropdown">
+                    <button class="dropbtn">Art</button>
+                    <div class="dropdown-content">
+                        <a href="Drawings.html">Drawings</a>
+                        <a href="Projects.html">Projects</a>
+                    </div>
+                </div></li>
+            <li id="li3"><a href="../Index.html"><img src="../logos/logo.png" alt= "MK handwritten Logo"></a></li>
+            <li id="li4"><a href="Biography.html" class="current">About</a></li> 
+            <li id="li5"><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="section1">
+           <img src="../images/Self-portrait.jpg" alt="Simplistic drawing of a person's upper half in black with yellow outlines" id="img1">
+            <h1>MK</h1>
+            <section id="pear">
+            <p> MK is an interdisciplinary artist living in Seattle, Washington. Having studied at both the School of
+                the Art Institute of Chicago as well as the Pacific Northwest College of Art and Design, you may recognize
+                their work from prestigious locations such as this website.
+            <p>
+                Self-aware in the good ways, pretentious in all the others, their work aims to capture the realities of living with mental illness, managing loss, 
+                and an all-consuming struggle for self-identity. Their art is often messy and their visuals simplistic, 
+                reflecting an unattainable desire to capture and convey a moment's worth of thought all at once. 
+            <p> Currently, they work in Kirkland, Washington as an art teacher for kids and teens. Feel free to reach out to them for 
+                any questions or proposals.
+            </p>
+            </p><p class=spacing><br><br></p></section>
+        </section>
+    </main>
+    <footer>
+        <div class="text">&#169; Mark Van Cleave, 2024</p></div>
+        <div class="sm"><a href="https://www.instagram.com?art_mvc/">Instagram</a></div>
+        <div class="email"><p class="email">markvancleave29@gmail.com</p></div> 
+    </footer>
+</body>
+</html>
