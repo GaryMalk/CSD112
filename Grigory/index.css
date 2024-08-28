@@ -1,0 +1,232 @@
+body {
+    font-family: 'DM Serif Text', serif;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    min-width: 320px; /* Minimum width for mobile screens */
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex:1;
+}
+.dm-serif-text-regular {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .dm-serif-text-light {
+    font-family: "DM Serif Text", serif;
+    font-weight: 50;
+    font-style:oblique;
+  }
+  
+  .dm-serif-text-regular-italic {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  .qwitcher-grypen-regular {
+    font-family: "Qwitcher Grypen", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .qwitcher-grypen-bold {
+    font-family: "Qwitcher Grypen", cursive;
+    font-weight: 700;
+    font-style: normal;
+  }
+  .roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+  
+
+header {
+    background-color: white;
+    padding: 1rem;
+}
+
+header img {
+    width: 40px; 
+    height: 40px; /* Maintains aspect ratio */
+    max-width: 100%; /* Ensures the image does not overflow */
+    margin-top: -150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+header ul li {
+    margin-left: 20px;
+}
+
+header ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.image1 img {
+    width: 100%;
+    height: 100%;
+    object-fit:scale-down; /* Ensures the image covers the entire area */
+    top: 0;
+    left: 0;
+}
+.impact-text {
+    text-align: left;
+    margin-left: 2vw;
+    line-height: 1;
+    color: #333;
+    font-size: 2rem; 
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.impact-text p {
+    margin: 10px 0; /* Add space between lines */
+}
+.larger-font {
+    font-size: 3rem; 
+}
+.smaller-font {
+    font-size:small;
+}
+.main-paragraph {
+    text-align: left; /* Aligns text to the left */
+    max-width: 50%; /* Set a max-width for the section to control text wrapping */
+    margin: 0 auto; /* Center the section horizontally */
+    padding: 20px; /* Add some padding for spacing */
+    line-height: 1.6; /* Improve readability with appropriate line spacing */
+}
+
+.main-paragraph p {
+    margin-bottom: 20px; /* Add space between paragraphs */
+}
+
+.image-container {
+    margin-left:19%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    grid-template-rows: 2fr; /* 2 equal rows */
+    gap: 1px; /* Adjusts the gap between images */
+    justify-content: center;
+    align-items: center;
+    padding: 20px; 
+    height: 70vh;
+    width: 60vw; 
+    box-sizing: border-box; /* Ensures padding doesn't affect grid layout */
+}
+
+.image-container img {
+    width: 100%; /* Image fills the width of its grid cell */
+    height: 100%; /* Image fills the height of its grid cell */
+    object-fit: cover; /* Ensures images cover the grid cells without stretching */
+}
+.image-container img:hover {
+    opacity: 0.77;
+    border:solid;
+    border-color: white;
+    border-width: 1px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .image-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+        grid-template-rows: repeat(4, 1fr); /* 4 equal rows */
+    }
+    footer {
+        margin-top: 50%;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+    }
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}

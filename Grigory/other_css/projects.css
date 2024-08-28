@@ -1,0 +1,136 @@
+body {
+    font-family: 'DM Serif Text', serif;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    min-width: 320px;
+    /* Minimum width for mobile screens */
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    margin-top: 60px;
+    flex: 1;
+}
+
+.dm-serif-text-regular {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.dm-serif-text-light {
+    font-family: "DM Serif Text", serif;
+    font-weight: 50;
+    font-style: oblique;
+}
+
+.dm-serif-text-regular-italic {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.qwitcher-grypen-regular {
+    font-family: "Qwitcher Grypen", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.qwitcher-grypen-bold {
+    font-family: "Qwitcher Grypen", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+
+header {
+    background-color: white;
+    padding: 1rem;
+}
+
+
+header img {
+    width: 40px;
+    height: 40px;
+    /* Maintains aspect ratio */
+    max-width: 100%;
+    /* Ensures the image does not overflow */
+    margin-top: -30px;
+    /* Adds some spacing above the image */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header ul li {
+    margin-left: 20px;
+}
+
+header ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.larger-font {
+    font-size: 1.6rem;
+}
+
+.p-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* Creates two columns */
+    grid-template-rows: repeat(4, 1fr);
+    /* Creates four rows */
+    height: 10vh;
+    /* Adjust the height as needed */
+    align-items: center;
+    /* Vertically centers the content */
+    justify-items: center;
+    /* Horizontally centers the content */
+}
+
+.p-container p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    /* Remove underline */
+    color: inherit;
+}
+
+/* Style the paragraph within the link */
+a .link-text {
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+a:hover {
+    color: #555;
+    /* Change color on hover */
+}
+
+footer {
+    margin-top: 50%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}

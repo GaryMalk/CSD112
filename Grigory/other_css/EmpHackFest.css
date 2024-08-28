@@ -1,0 +1,215 @@
+body {
+  font-family: 'DM Serif Text', serif;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  min-width: 320px;
+  /* Minimum width for mobile screens */
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+main {
+  margin-top: 60px;
+  flex: 1;
+}
+
+.dm-serif-text-regular {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-serif-text-light {
+  font-family: "DM Serif Text", serif;
+  font-weight: 50;
+  font-style: oblique;
+}
+
+.dm-serif-text-regular-italic {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.qwitcher-grypen-regular {
+  font-family: "Qwitcher Grypen", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.qwitcher-grypen-bold {
+  font-family: "Qwitcher Grypen", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-thin-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+header {
+  background-color: white;
+  padding: 1rem;
+}
+
+
+header img {
+  width: 40px;
+  height: 40px;
+  /* Maintains aspect ratio */
+  max-width: 100%;
+  /* Ensures the image does not overflow */
+  margin-top: -30px;
+  /* Adds some spacing above the image */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+header ul li {
+  margin-left: 20px;
+}
+
+header ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.larger-font {
+  font-size: 1.6rem;
+
+}
+
+.explanation .content {
+  display: flex;
+  align-items: flex-start;
+  /* Align items at the top */
+  gap: 20px;
+  /* Space between the image and the text */
+}
+
+.explanation img {
+  margin-left: 15%;
+  max-width: 40%;
+  max-height: 40%;
+  width: auto;
+  /* Maintain aspect ratio */
+  height: auto;
+  /* Maintain aspect ratio */
+}
+
+.explanation .text {
+  flex: 1;
+  /* Allow text to take up the remaining space */
+  max-width: 25%;
+}
+
+.smaller-font {
+  font-size: small;
+}
+
+a {
+  text-decoration: none;
+  /* Remove underline */
+  color: cornflowerblue;
+}
+
+/* Style the paragraph within the link */
+a .link-text {
+  color: cornflowerblue;
+  margin: 0;
+  padding: 0;
+}
+
+
+a:hover {
+  color: grey;
+  /* Change color on hover */
+}
+
+footer {
+  margin-top: 50%;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
