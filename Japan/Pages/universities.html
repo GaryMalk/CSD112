@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>universities</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    @font-face {
+        font-family: 'TitleText';
+        src: url('resources/Poppins/Poppins-ExtraLight.ttf') format("truetype");
+    }
+    @font-face {
+        font-family: 'TitleTextBold';
+        src: url('resources/Poppins/Poppins-SemiBold.ttf') format("truetype");
+    }
+    @font-face {
+        font-family: 'StandardText';
+        src: url('resources/Source_Sans_3/SourceSans3-Medium.ttf') format("truetype");
+    }
+    :root {
+        --web-white: #f7ebe8;
+        --web-alt-white: #fdf7f5;
+        --text-black: #1e1e24;
+        --text-highlight: #be5551;
+        --text-box-out: #d46966;
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+    html, body {
+        height: 100%;
+        width: 100%;
+        background-color: var(--web-white);
+    }
+    body {
+        overflow-x: hidden;
+    }
+    nav {
+        padding-top: 50px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        background-color: var(--web-white);
+        width: 100%;
+        height: 75px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        display: flex;
+        align-items: center;
+    }
+    ul {
+        margin: 0 auto;
+        list-style-type: none;
+        justify-content: space-around;
+        display: flex;
+        max-width: 1200px;
+    }
+    li {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .seprator {
+        margin: 0 10px;
+        transform: translateY(-4px);
+        font-size: 40px;
+        min-height: 100px;
+        display: inline-block;
+        color: var(--text-black);
+    }
+    li a {
+        text-decoration: none;
+        color: var(--text-black);
+        font-family: 'TitleText', sans-serif;
+        margin: 10px 20px;
+        min-height: 50px;
+        display: inline-block;
+        transition: color 0.3s ease;
+    }
+    li a:hover {
+        color: var(--text-highlight);
+    }
+    .icon-container {
+        transform: translateY(-25px);
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+    .home-icon {
+        height: 40px;
+        width: auto;
+    }
+    .home-text {
+        text-decoration: none;
+        font-size: 35px;
+        font-family: 'TitleText', sans-serif;
+        color: var(--text-black);
+    }
+    .icon-container:hover {
+    cursor: pointer;
+    }
+    main {
+        position: relative;
+        width: 100%;
+        min-height: calc(100vh - 70px);
+        z-index: 21;
+    }
+    .main-content-box {
+        padding-top: 10%;
+        width: 100%;
+        height: 80%;
+        margin: 20px auto;
+        background-color: var(--web-alt-white);
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .smaller-title-text {
+        max-width: 40%;
+        color: whitesmoke;
+        text-align: center;
+        font-family: 'TitleText', sans-serif;
+        font-size: 500%;
+        text-shadow: 2px 2px 5px #000000;
+        z-index: 20; 
+    }
+    .empty-space {
+        width: 100%;
+        height: 10vh;
+        color: transparent;
+    }
+    .centered-text-box {
+        width: 40%;
+        padding: 15px;
+        border: 1px solid var(--text-box-out);
+        border-radius: 5px;
+        background-color: var(--web-white);
+        z-index: 15;
+    }
+    .header-title {
+        font-family: 'TitleTextBold', sans-serif;
+        color: var(--text-black);
+    }
+    .paragraph-text {
+        font-family: 'StandardText', sans-serif;
+        text-decoration: none;
+        font-size: larger;
+        color: var(--text-black);
+    }
+    .container {
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 30px;
+        background-color: var(--web-white);
+    }
+    .container-title {
+        text-align: center;
+        padding: 20px 0;
+    }
+    .content {
+        display: flex;
+        flex-direction: row;
+    }
+    .image {
+        flex: 1;
+        margin: 5%;
+        max-width: 48%;
+        height: 100%;
+        display: block;
+        border-radius: 5px;
+        border: 1px solid var(--text-box-out);
+    }
+    .text {
+        flex: 1;
+        margin: 5%;
+        padding: 2%;
+        max-width: 48%;
+        border-radius: 5px;
+        background-color: rgb(252, 249, 249);
+        border: 1px solid var(--text-box-out)
+    }
+    .container:nth-child(even) .content {
+        flex-direction: row-reverse;
+    }
+    .container:nth-child(odd) {
+        background-color: var(--web-alt-white);
+    }
+    .table {
+        width: 80%;
+        margin: auto;
+        background-color: var(--web-alt-white);
+        overflow: hidden;
+        border-collapse: separate;
+        border-spacing: 0;
+        border-radius: 5px;
+    }
+    th, td {
+        border: 1px solid var(--text-box-out);
+        padding: 1%;
+        text-align: center;
+    }
+    th {
+        font-size: 90%;
+        font-family: 'TitleTextBold', sans-serif;
+        color: var(--text-black);
+    }
+    td {
+        font-family: 'StandardText', sans-serif;
+        color: var(--text-black);
+    }
+    .footer {
+        font-family: 'StandardText', sans-serif;
+        font-size: large;
+        margin-top: auto;
+        background-color: var(--web-alt-white);
+        color: var(--text-black);
+        width: 100%;
+        bottom: 0;
+        position: relative;
+        clear: both;
+        border-top: 1px solid var(--text-box-out);
+        padding-left: 4%;
+        padding-top: 1%;
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="icon-container">
+            <img src="resources/home-icon.png" class="home-icon">
+            <a href="../home.html" class="home-text">HOME</a>
+        </div>
+        <ul>
+            <li><a href="why.html" class="text-change">Why Japan</a></li>
+            <li class="seprator">|</li>
+            <li><a href="starting.html" class="text-change">Starting The Process</a></li>
+            <li class="seprator">|</li>
+            <li><a href="universities.html" class="text-change">Top Five Universities</a></li>
+            <li class="seprator">|</li>
+            <li><a href="more-information.html" class="text-change">More Information</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="main-content-box">
+            <h1 class="smaller-title-text">Top Five Universities</h1>
+            <div class="empty-space"></div>
+            <div class="centered-text-box">
+                <h2 class="header-title">Preliminary Note</h2>
+                <br>
+                <p class="paragraph-text"><br>Before starting, it is worth mentioning the stastics are based on general data with a focus on international student programs 
+                    and application. Due to the nature of stastics like admission changing frequently it is hard to find an exact number for admission prices and acceptance rates, it
+                    is highly recommended to view them as guidelines and check your specific field on the official websites for more information.<br><br>
+                    The universities following the table are in order the top five universities, for that reason there is little need to mention they are all prestigious and will all
+                    likely lead to successful outcomes, the overview is more focused on the given strengths of each university</p>
+            </div>
+            <div class="empty-space"></div>
+            <div class="centered-text-box">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Yearly Tuition (usd)</th>
+                            <th>Acceptance Rate</th>
+                            <th>Has Classes in English</th>
+                            <th>Required Entry Test</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>University of Tokyo</th>
+                            <td>5000$-8000$</td>
+                            <td>20%-30%</td>
+                            <td>yes</td>
+                            <td>EJU, SAT or ACT</td>
+                        </tr>
+                        <tr>
+                            <th>Kyoto University</th>
+                            <td>4900$</td>
+                            <td>11%</td>
+                            <td>yes</td>
+                            <td>EJU or JLPT</td>
+                        </tr>
+                        <tr>
+                            <th>Tohoku University</th>
+                            <td>4900$</td>
+                            <td>30%-40%</td>
+                            <td>yes</td>
+                            <td>EJU, in house Entrence Exams</td>
+                        </tr>
+                        <tr>
+                            <th>Osaka University</th>
+                            <td>4900$</td>
+                            <td>13%-38%</td>
+                            <td>yes</td>
+                            <td>EJU or JLP</td>
+                        </tr>
+                        <tr>
+                            <th>Kyushu University</th>
+                            <td>3600$</td>
+                            <td>14%-40%</td>
+                            <td>yes</td>
+                            <td>EJU, at least one standardized Test (e.g SAT, ACT, IB, etc)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br>
+        </div>
+        <div class="container">
+            <h2 class="container-title header-title">University of Tokyo</h2>
+            <div class="content">
+                <img src="resources/university-of-tokyo.jpg" class="image">
+                <div class="text">
+                    <p class="paragraph-text">University of Tokyo is the oldest national university in Japan, it’s maintained its reputation as one of the leading universities 
+                        in Japan through its cutting edge programs, and great research opportunities. University of Tokyo, sometimes abbreviated to uTokyo 
+                        excels in stem fields like science and engineering. uTokyo has a couple campuses all located in the major city of Tokyo giving students 
+                        an opportunity to form connections in Japan’s largest most globalized city. uTokyo is the most prestigious school in Japan and is among the 
+                        top schools worldwide, while the admission process is rigorous due to its prestigious nature, getting in would offer opportunities in research 
+                        that are rare in other universities.</p>
+                        <br><br><p class="paragraph-text">For more information visit the official school website: <a href="https://www.u-tokyo.ac.jp/en/about/about.html">uTokyo/about</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h2 class="container-title header-title">Kyoto University</h2>
+            <div class="content">
+                <img src="resources/Kyoto_University.jpg" class="image">
+                <div class="text">
+                    <p class="paragraph-text">Kyoto University is the second oldest university in Japan, and a direct competitor to University of Tokyo. 
+                        If you are familiar with American colleges the relationship between the two is similar to Harvard and Stanford. 
+                        Kyoto Excels in many of the same fields as the University of Tokyo making it a great backup pick if applying to the 
+                        University of Tokyo. Its programs are also considered cutting edge with many unique research opportunities. Kyoto University 
+                        being located in Kyoto will also give a great opportunity to explore Japan’s rich culture, culture being one of the hallmarks 
+                        of the city of Kyoto. University of Kyoto is a great pick alongside University of Tokyo, and for those who also want to learn more 
+                        about the rich historical culture of Japan.</p>
+                        <br><br><p class="paragraph-text">For more information visit the official school website: <a href="https://www.kyoto-u.ac.jp/en/about">Kyoto_U/about</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h2 class="container-title header-title">Tohoku University</h2>
+            <div class="content">
+                <img src="resources/Tohoku_University.jpg" class="image">
+                <div class="text">
+                    <p class="paragraph-text">Tohoku University is the third oldest imperial University. Like the previously mentioned schools it provides unique research 
+                        opportunities. However while still excelling in stem Tohoku University is specifically known for it’s science programs, having the 6th highest rated 
+                        material science program world wide, and 12th highest in physics, it is a great choice for those looking for a top of the line science education. 
+                        Tohoku also boasts a favorable student to faculty ratio of 6:1 meaning you will have all the support you need to succeed. It’s location in Sendai is known 
+                        for it’s beautiful nature and mix of urban planning and nature giving it the nickname of “city of trees”. Sendai is still a large city providing 
+                        opportunities. Unlike Kyoto and Tokyo which are highly crowded cities with lots of tourism on top of that,  Sendai has a lot less tourism and less 
+                        crowding issues, ideal for those who still want a city but don’t want the crowding of Tokyo. Tohoku university is ideal for students who are looking 
+                        at a more scientific field rather than engineering, and don’t want the crowding that comes with Kyoto or Tokyo.</p>
+                        <br><br><p class="paragraph-text">For more information visit the official school website: <a href="https://www.tohoku.ac.jp/en/about/index.html">Tohoku/about</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h2 class="container-title header-title">Osaka University</h2>
+            <div class="content">
+                <img src="resources/Osaka_University.jpg" class="image">
+                <div class="text">
+                    <p class="paragraph-text">Osaka University is in the same class of universities as the previously mentioned schools being an imperial university. Osaka University excels in research pertaining to medical and chemistry 
+                        fields, ranking number 8 in chemistry world wide, 11th for immunology, and top 40 for fields like dentistry, chemical engineering, and physics. Osaka University’s facilities include two university hospitals. 
+                        As for the city of Osaka, it is the third largest city in Japan. Osaka is considered one of the more vibrant cities in Japan due to its friendly and open population making
+                        it a great location for new international students. One of the biggest complaints from new international students is feeling isolated from the broader culture,
+                        Osaka is a great choice of location to minimize that feeling. Overall Osaka University is a great choice for those looking for a career in chemistry, or medical 
+                        fields. And also has a great location for international students due to its friendly locals and culture.
+                        </p>
+                        <br><br><p class="paragraph-text">For more information visit the official school website: <a href="https://www.osaka-u.ac.jp/en/guide">Osaka/about</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h2 class="container-title header-title">Kyushu University</h2>
+            <div class="content">
+                <img src="resources/Kyushu_University.jpg" class="image">
+                <div class="text">
+                    <p class="paragraph-text">Finally, Kyushu University is among the same class of imperial schools as the previous four universities. 
+                        While still being incredibly strong across stem fields it doesn’t have noteworthy fields like the previous Universities. 
+                        But Kyushu University makes up for it by being one of the best choices for international students and international research. Kyushu
+                        University is known for having a particularly international friendly program along with noteworthy Alumni. Kyushu University
+                        is also known for its  great research output across a variety of fields from research in hydrogen energy, medical science, 
+                        to engineering. Its location is in the largest city on the island of Kyushu. Fukuoka as a city is known for it’s great food 
+                        particularly sea food being located on an island off the coast of mainland Japan, and it’s many temples and shrines 
+                        for those interested in Japans history and culture. Kyushu University is ideal for people who want a strong international program, and for those looking 
+                        for research opportunities due to its vide array or research programs.</p>
+                        <br><br><p class="paragraph-text">For more information visit the official school website: <a href="https://www.kyushu-u.ac.jp/en/university/">Kyushu_U/about</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<footer class="footer"> 
+    <p>Email: JohnDoe@email.com</p>
+    <p>Phone: +1(425-654-japan)</p>
+    <p>Refrence: <a href="https://www.studyinjapan.go.jp/en/">studyinjapan.go</a></p>
+    <p>© Mykyta Dukhopel 2024</p>
+</footer>
+</html>

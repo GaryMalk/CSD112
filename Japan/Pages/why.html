@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>why</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    @font-face {
+        font-family: 'TitleText';
+        src: url('resources/Poppins/Poppins-ExtraLight.ttf') format("truetype");
+    }
+    @font-face {
+        font-family: 'TitleTextBold';
+        src: url('resources/Poppins/Poppins-SemiBold.ttf') format("truetype");
+    }
+    @font-face {
+        font-family: 'StandardText';
+        src: url('resources/Source_Sans_3/SourceSans3-Medium.ttf') format("truetype");
+    }
+    :root {
+        --web-white: #f7ebe8;
+        --web-alt-white: #fdf7f5;
+        --text-black: #1e1e24;
+        --text-highlight: #be5551;
+        --text-box-out: #d46966;
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+    html, body {
+        height: 100%;
+        width: 100%;
+        background-color: var(--web-white);
+    }
+    body {
+        overflow-x: hidden;
+    }
+    nav {
+        padding-top: 50px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        background-color: var(--web-white);
+        width: 100%;
+        height: 75px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        display: flex;
+        align-items: center;
+    }
+    ul {
+        margin: 0 auto;
+        list-style-type: none;
+        justify-content: space-around;
+        display: flex;
+        max-width: 1200px;
+    }
+    li {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .seprator {
+        margin: 0 10px;
+        transform: translateY(-4px);
+        font-size: 40px;
+        min-height: 100px;
+        display: inline-block;
+        color: var(--text-black);
+    }
+    li a {
+        text-decoration: none;
+        color: var(--text-black);
+        font-family: 'TitleText', sans-serif;
+        margin: 10px 20px;
+        min-height: 50px;
+        display: inline-block;
+        transition: color 0.3s ease;
+    }
+    li a:hover {
+        color: var(--text-highlight);
+    }
+    .icon-container {
+        transform: translateY(-25px);
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+    .home-icon {
+        height: 40px;
+        width: auto;
+    }
+    .home-text {
+        text-decoration: none;
+        font-size: 35px;
+        font-family: 'TitleText', sans-serif;
+        color: var(--text-black);
+    }
+    .opening-title-container{
+        height: 60%;
+        width: 100%;
+        z-index: 22;
+        background-color: var(--web-alt-white);
+    }
+    .main-title {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-55%, -50%);
+        color: whitesmoke;
+        text-align: center;
+        margin: 20px;
+        border-radius: 10px;
+        font-family: 'TitleText', sans-serif;
+        font-size: 600%;
+        text-shadow: 2px 2px 5px #000000;
+        z-index: 20; 
+    }
+    .title-overlay {
+        position: absolute;
+        bottom: 20%;
+        transform: translateX(-8.3%);
+        width: 120%;
+        height: 40%;
+        background-color: var(--web-alt-white);
+        border-radius: 50%;
+        z-index: 15; 
+    }
+    .icon-container:hover {
+    cursor: pointer;
+    }
+    main {
+        margin-top: 18%;
+        position: relative;
+        width: 100%;
+        min-height: calc(100vh - 70px);
+        z-index: 21;
+    }
+    main p {
+        color: var(--text-black);
+        font-size: 1.5em;
+    }
+    main p a {
+        text-decoration: none;
+    }
+    .main-container {
+        transform: translateX(7%);
+        display: flex;
+        justify-content: flex-start;
+        padding: 4%;
+    }
+    .section-title {
+        text-align: center;
+        padding: 20px 0;
+        display: block;
+    }
+    .section-title-icon {
+        width: 64;
+        height: 64;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .section-title-text {
+        font-family: 'TitleTextBold', sans-serif;
+        font-size: 250%;
+        color: var(--text-black);
+    }
+    .left-side-container {
+        width: 40%;
+        padding: 15px;
+        border: 1px solid var(--text-box-out);
+        border-radius: 5px;
+        background-color: var(--web-alt-white);
+        z-index: 15;
+    }
+    .right-side-container {
+        transform: translateX(13%);
+        width: 40%;
+        padding: 15px;
+        border: 1px solid var(--text-box-out);
+        border-radius: 5px;
+        background-color: var(--web-alt-white);
+        z-index: 15;
+    }
+    .right-side-container-with-image {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        max-width: 100%;
+        border-radius: 5px;
+    }
+    .header-title {
+        font-family: 'TitleTextBold', sans-serif;
+        color: var(--text-black);
+    }
+    .paragraph-text {
+        font-family: 'StandardText', sans-serif;
+        text-decoration: none;
+        font-size: larger;
+        color: var(--text-black);
+    }
+    .section-seperator {
+        width: 100%;
+        padding-top: 100px;
+        background-color: transparent;
+    }
+    .main-container-alt {
+        width: 100%;
+        padding: 4% 0;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        background-color: var(--web-alt-white);
+        border-radius: 5%;
+    }
+    .alt-content {
+        margin: 0 auto;
+        width: 86%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-container-alt .section-title {
+        width: 86%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .main-container-alt .left-side-container {
+        width: 42.8%;
+        transform: translateX(10.9%);
+        background-color: var(--web-white);
+    }
+    .main-container-alt .right-side-container {
+        width: 42.8%;
+        transform: translateX(-9.85%);
+        background-color: var(--web-white);
+    }
+    .footer {
+        font-family: 'StandardText', sans-serif;
+        font-size: large;
+        margin-top: auto;
+        background-color: var(--web-alt-white);
+        color: var(--text-black);
+        width: 100%;
+        bottom: 0;
+        position: relative;
+        clear: both;
+        border-top: 1px solid var(--text-box-out);
+        padding-left: 4%;
+        padding-top: 1%;
+    }
+    .empty-space {
+        width: 100%;
+        height: 6vh;
+        color: transparent;
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="icon-container">
+            <img src="resources/home-icon.png" class="home-icon">
+            <a href="../home.html" class="home-text">HOME</a>
+        </div>
+        <ul>
+            <li><a href="why.html" class="text-change">Why Japan</a></li>
+            <li class="seprator">|</li>
+            <li><a href="starting.html" class="text-change">Starting The Process</a></li>
+            <li class="seprator">|</li>
+            <li><a href="universities.html" class="text-change">Top Five Universities</a></li>
+            <li class="seprator">|</li>
+            <li><a href="more-information.html" class="text-change">More Information</a></li>
+        </ul>
+    </nav>
+    <div class="opening-title-container">
+        <h1 class="main-title">Why Japan?</h1>
+        <div class="title-overlay"></div>
+    </div>
+    <main>
+        <div class="section-title">
+        <img src="resources/decorative-icon-two.png" class="section-title-icon">
+            <h1 class="section-title-text">The Country</h1>
+        </div>
+        <div class="main-container">
+            <div class="left-side-container">
+                <h1 class="header-title">Culture</h1>
+                <br>
+                <p class="paragraph-text">One of the draws for Japan is it's rich culture. This being in part to Japan being estimated to be about 1300 years old. While there are older
+                cultures Japan has the unique advantage of being an island country offering it much protection from being invaded meaning it's culture is well preserved and safe from 
+                war and outside influence. Exploring Japan's culture is a unique oppurtunity which is one of the reasons it's a highly popular tourist destination in the modern day.</p>
+                <div class="empty-space"></div>
+                <h1 class="header-title">Cities</h1>
+                <br>
+                <p class="paragraph-text">Japan has some of the safest and cleanest cities in the world, most universities being located in or around cities this naturally a big positive. 
+                Also Japan's cities have very well maintained and functioning public transit the main drawback being how crowded it can get during peak hours, however this does mean you can go 
+                anywhere in the city without ever needing a car.
+                </p>
+                <div class="empty-space"></div>
+                <h1 class="header-title">Challenge and Opportunity</h1>
+                <br>
+                <p class="paragraph-text"> Finally going to a different country provides unique oppurtunities and challenges which can lead to self growth. Japan is a great country for this
+                due to how unique their culture is when contrasted with western countries. This point can apply to more than just Japan but is definetly worth mentioning.
+                </p>
+            </div>
+            <div class="right-side-container">
+                <img src="resources/web-content-two.jpg" class="right-side-container-with-image">
+            </div>
+        </div>
+        
+        <div class="main-container-alt">
+            <div class="section-title">
+                <img src="resources/decorative-icon-three.png" class="section-title-icon">
+                <h1 class="section-title-text">The Academics</h1>
+            </div>
+            <div class="alt-content">
+                <div class="left-side-container">
+                    <h1 class="header-title">Research and Innovation</h1>
+                    <br>
+                    <p class="paragraph-text">Japanese universities are among the best when it comes to engineering and technology, University of Tokyo Japan's highest ranked University
+                    is consistently cited as being among top ten world wide for physics, chemistry, and engineering. Japan being a global leader in engineering means that you don't have to 
+                    make it into the top university to have access to great oppurtunities within that field.
+                    </p>
+                    <div class="empty-space"></div>
+                    <h1 class="header-title">Financially Affordable</h1>
+                    <br>
+                    <p class="paragraph-text"> When compared to American schools Japan's universities are incredibly cheap, going back to University of Tokyo Japan's highest ranked university
+                    costs around 5000$-8000$ usd per year depending on the program. While in local currency this can still be considered expensive for international students who are living in America and have a means of paying using
+                    western currency Japan's universities are very cheap.
+                    </p>
+                    </div>
+                <div class="right-side-container">
+                    <img src="resources/web-content-three.jpg" class="right-side-container-with-image">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer"> 
+        <p>Email: JohnDoe@email.com</p>
+        <p>Phone: +1(425-654-japan)</p>
+        <p>Refrence: <a href="https://www.studyinjapan.go.jp/en/">studyinjapan.go</a></p>
+        <p>© Mykyta Dukhopel 2024</p>
+    </footer>
+</body>
+</html>

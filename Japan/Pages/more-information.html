@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>more-information</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    @font-face {
+        font-family: 'TitleText';
+        src: url('resources/Poppins/Poppins-ExtraLight.ttf') format("truetype");
+    }
+    @font-face {
+        font-family: 'TitleTextBold';
+        src: url('resources/Poppins/Poppins-SemiBold.ttf') format("truetype");
+    }
+    @font-face {
+        font-family: 'StandardText';
+        src: url('resources/Source_Sans_3/SourceSans3-Medium.ttf') format("truetype");
+    }
+    :root {
+        --web-white: #f7ebe8;
+        --web-alt-white: #fdf7f5;
+        --text-black: #1e1e24;
+        --text-highlight: #be5551;
+        --text-box-out: #d46966;
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+    html, body {
+        height: 100%;
+        width: 100%;
+        background-color: var(--web-white);
+    }
+    body {
+        overflow-x: hidden;
+    }
+    nav {
+        padding-top: 50px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        background-color: var(--web-white);
+        width: 100%;
+        height: 75px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        display: flex;
+        align-items: center;
+    }
+    ul {
+        margin: 0 auto;
+        list-style-type: none;
+        justify-content: space-around;
+        display: flex;
+        max-width: 1200px;
+    }
+    li {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .seprator {
+        margin: 0 10px;
+        transform: translateY(-4px);
+        font-size: 40px;
+        min-height: 100px;
+        display: inline-block;
+        color: var(--text-black);
+    }
+    li a {
+        text-decoration: none;
+        color: var(--text-black);
+        font-family: 'TitleText', sans-serif;
+        margin: 10px 20px;
+        min-height: 50px;
+        display: inline-block;
+        transition: color 0.3s ease;
+    }
+    li a:hover {
+        color: var(--text-highlight);
+    }
+    .icon-container {
+        transform: translateY(-25px);
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+    .home-icon {
+        height: 40px;
+        width: auto;
+    }
+    .home-text {
+        text-decoration: none;
+        font-size: 35px;
+        font-family: 'TitleText', sans-serif;
+        color: var(--text-black);
+    }
+    .icon-container:hover {
+    cursor: pointer;
+    }
+    .title-container {
+        width: 100%;
+        padding: 33%;
+        transform: translateY(-10%);
+        margin-top: 70px;
+        max-height: 70vh;
+        background-image: url("resources/background-image.jpg");
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    .title {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-55%, -50%);
+        color: whitesmoke;
+        text-align: center;
+        margin: 20px;
+        border-radius: 10px;
+        font-family: 'TitleText', sans-serif;
+        font-size: 600%;
+        text-shadow: 2px 2px 5px #000000;
+        z-index: 20; 
+    }
+    .title-overlay {
+        position: absolute;
+        bottom: -10%;
+        transform: translateX(-35.85%);
+        width: 120%;
+        height: 40%;
+        background-color: var(--web-white);
+        border-radius: 50%;
+        z-index: 15; 
+    }
+    main {
+        transform: translateY(-30%);
+        position: relative;
+        width: 100%;
+        min-height: calc(100vh - 70px);
+        z-index: 21;
+    }
+    .header-title {
+        font-family: 'TitleTextBold', sans-serif;
+        color: var(--text-black);
+    }
+    .paragraph-text {
+        font-family: 'StandardText', sans-serif;
+        text-decoration: none;
+        font-size: larger;
+        color: var(--text-black);
+    }
+    .section-title {
+        text-align: center;
+        padding: 20px 0;
+        display: block;
+    }
+    .section-title-icon {
+        height: 64px;
+        width: 64px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .section-title-text {
+        font-size: 400%;
+    }
+    .container {
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 30px;
+        background-color: var(--web-white);
+    }
+    .content {
+        display: flex;
+        flex-direction: row;
+    }
+    .text {
+        flex: 1;
+        margin: 4%;
+        padding: 2%;
+        max-width: 48%;
+        border-radius: 5px;
+        background-color: var(--web-alt-white);
+        border: 1px solid var(--text-box-out)
+    }
+    .user-form-container {
+        flex: 1;
+        margin: 4%;
+        padding: 2%;
+        max-width: 48%;
+        border-radius: 5px;
+        background-color: var(--web-alt-white);
+        border: 1px solid var(--text-box-out)
+    }
+    .form-content-margin {
+        margin-bottom: 20px;
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-family: 'StandardText', sans-serif;
+        color: var(--text-black);
+    }
+    textarea {
+        resize: vertical;
+    }
+    input[type="text"], input[type="email"], textarea {
+        width: 100%;
+        padding: 1%;
+        border: 1px solid var(--text-box-out);
+        border-radius: 5px;
+        font-family: 'StandardText', sans-serif;
+    }
+    input[type="checkbox"] {
+        margin-right: 5px;
+    }
+    button {
+    padding: 1% 2%;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: var(--text-box-out);
+    color: var(--text-black);
+    font-family: 'StandardText', sans-serif;
+    }
+    button:hover {
+    background-color: #e28e8b;
+    }
+    #feedback {
+        width: 100%;
+        height: 100%;
+        padding: 1%;
+        border: 1px solid var(--text-box-out);
+        border-radius: 5px;
+        font-family: 'StandardText', sans-serif;
+        resize: none;
+        overflow-y: auto;
+    }
+    .link-without-underline {
+        text-decoration: none;
+    }
+    .footer {
+        font-family: 'StandardText', sans-serif;
+        font-size: large;
+        margin-top: auto;
+        background-color: var(--web-alt-white);
+        color: var(--text-black);
+        width: 100%;
+        bottom: 0;
+        position: relative;
+        clear: both;
+        border-top: 1px solid var(--text-box-out);
+        padding-left: 4%;
+        padding-top: 1%;
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="icon-container">
+            <img src="resources/home-icon.png" class="home-icon">
+            <a href="../home.html" class="home-text">HOME</a>
+        </div>
+        <ul>
+            <li><a href="why.html" class="text-change">Why Japan</a></li>
+            <li class="seprator">|</li>
+            <li><a href="starting.html" class="text-change">Starting The Process</a></li>
+            <li class="seprator">|</li>
+            <li><a href="universities.html" class="text-change">Top Five Universities</a></li>
+            <li class="seprator">|</li>
+            <li><a href="more-information.html" class="text-change">More Information</a></li>
+        </ul>
+    </nav>
+    <div class="title-container">
+        <h1 class="title">More Information</h1>
+        <div class="title-overlay"></div>
+    </div>
+    <main>
+        <div class="section-title">
+            <img src="resources/decorative-icon-four.png" class="section-title-icon">
+            <h1 class="header-title section-title-text">Closing Remarks</h1>
+        </div>
+        <div class="container">
+            <div class="content">
+                <div class="text">
+                    <h1 class="header-title">What else?</h1>
+                    <p class="paragraph-text">It was briefly mentioned in the starting process page that language schools are a good option before directly applying to university. This goes
+                        both for those wanting to apply for English and Japanese programs, knowing enough Japanese to communicate and live in Japan is important if you are planning to study there 
+                        because the majority of the population does not know English, and there are not english labels in most places meaning you should know at least enough Japanese to be able to live
+                        in Japan even if you aren't planning to take a Japanese program. Also language schools provide many services outside of just studying language, while they are a bit on the pricy side
+                        language schools can help with navigating culture and life in Japan without having to also worry about holding good grades like you would in university which can help new students acclimate
+                        to the country. Over all it's a path way worth consdering if you have time and money.
+                    </p><br><br>
+                    <h1 class="header-title">Where to find more information?</h1>
+                    <p class="paragraph-text">Japan hosts an official website that cointains contact and detailed information about studying in Japan, it is what inspired this website
+                    and has more information if you are willing to search, follow this link to visit the home page <a href="https://www.studyinjapan.go.jp/en/" class="link-without-underline">studyinjapan.go</a>.
+                    <br><br>While there were five universities brought up there are of course many more universities in Japan, and the five given are among the top universities in Japan and hard to get into, they also may not have the programs you want
+                    if you want to search through a data base of universities to find one that fits you follow this link: <a href="https://www.studyinjapan.go.jp/en/search-for-schools/school_search.php?lang=en" class="link-without-underline">studyinjapan.go/search_for_schools</a>.<br><br>
+                    Finally it was mentioned that language schools are a good option, one of these options is ISI language school which is the largest chain language school in Japan, they work essentially like a university with programs for 
+                    learning Japanese for different purposes, they are a bit pricy but have large campus locations across many cities and would be a safe choice for language school, their official website is <a href="https://www.isi-education.com/" class="link-without-underline">isi_education.com</a>. You will have to search for other 
+                    alternatives if you want other options since there are many language schools ranging from chain language schools like ISI to small locally run language schools with a handful of students and I can't list every language school in Japan.
+                    </p>
+                </div>
+                <div class="user-form-container">
+                    <div class="section-title">
+                        <h1 class="header-title">Feedback</h1>
+                    </div>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Preferred Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="feedback">Feedback:</label>
+                            <textarea id="feedback" name="feedback" rows="5" required></textarea>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="subscribe"><input type="checkbox" id="subscribe" name="subscribe">Do you want to receive a reply to your feedback?</label>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer"> 
+        <p>Email: JohnDoe@email.com</p>
+        <p>Phone: +1(425-654-japan)</p>
+        <p>Refrence: <a href="https://www.studyinjapan.go.jp/en/">studyinjapan.go</a></p>
+        <p>© Mykyta Dukhopel 2024</p>
+    </footer>
+</body>
+</html>

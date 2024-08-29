@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    @font-face {
+        font-family: 'TitleText';
+        src: url('pages/resources/Poppins/Poppins-ExtraLight.ttf') format("truetype");
+    }
+    @font-face {
+        font-family: 'TitleTextBold';
+        src: url('pages/resources/Poppins/Poppins-SemiBold.ttf') format("truetype");
+    }
+    @font-face {
+        font-family: 'StandardText';
+        src: url('pages/resources/Source_Sans_3/SourceSans3-Medium.ttf') format("truetype");
+    }
+    :root {
+        --web-white: #f7ebe8;
+        --web-alt-white: #fdf7f5;
+        --text-black: #1e1e24;
+        --text-highlight: #be5551;
+        --text-box-out: #d46966;
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+    html, body {
+        height: 100%;
+        width: 100%;
+        background-color: var(--web-white);
+    }
+    body {
+        overflow-x: hidden;
+    }
+    nav {
+        padding-top: 50px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        background-color: var(--web-white);
+        width: 100%;
+        height: 75px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        display: flex;
+        align-items: center;
+    }
+    ul {
+        margin: 0 auto;
+        list-style-type: none;
+        justify-content: space-around;
+        display: flex;
+        max-width: 1200px;
+    }
+    li {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .seprator {
+        margin: 0 10px;
+        transform: translateY(-4px);
+        font-size: 40px;
+        min-height: 100px;
+        display: inline-block;
+        color: var(--text-black);
+    }
+    li a {
+        text-decoration: none;
+        color: var(--text-black);
+        font-family: 'TitleText', sans-serif;
+        margin: 10px 20px;
+        min-height: 50px;
+        display: inline-block;
+        transition: color 0.3s ease;
+    }
+    li a:hover {
+        color: var(--text-highlight);
+    }
+    .icon-container {
+        transform: translateY(-25px);
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+    .home-icon {
+        height: 40px;
+        width: auto;
+    }
+    .home-text {
+        text-decoration: none;
+        font-size: 35px;
+        font-family: 'TitleText', sans-serif;
+        color: var(--text-black);
+    }
+    .icon-container:hover {
+    cursor: pointer;
+}
+    .background-image-home {
+        margin-top: 70px;
+        background-image: url(Pages/resources/homepage-image-one.jpg);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+        height: 80%;
+        width: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: 10;
+    }
+    .main-title {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: whitesmoke;
+        text-align: center;
+        margin: 20px;
+        border-radius: 10px;
+        font-family: 'TitleText', sans-serif;
+        font-size: 600%;
+        text-shadow: 2px 2px 5px #000000;
+        z-index: 20; 
+    }
+    .title-overlay {
+        position: absolute;
+        bottom: -10%;
+        transform: translateX(-8.3%);
+        width: 120%;
+        height: 40%;
+        background-color: var(--web-alt-white);
+        border-radius: 50%;
+        z-index: 15; 
+    }
+    .title-overlay-two {
+        position: absolute;
+        bottom: -12%;
+        transform: translateX(-8.3%);
+        width: 120%;
+        height: 40%;
+        background-color: var(--web-white);
+        border-radius: 50%;
+        z-index: 16;
+    }
+    main {
+        margin-top: 20px;
+        position: relative;
+        width: 100%;
+        min-height: calc(100vh - 70px);
+        z-index: 21;
+    }
+    main p {
+        color: var(--text-black);
+        font-size: 1.5em;
+        
+    }
+    main p a {
+        text-decoration: none;
+    }
+    .main-container {
+        transform: translateX(7%);
+        display: flex;
+        justify-content: flex-start;
+        padding: 4%;
+    }
+    .section-title {
+        text-align: center;
+        margin: 0;
+        padding: 20px 0;
+    }
+    .section-title-icon {
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .section-title-text {
+        font-family: 'TitleTextBold', sans-serif;
+        font-size: 150%;
+        color: var(--text-black);
+    
+    }
+    .left-side-container {
+        width: 40%;
+        padding: 15px;
+        border: 1px solid var(--text-box-out);
+        border-radius: 5px;
+        background-color: var(--web-alt-white);
+    }
+    .right-side-container {
+        transform: translateX(13%);
+        width: 40%;
+        padding: 15px;
+        border: 1px solid var(--text-box-out);
+        border-radius: 5px;
+        background-color: var(--web-alt-white);
+    }
+    .right-side-container-with-image {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        max-width: 100%;
+        border-radius: 5px;
+    }
+    .header-title {
+        font-family: 'TitleTextBold', sans-serif;
+        color: var(--text-black);
+    }
+    .paragraph-text {
+        font-family: 'StandardText', sans-serif;
+        text-decoration: none;
+        font-size: larger;
+        color: var(--text-black);
+    }
+    .footer {
+        font-family: 'StandardText', sans-serif;
+        font-size: large;
+        margin-top: auto;
+        background-color: var(--web-alt-white);
+        color: var(--text-black);
+        padding-left: 4%;
+        padding-top: 1%;
+        width: 100%;
+        bottom: 0;
+        position: relative;
+        clear: both;
+        border-top: 1px solid var(--text-box-out);
+    }
+    
+    </style>
+</head>
+<body>
+        <nav>
+            <div class="icon-container">
+                <img src="Pages/resources/home-icon.png" class="home-icon">
+                <a href="home.html" class="home-text">HOME</a>
+            </div>
+            <ul>
+                <li><a href="Pages/why.html" class="text-change">Why Japan</a></li>
+                <li class="seprator">|</li>
+                <li><a href="Pages/starting.html" class="text-change">Starting The Process</a></li>
+                <li class="seprator">|</li>
+                <li><a href="Pages/universities.html" class="text-change">Top Five Universities</a></li>
+                <li class="seprator">|</li>
+                <li><a href="Pages/more-information.html" class="text-change">More Information</a></li>
+            </ul>
+        </nav>
+    <div class="background-image-home">
+        <div class="main-title"><p>Studying in Japan</p></div>
+        <div class="title-overlay"></div>
+        <div class="title-overlay-two"></div>
+    </div>
+    
+    <main>
+        <div class="section-title">
+            <img src="Pages/resources/decorative-icon-one.png" class="section-title-icon">
+            <div class="section-title-text"><h1>Introduction</h1></div>
+        </div>
+        <div class="main-container">
+            <div class="left-side-container">
+                <div class="header-title"><h1>What is This Webpage About?</h1></div>
+                    <p class="paragraph-text"><br>The purpose of this webpage is to share what I’ve learned while researching as a prospective student who 
+                    wants to study in Japan. The things I will share are what are some potential reasons why someone would want to study in Japan, 
+                    where to start if you are looking to study in Japan, and what are some school choices. There will also be a page containing some 
+                    extra information and resources for more information.</p>
+                    <br>
+                    <p class="paragraph-text">This page will be a mix of informed opinion and facts from other resources 
+                    which should be kept in mind, always do your own research and fact checking.There will be references to more information if desired, 
+                    the content will serve more a general summary to point potential readers in the right direction. Also <a href="Pages/more-information.html">more information</a>
+                    will contain many of the refrences throughout the webpage in one location. As an additional final note this website is not meant as an objective opinion or source,
+                    the information provided is from the point of view of someone living in America, and not entirely unbiased in favor of Japan.</p>
+            </div>
+            <div class="right-side-container">
+                <img src="Pages/resources/web-content-one.jpg" class="right-side-container-with-image">
+            </div>
+        </div>
+    </main>
+    <footer class="footer"> 
+        <p>Email: JohnDoe@email.com</p>
+        <p>Phone: +1(425-654-japan)</p>
+        <p>Refrence: <a href="https://www.studyinjapan.go.jp/en/">studyinjapan.go</a></p>
+        <p>© Mykyta Dukhopel 2024</p>
+    </footer>
+</body>
+</html>
