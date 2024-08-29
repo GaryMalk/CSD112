@@ -1,0 +1,46 @@
+header{
+    text-align: center;
+    padding:20px;
+    background-image: url("../Pictures/Ambush.png");
+    font-size: large;
+    color: khaki;
+}
+
+p{
+    font-size: 120%;
+}
+
+#table-pic{
+    display: flex;
+
+}
+
+#table-pic img{
+    padding-left: 600px;
+    width: 35%;
+    height: auto;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#links{
+    display: flex;
+    flex-direction: column;
+    font-size: 150%;
+}
+
+#links a{
+    padding: 20px;
+    margin-top: 5px;
+}
+
+footer{
+    text-align: center;
+    background-color: khaki;
+    padding: 20px;
+    font-size: 150%;
+
+}

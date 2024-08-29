@@ -1,0 +1,43 @@
+header{
+    text-align: center;
+    padding:20px;
+    background-image: url("../Pictures/Ambush.png");
+    font-size: large;
+    color: khaki;
+}
+
+
+
+
+#t-34-description ol li{
+
+    padding-top: 5px;
+    font-size: 120%;
+}
+
+img{
+    position: relative;
+
+    left: 40%;
+    width: 30%;
+    height: auto;
+}
+
+#links{
+    display: flex;
+    flex-direction: column;
+    font-size: 150%;
+}
+
+#links a{
+    padding: 20px;
+    margin-top: 5px;
+}
+
+footer{
+    text-align: center;
+    background-color: khaki;
+    padding-top: 5px;
+    font-size: 150%;
+
+}

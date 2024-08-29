@@ -1,0 +1,224 @@
+body{
+    background-image: url("https://miro.medium.com/v2/resize:fit:1400/format:webp/1*kKlwfflOpcfo91MDH5eIHw.jpeg");
+    background-repeat: repeat;
+    background-size: 125%;
+}
+
+header{
+    text-align: center;
+    padding:20px;
+    background-image: url("Pictures/Ambush.png");
+    font-size: large;
+    color: khaki;
+    
+}
+
+#container{
+    display:flex;
+    margin:20px;
+
+}
+
+aside{
+    flex: 1;
+    position: sticky;
+    top:0;
+    width: 15%;
+    overflow: hidden;
+    background-color: lightgreen;
+    box-sizing: border-box;
+    
+}
+
+aside h3{
+    text-align: center;
+}
+
+aside ol li{
+    margin-top: 10px;
+    font-size: 120%;
+}
+
+
+#content{
+    box-sizing: border-box;
+    width:85%;
+    overflow: hidden;
+    padding-left: 15px;
+    background-color: rgba(211,211,211,0.7);
+}
+
+#content p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#content #introduction{
+    padding-left: 2px;
+    padding-right: 3px;
+    font-size: 120%;
+}
+
+#content hr{
+    height: 2px;
+    border-width: 2px;
+}
+
+#content a{
+    font-size: 150%;
+}
+
+#content h1{
+    font-size: 200%;
+}
+
+#panzer #panzer-align{
+    display: flex;
+    align-items: center;
+}
+
+#panzer #panzer-align #panzer-text{
+    flex:1;
+    font-size: 125%;
+}
+
+#panzer #panzer-align img{
+    width:40%;
+    height:auto;
+}
+
+
+
+#tiger #tiger-align{
+    display: flex;
+    align-items: center;
+}
+
+#tiger #tiger-align #tiger-text{
+    flex:1;
+    font-size: 125%;
+}
+
+#tiger #tiger-align img{
+    width:30%;
+    height:auto;
+}
+
+#jagdtiger #jagdtiger-align{
+    display: flex;
+    align-items: center;
+}
+
+#jagdtiger #jagdtiger-align #jagdtiger-text{
+    flex:1;
+    font-size: 125%;
+}
+
+#jagdtiger #jagdtiger-align img{
+    width:35%;
+    height:auto;
+}
+
+
+#t-34 #t-34-align{
+    display: flex;
+    align-items: center;
+}
+
+#t-34 #t-34-align #t-34-text{
+    flex:1;
+    font-size: 125%;
+}
+
+#t-34 #t-34-align img{
+    width:35%;
+    height:auto;
+}
+
+#kv-1 #kv-1-align{
+    display: flex;
+    align-items: center;
+}
+
+#kv-1 #kv-1-align #kv-1-text{
+    flex:1;
+    font-size: 125%;
+}
+
+#kv-1 #kv-1-align img{
+    width:30%;
+    height:auto;
+}
+
+#is #is-align{
+    display: flex;
+    align-items: center;
+}
+
+#is #is-align #is-text{
+    flex:1;
+    font-size: 125%;
+}
+
+#is #is-align img{
+    width:30%;
+    height:auto;
+}
+
+#churchill #churchill-align{
+    display: flex;
+    align-items: center;
+}
+
+#churchill #churchill-align #churchill-text{
+    flex:1;
+    font-size: 125%;
+}
+
+#churchill #churchill-align img{
+    width:30%;
+    height:auto;
+}
+
+#sherman #sherman-align{
+    display: flex;
+    align-items: center;
+}
+
+#sherman #sherman-align #sherman-text{
+    flex:1;
+    font-size: 125%;
+}
+
+#sherman #sherman-align img{
+    width:27%;
+    height:auto;
+}
+
+#crusader #crusader-align{
+    display: flex;
+    align-items: center;
+}
+
+#crusader #crusader-align #crusader-text{
+    flex:1;
+    font-size: 125%;
+}
+
+#crusader #crusader-align img{
+    width:25%;
+    height:auto;
+}
+
+footer{
+    text-align: center;
+    background-color: khaki;
+    padding: 5px;
+    margin: 0;
+    font-size: 150%;
+}
