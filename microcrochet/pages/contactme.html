@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../indexCss.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=contact_support" />
+
+
+    
+    <title>Microcrochet Lauchpad | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Inconsolata:wght@200..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div class="side"> 
+    <input type="checkbox" id="checkmark">
+    <label for="checkmark">
+        <i class="material-icons" id="menu">menu</i>
+    </label>
+    <div class="sidenav">
+        <label for="checkmark">
+            <i class="material-icons" id="close">close</i>
+        </label>
+    
+        <header>Menu</header>
+        <ul>
+            <li> <a href="../index.html"> Home </a> </li>
+            <li> <a href="whycrochet.html"> Why Microcrochet </a> </li>
+            <li> <a href="howtobegin.html"> How to Begin </a> </li>
+            <li> <a href="choose.html"> Choose Wisely </a> </li>
+            <li> <a href="patterns.html"> Patterns </a> </li>
+            <li> <a href="stiches.html"> Stiches </a> </li>   
+            <li  class="shaded" > <a href="contactme.html"> Contact Me </a> </li>   
+            <li> <a href="#">   </a> </li>
+        </ul>
+    <div>
+        <section></section>
+    </div>
+</div>
+
+
+<!--Header, title, help button-->
+<div class="out">
+    <div class="head">
+        <h1>Microcrochet Lauchpad</h1>
+        <button class="supportb" onclick="window.location.href = 'contactme.html';"> <i class="material-icons">contact_support</i></button>
+        <hr class="titleline">
+    </div>
+
+    <!--Page Main Info-->
+
+        <!--Form-->    
+    <form method="post" class="form">
+
+
+            <p class="help">Email:</p>
+            <input class="formbutton" type="email" id="email" name="email" size="40" placeholder="user@email.com"><br>
+            
+            <p class="help">First name:</p>
+            <input class="formbutton" type="text" id="fname" name="fname" placeholder="Type here"><br><br>
+
+            <p class="help">Enter your phone number:</p>
+            <input class="formbutton" type="tel" id="phone" name="phone" pattern="[0-9 {3}-[0-9 {3}-[0-9 {4}]" size="40" placeholder="000-000-0000"><br><br>
+
+            <p class="help">Feedback:</p>
+            <textarea class="formbutton" name="feedback" rows="4" cols="50" placeholder="Enter your feedback here"></textarea>
+
+            <p class="help">How much do you know about crochet?</p>
+            <input class="formbutton" type="radio" id="cyes" name="knowcrochet" value="I know what crochet is and how to crochet">
+            <label for="cyes">I know what crochet is and how to crochet</label>
+            <br>
+            <input class="formbutton" type="radio" id="chalf" name="knowcrochet" value="I know some about crochet but I need help or want to know more about it">
+            <label for="chalf">I know some about crochet but I need help or want to know more about it</label>
+            <br>
+            <input class="formbutton" type="radio" id="cno" name="knowcrochet" value="I know little to nothing about crochet, and I would like to know more or maybe learn">
+            <label for="cno">I know little to nothing about crochet, and I would like to know more or maybe learn</label>
+        
+
+            <p class="help">How much do you know about microcrochet?</p>
+            <input class="formbutton" type="radio" id="myes" name="knowmicrocrochet" value="I know what microcrochet is and how to microcrochet">
+            <label for="myes" >I know what microcrochet is and how to microcrochet</label>
+            <br>
+            <input class="formbutton" type="radio" id="mhalf" name="knowmicrocrochet" value="I know some about microcrochet but I need help or want to know more about it">
+            <label for="mhalf">I know some about microcrochet but I need help or want to know more about it</label>
+            <br>
+            <input class="formbutton" type="radio" id="mno" name="knowmicrocrochet" value="I know little to nothing about microcrochet, and I would like to know more or maybe learn">
+            <label  for="mno">I know little to nothing about microcrochet, and I would like to know more or maybe learn</label>
+        
+
+            <p class="help">Do you need help finding microcrochet patterns?</p>
+            <input class="formbutton" type="radio" id="yesc1" name="patternhelp" value="Yes">
+            <label for="yesc1"> Yes, I need help</label><br>
+            <input class="formbutton" type="radio" id="noc1" name="patternhelp" value="No">
+            <label  for="noc1"> No, I do not need help</label><br>
+
+
+            <p class="help">Do you need help with microcrochet stiches?</p>
+            <input class="formbutton" type="radio" id="yesc2" name="sticheshelp" value="Yes">
+            <label  for="yesc2"> Yes, I need help</label><br>
+            <input class="formbutton" type="radio" id="noc2" name="sticheshelp" value="No">
+            <label for="noc2"> No, I do not need help</label><br>
+        
+
+            <p class="help">Do you need help with choosing microcrochet supplies?</p>
+            <input class="formbutton" type="radio" id="yesc3" name="supplieshelp" value="Yes">
+            <label for="yesc3"> Yes, I need help</label><br>
+            <input class="formbutton" type="radio" id="noc3" name="supplieshelp" value="No">
+            <label for="noc3"> No, I do not need help</label><br>
+        
+
+            <p class="help">How did you find Microcrochet Launchpad?</p>
+            <input class="formbutton" type="checkbox" id="choice1" name="how1" value="Google/Search Engine">
+            <label for="choice1"> Google/Search Engine</label><br>
+            <input class="formbutton" type="checkbox" id="choice2" name="how2" value="Etsy">
+            <label  for="choice2"> Etsy</label><br>
+            <input class="formbutton" type="checkbox" id="choice3" name="how3" value="Facebook">
+            <label  for="choice3"> Facebook</label><br>
+            <input class="formbutton" type="checkbox" id="choice4" name="how3" value="Other">
+            <label  for="choice4"> Other</label><br><br>
+        
+
+
+
+            <input class="formbutton2" type="reset" id="clear" value="Clear">
+            <input class="formbutton3" type="submit" id="submit" value="Submit">
+    </form>
+    
+</div>
+
+</body>
+</html>
