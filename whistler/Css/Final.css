@@ -1,0 +1,237 @@
+/* General Styles for All Pages */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #A7C7E7;
+    color: #3D6D4E;
+    font-family: 'Roboto', sans-serif; /
+}
+
+p {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+
+header {
+    background-image: url('FinalProject/images/20170123_111513.jpg'); 
+    background-attachment: fixed;
+    padding: 80px 20px 60px 20px; 
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    height: 400px;
+}
+
+header h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); 
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.5rem;
+}
+
+nav {
+    text-align: center;
+    background-color: #3D6D4E;
+    padding: 15px 0;
+}
+
+nav a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav a:hover {
+    color: #A7C7E7;
+}
+
+main {
+    padding: 20px;
+    max-width: 100%;
+    margin: auto;
+}
+
+h2 {
+    color: #3D6D4E;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.content-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.content-section img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.content-section .text-content {
+    max-width: 50%;
+}
+
+.content-section h3 {
+    color: #3D6D4E;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.content-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.gondola-section {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gondola-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.gondola-section h3 {
+    font-size: 1.8em;
+    color: #3D6D4E;
+    margin-bottom: 10px;
+}
+
+.gondola-section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #3D6D4E;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .content-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content-section img {
+        margin-bottom: 20px;
+        max-width: 100%;  
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .content-section h3 {
+        font-size: 1.4rem;
+    }
+
+    .content-section p {
+        font-size: 1em;
+    }
+
+    header {
+        padding: 60px 20px;
+    }
+
+    nav {
+        padding: 8px;
+    }
+
+    nav a {
+        font-size: 1em;
+    }
+
+    .gondola-section h3 {
+        font-size: 1.5em;
+    }
+
+    .gondola-section p {
+        font-size: 1em;
+    }
+}
+
+.restaurant, .run, .accommodation {
+    display: flex;
+    align-items: center;
+    border: 2px solid #3D6D4E;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #FFFFFF;
+}
+
+.restaurant img, .run img, .accommodation img {
+    max-width: 150px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.restaurant-content, .run-content, .accommodation-content {
+    max-width: 500px;
+}
+
+.restaurant-content h3, .run-content h3, .accommodation-content h3 {
+    color: #3D6D4E;
+    font-size: 1.7em;
+    margin-bottom: 10px;
+}
+
+.run {
+    display: flex;  
+    margin-bottom: 40px;
+    align-items: center;  
+}
+
+.run img {
+    width: 60%; 
+    max-width: 800px;  
+    height: auto; 
+    margin-right: 20px;  
+    border-radius: 8px; 
+}
+
+.run-content {
+    flex: 1; 
+}
+
+.run-content h3 {
+    font-size: 2rem;
+    margin-top: 0;
+    color: #3D6D4E;
+}
+
+.run-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
