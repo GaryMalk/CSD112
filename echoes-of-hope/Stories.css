@@ -1,0 +1,165 @@
+body {
+  font-family: 'Be Vietnam', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+
+header {
+  background-color: #556994;
+  color: #FFFFFF;
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0; 
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Be Vietnam', sans-serif;
+  padding: 5px 5px;
+}
+
+nav ul li a:hover {
+  background-color: #FFF5CC;
+  color: #556994;
+}
+
+.logo {
+  font-family: 'Be Vietnam', sans-serif;
+  font-size: 30px; 
+  font-weight: bold;
+}
+.intro {
+    padding: 40px;
+    text-align: center;
+}
+
+.intro h1 {
+    color: #4C4C6D;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    color: #666;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.stories-list {
+    padding: 40px;
+}
+
+.stories-list h2 {
+    color: #4C4C6D;
+    font-size: 2em;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.story {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.story h3 {
+    color: #A98196;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.story p {
+    color: #666;
+    font-size: 1em;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: transparent;
+    color: #556994;
+    text-decoration: underline;
+}
+
+.read-more:hover {
+    background-color: #FFF5CC;
+    color: #556994;
+}
+
+footer
+.email-btn {
+    background-color: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    text-decoration: underline;
+    border-radius: 5px;
+    font-family: 'Be Vietnam', sans-serif;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.subscribe-btn { 
+    background-color: none;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: underline; 
+    border-radius: 8px;
+    font-family: 'Be Vietnam', sans-serif; 
+    font-weight: bold; 
+    font-size: 20px;
+}
+
+.copyright {
+    font-size: 0.8rem; 
+    color: #FFF;
+    margin-top: 10px;
+}
+.social-links a {
+  font-size: 20px; 
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 10px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.social-links i {  
+  margin-right: 8px;  
+  font-size: 1.1rem;  
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #556994;
+  color: white; 
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-contact {
+  margin-bottom: 10px;
+}
+
+.subscribe-section {
+  margin-top: 10px;
+}

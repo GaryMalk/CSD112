@@ -1,0 +1,183 @@
+body {
+  font-family: 'Be Vietnam', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+
+header {
+  background-color: #556994;
+  color: #FFFFFF;
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0; 
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Be Vietnam', sans-serif;
+  padding: 5px 5px;
+}
+
+nav ul li a:hover {
+  background-color: #FFF5CC;
+  color: #556994;
+}
+
+.logo {
+  font-family: 'Be Vietnam', sans-serif;
+  font-size: 30px; 
+  font-weight: bold;
+}
+
+.contact-section { 
+    padding: 20px; 
+    background-color: #FFF;
+    max-width: 800px; 
+    margin: 0 auto;
+}
+
+.contact-section h2 { 
+    font-size: 2.5em; 
+    color: #6F7B98; 
+    text-align: center; 
+    margin-bottom: 20px;
+}
+
+.contact-section h3 {
+    font-size: 15px; 
+    color: #333; 
+    margin-top: 20px; 
+    margin-bottom: 10px;
+}
+
+.contact-section h4 {
+    font-size: 15px; 
+    color: #333; 
+    margin-top: 20px; 
+    margin-bottom: 10px;
+}
+
+.contact-section p { 
+    font-size: 10px; 
+    line-height: 1.6; 
+    color: #555;
+}
+
+.contact-section ul {
+    list-style-type: square; 
+    padding-left: 20px;
+}
+
+.contact-section ul li { 
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.contact-form { 
+    margin-top: 30px;
+}
+
+.contact-form label {
+    display: block; 
+    font-size: 1.1em; 
+    margin-bottom: 5px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px; 
+    margin-bottom: 20px;
+    border: 1px solid #CCC;
+    border-radius: 5px; 
+    font-size: 1em;
+}
+
+.contact-form button {
+    background-color: #6F7B98;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; 
+    font-size: 1.2em; 
+    cursor: pointer;
+}
+
+.contact-form button:hover { 
+    background-color: #566385;
+}
+
+
+footer
+.email-btn {
+    background-color: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    text-decoration: underline;
+    border-radius: 5px;
+    font-family: 'Be Vietnam', sans-serif;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.subscribe-btn { 
+    background-color: none;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: underline; 
+    border-radius: 8px;
+    font-family: 'Be Vietnam', sans-serif; 
+    font-weight: bold; 
+    font-size: 20px;
+}
+
+.copyright {
+    font-size: 0.8rem; 
+    color: #FFF;
+    margin-top: 10px;
+}
+.social-links a {
+  font-size: 20px; 
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 10px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.social-links i {  
+  margin-right: 8px;  
+  font-size: 1.1rem;  
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #556994;
+  color: white; 
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-contact {
+  margin-bottom: 10px;
+}
+
+.subscribe-section {
+  margin-top: 10px;
+}
