@@ -1,0 +1,391 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #fff;
+  background-color: #1c1c1e;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background-color: #111;
+  padding: 20px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f5b400;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav-links a:hover {
+  color: #f5b400;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: white;
+}
+
+.contact-info a:hover {
+  color: #f5b400;
+}
+
+.btn {
+  background-color: #f5b400;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.btn a {
+  color: black;
+  text-decoration: none;
+}
+
+
+.hero {
+  position: relative;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  color: #fff;
+}
+
+.hero-content {
+  width: 40%;
+  text-align: left;
+  margin-left: 10%;
+  margin-bottom: 10%;
+}
+
+.hero-content p {
+  width: 80%;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("./images/yellowCar.jpeg") no-repeat center center/cover;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+.hero h1,
+.hero p,
+.btn {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+/* Window Tint Page Styles */
+.container2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10%;
+}
+.content2 {
+  flex: 1;
+  margin-right: 50px;
+}
+.content2 h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+.content2 p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+.pricing {
+  display: flex;
+  gap: 20px;
+}
+.pricing-card {
+  background-color: #2a2a2a;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+}
+.pricing-card h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #c9c9c9;
+}
+.pricing-card .price {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+.pricing-card .old-price {
+  text-decoration: line-through;
+  color: #888;
+  font-size: 16px;
+}
+.pricing-card button {
+  background-color: #f5b400;
+  border: none;
+  padding: 10px 20px;
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pricing-card button a {
+  color: #000;
+  text-decoration: none;
+}
+
+.image-container {
+  flex: 1;
+  position: relative;
+}
+.image-container img {
+  width: 100%;
+  border-radius: 20px;
+}
+.dots {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 50px;
+  height: 50px;
+  gap: 5px;
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #ffcc00;
+  border-radius: 50%;
+}
+
+/* PPF page styles */
+.container3 {
+  padding: 50px;
+}
+.video-section {
+  position: relative;
+}
+.video-section img {
+  width: 100%;
+  border-radius: 10px;
+}
+.video-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+}
+.video-overlay span {
+  background-color: #ffc107;
+  padding: 5px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.content {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.details {
+  flex: 1;
+  margin-right: 50px;
+}
+.details h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.details ul {
+  list-style-type: none;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1.6;
+}
+.details ul li {
+  margin-bottom: 10px;
+}
+.pricing-section {
+  padding-top: 3%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 50%;
+  flex-wrap: wrap;
+}
+.pricing-card2 {
+  background-color: #2a2a2a;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 22%;
+  height: 350px;
+}
+.pricing-card2 img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.pricing-card2 h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #c9c9c9;
+}
+.pricing-card2 .price {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+.pricing-card2 .old-price {
+  text-decoration: line-through;
+  color: #888;
+  font-size: 16px;
+}
+.pricing-card2 button {
+  background-color: #f5b400;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pricing-card2 button a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Book Now Page styles */
+.container4 {
+  margin: 5%;
+  margin-left: 8%;
+  display: flex;
+  background-color: #2a2a2a;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.form-section {
+  padding: 40px;
+  width: 50%;
+  background-color: #2b2b2b;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input,
+form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+}
+
+form button {
+  padding: 12px;
+  background-color: #f1c40f;
+  border: none;
+  border-radius: 5px;
+  color: #1d1d1d;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #e2b70f;
+}
+
+.contact-info {
+  margin-top: 30px;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+}
+
+.social-media a {
+  margin-right: 10px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.map-section {
+  width: 40%;
+  height: 80px;
+  padding: 5%;
+}
