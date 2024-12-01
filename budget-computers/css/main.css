@@ -1,0 +1,669 @@
+:root {
+  /* Nord Color Scheme - https://www.nordtheme.com */
+
+  /* Polar Night */
+  --nord0: #2E3440;
+  --nord1: #3B4252;
+  --nord2: #434C5E;
+  --nord3: #4C566A;
+
+  /* Snow Storm */
+  --nord4: #D8DEE9;
+  --nord5: #E5E9F0;
+  --nord6: #ECEFF4;
+
+  /* Frost */
+  --nord7: #8FBCBB;
+  --nord8: #88C0D0;
+  --nord9: #81A1C1;
+  --nord10: #5E81AC;
+
+  /* Aurora */
+  --nord11: #BF616A; /* Red */
+  --nord12: #D08770; /* Orange */
+  --nord13: #EBCB8B; /* Yellow */
+  --nord14: #A3BE8C; /* Green */
+  --nord15: #B48EAD; /* Purple */
+}
+
+.nordBlue {
+  color: #8FBCBB; /* IE Fallback */
+  color: var(--nord7);
+}
+
+.nordRed {
+  color: #BF616A; /* IE Fallback */
+  color: var(--nord11);
+}
+
+.nordOrange {
+  color: #D08770; /* IE Fallback */
+  color: var(--nord12);
+}
+
+.nordYellow {
+  color: #EBCB8B; /* IE Fallback */
+  color: var(--nord13);
+}
+
+.nordGreen {
+  color: #A3BE8C; /* IE Fallback */
+  color: var(--nord14);
+}
+
+.nordPurple {
+  color: #B48EAD; /* IE Fallback */
+  color: var(--nord15);
+}
+
+/******************************************************************************/
+
+body {
+  /* Margins & Padding */
+  margin: 0rem;
+  padding: 0rem;
+
+  /* Font Properties */
+  font-family: "Liberation Sans", "Noto Sans", "Arial", "Verdana", ui-sans-serif, sans-serif;
+  font-size: 16px;
+
+  /* Colors */
+  color: #ECEFF4; /* IE Fallback */
+  color: var(--nord4);
+  background-color: #2E3440; /* IE Fallback */
+  background-color: var(--nord0);
+}
+
+hr {
+  /* Margins & Padding */
+  margin: 0rem;
+  padding: 0rem;
+
+  /* Borders */
+  border-style: none;      /* Set all borders to be invisible... */
+  border-top-style: solid; /* ...except the top border.          */
+
+  border-width: 0rem;         /* Set all borders have no thickness... */
+  border-top-width: 0.125rem; /* ...except the top border. (Again)    */
+
+  border-collapse: collapse;
+
+  border-color: #4C566A; /* IE Fallback */
+  border-color: var(--nord3);
+
+  /* Colors */
+  color: rgba(0, 0, 0, 0); /* Makes the line invisible */
+}
+
+/* HEADER & FOOTER ************************************************************/
+
+header, footer {
+  /* Positioning & Alignment */
+  position: sticky;
+
+  /* Margins & Padding */
+  margin: 0rem;
+  padding: 0.5rem;
+
+  /* Font Properties */
+  font-weight: bold;
+
+  /* Colors */
+  background-color: #3B4252;
+  background-color: var(--nord1);
+}
+
+footer {
+  /* Positioning & Alignment */
+  bottom: 0rem;
+}
+
+header {
+  /* Positioning & Alignment */
+  top: 0rem;
+
+  /* Colors */
+  color: #D8DEE9; /* IE Fallback */
+  color: var(--nord6);
+
+  /* Background Properties */
+  background-image: url("./../img/bg/2.png");
+  background-repeat: no-repeat;
+  background-size: 40% auto;
+  background-position: right 44%;
+}
+
+footer > div#copyright {
+  /* Display & Sizing */
+  display: inline;
+
+  /* Positioning & Alignment */
+  text-align: right;
+  float: right;
+  vertical-align: middle;
+}
+
+header > h1 {
+  /* Display & Sizing */
+  display: inline;
+
+  /* Positioning & Alignment */
+  vertical-align: middle;
+}
+
+header > div#logoContainer {
+  /* Display & Sizing */
+  display: inline-block;
+  width: 12rem;
+  min-width: 12rem;
+
+  /* Positioning & Alignment */
+  text-align: center;
+}
+
+img#logoImg {
+  /* Display & Sizing */
+  width: 6rem;
+  /* Positioning & Alignment */
+  vertical-align: middle;
+}
+
+header > div#headerNoteContainer {
+  /* Margins & Padding */
+  margin: 0rem;
+  padding: 0rem;
+
+  /* Positioning & Alignment */
+  position: relative;
+}
+
+p#headerPicNote {
+  /* Positioning & Alignment */
+  position: absolute;
+  right: 0.5rem;
+  bottom: -1rem;
+
+  text-align: right;
+  float: right;
+  vertical-align: bottom;
+
+  /* Font Properties */
+  font-size: 0.75rem;
+  text-shadow: 0rem 0rem 0.5rem black, 0rem 0rem 0.5rem black, 0rem 0rem 0.5rem black, 0rem 0rem 0.5rem black;
+
+  /* Colors */
+  color: #D8DEE9; /* IE Fallback */
+  color: var(--nord4);
+}
+
+/* STANDARD TEXT LINK *********************************************************/
+
+a, a:link {
+  /* Colors */
+  color: #81A1C1; /* IE Fallback */
+  color: var(--nord9);
+
+  /* Transitions & Animation */
+  transition-timing-function: linear;
+  transition-duration: 0.125s;
+}
+
+a:hover {
+  /* Colors */
+  color: #88C0D0; /* IE Fallback */
+  color: var(--nord8);
+}
+
+a:active {
+  /* Colors */
+  color: #5E81AC; /* IE Fallback */
+  color: var(--nord10);
+}
+
+a:visited {
+  /* Colors */
+  color: #B48EAD; /* IE Fallback */
+  color: var(--nord15);
+}
+
+/******************************************************************************/
+
+div.wrap {
+  /* Display & Sizing */
+  display: flex;
+}
+
+main {
+  /* Display & Sizing */
+  display: inline-block;
+  width: 100%;
+
+  /* Margins & Padding */
+  margin: 0rem;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+
+  /* Colors */
+  color: #D8DEE9; /* IE Fallback */
+  color: var(--nord4);
+  background-color: #2E3440; /* IE Fallback */
+  background-color: var(--nord0);
+}
+
+main > h2 {
+  /* Colors */
+  color: #ECEFF4;
+  color: var(--nord6);
+}
+
+main > h3 {
+  /* Colors */
+  color: #E5E9F0;
+  color: var(--nord5);
+}
+
+ul.block {
+  /* Display & Sizing */
+  display: inline-block;
+
+  /* Margins & Padding */
+  margin: 0rem;
+}
+
+/* NAVIGATION SIDE ************************************************************/
+
+aside {
+  /* Display & Sizing */
+  display: inline-block;
+  width: 12rem;
+  min-width: 12rem;
+
+  /* Positioning & Alignment */
+  float: left;
+
+  /* Colors */
+  background-color: #434C5E; /* IE Fallback */
+  background-color: var(--nord2);
+}
+
+nav {
+  /* Display & Sizing */
+  display: inline-block;
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+
+  /* Margins & Padding */
+  margin: 0rem;
+  padding: 0rem;
+}
+
+nav > ul {
+  /* Display & Sizing */
+  display: inline-block;
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+
+  /* Positioning & Alignment */
+  text-align: center;
+
+  /* Margins & Padding */
+  margin: 0rem;
+  padding: 0rem;
+
+  /* Other Properties */
+  list-style-type: none;
+}
+
+li#currentPage {
+  /* Font Properties */
+  font-weight: bold;
+
+  /* Colors */
+  color: #ECEFF4;
+  color: var(--nord6);
+}
+
+li#currentPage::before {
+  /* Font Properties */
+  font-weight: bold;
+
+  /* Other Properties */
+  content: "► ";
+}
+
+li#currentPage::after {
+  /* Font Properties */
+  font-weight: bold;
+
+  /* Other Properties */
+  content: " ◄";
+}
+
+aside > h2 {
+  /* Display & Sizing */
+  display: inline-block;
+  width: 100%;
+
+  /* Positioning & Alignment */
+  text-align: center;
+
+  /* Margins & Padding */
+  margin: 0rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  /* Colors */
+  color: #D8DEE9;
+  color: var(--nord4);
+}
+
+/******************************************************************************/
+
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  /* Display & Sizing */
+  width: 4rem;
+  max-width: 4rem;
+  min-width: 4rem;
+
+  /* Margins & Padding */
+  margin-right: 0.5rem;
+
+  /* Font Properties */
+  font-weight: bold;
+}
+
+input[type="date"],
+input[type="tel"],
+input[type="password"],
+input[type="text"],
+input[type="email"] {
+  /* Margins & Padding */
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+input[type="date"] {
+  /* Display & Sizing */
+  width: 8rem;
+}
+
+input[type="tel"] {
+  /* Display & Sizing */
+  width: 8.5rem;
+}
+
+input[type="password"],
+input[type="text"],
+input[type="email"] {
+  /* Display & Sizing */
+  width: 16rem;
+}
+
+input[type="tel"]:invalid,
+input[type="password"]:invalid,
+input[type="text"]:invalid,
+input[type="email"]:invalid,
+input[type="tel"]:valid,
+input[type="password"]:valid,
+input[type="text"]:valid,
+input[type="email"]:valid {
+  /* Borders */
+  border-style: solid;
+  border-width: 0.125rem;
+}
+
+input[type="tel"]:invalid,
+input[type="password"]:invalid,
+input[type="text"]:invalid,
+input[type="email"]:invalid {
+  /* Borders */
+  border-color: #BF616A; /* IE Fallback */
+  border-color: var(--nord11);
+}
+
+input[type="tel"]:valid,
+input[type="password"]:valid,
+input[type="text"]:valid,
+input[type="email"]:valid {
+  /* Borders */
+  border-color: #A3BE8C; /* IE Fallback */
+  border-color: var(--nord14);
+}
+
+input[type="tel"] + span:after,
+input[type="password"] + span:after,
+input[type="text"] + span:after,
+input[type="email"] + span:after {
+  /* Positioning & Alignment */
+  vertical-align: middle;
+
+  /* Font Properties */
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+input[type="tel"]:invalid + span::after,
+input[type="password"]:invalid + span::after,
+input[type="text"]:invalid + span::after,
+input[type="email"]:invalid + span::after {
+  /* Colors */
+  color: #BF616A; /* IE Fallback */
+  color: var(--nord11);
+
+  /* Other Properties */
+  content: " ✖";
+}
+
+input[type="tel"]:valid + span::after,
+input[type="password"]:valid + span::after,
+input[type="text"]:valid + span::after,
+input[type="email"]:valid + span::after {
+  /* Colors */
+  color: #A3BE8C; /* IE Fallback */
+  color: var(--nord14);
+
+  /* Other Properties */
+  content: " ✔";
+}
+
+input, textarea, button {
+  /* Display & Sizing */
+  display: inline-block;
+
+  /* Margins & Padding */
+  margin: 0rem;
+  padding: 0.375rem;
+
+  /* Colors */
+  color: #D8DEE9; /* IE Fallback */
+  color: var(--nord4);
+  background-color: #434C5E; /* IE Fallback */
+  background-color: var(--nord2);
+
+  /* Borders */
+  border-style: none;
+  border-radius: 0.5rem;
+
+  /* Transitions & Animation */
+  transition-timing-function: linear;
+  transition-duration: 0.125s;
+}
+
+form > label {
+  /* Font Properties */
+  font-weight: bold;
+}
+
+textarea:hover,
+button:hover,
+input:hover {
+  /* Colors */
+  color: #ECEFF4; /* IE Fallback */
+  color: var(--nord6);
+  background-color: #4C566A; /* IE Fallback */
+  background-color: var(--nord3);
+}
+
+textarea:active,
+button:active,
+input:active {
+  /* Colors */
+  color: #D8DEE9; /* IE Fallback */
+  color: var(--nord4);
+  background-color: #3B4252; /* IE Fallback */
+  background-color: var(--nord1);
+}
+
+textarea {
+  /* Display & Sizing */
+  resize: none;
+
+  /* Margins & Padding */
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  
+  /* Other Properties */
+  overflow: auto;
+}
+
+/******************************************************************************/
+
+table {
+  /* Display & Sizing */
+  display: inline-table;
+  width: 48rem;
+
+  /* Margins & Padding */
+  margin: 0rem;
+  margin-right: 0.75rem;
+  margin-left: 0rem;
+}
+
+table.desktopPC {
+  /* Display & Sizing */
+  height: 40rem;
+}
+
+table, th, td {
+  /* Margins & padding */
+  padding: 0.375rem;
+
+  /* Colors */
+  background-color: #3B4252; /* IE Fallback */
+  background-color: var(--nord1);
+
+  /* Borders */
+  border-width: 0.125rem;
+  border-style: solid;
+  border-color: #434C5E; /* IE Fallback */
+  border-color: var(--nord2);
+  border-collapse: collapse;
+}
+
+th, td {
+  /* Positioning & Alignment */
+  vertical-align: middle;
+}
+
+td.txtB {
+  /* Display & Sizing */
+  width: 6.25rem;
+  max-width: 6.25rem;
+  min-width: 6.25rem;
+
+  /* Positioning & Alignment */
+  text-align: right;
+
+  /* Colors */
+  color: #E5E9F0;
+  color: var(--nord5);
+}
+
+th {
+  /* Positioning & Alignment */
+  text-align: center;
+
+  /* Font Properties */
+  font-size: 1.25rem;
+  font-weight: bold;
+
+  /* Colors */
+  color: ECEFF4;
+  color: var(--nord6);
+}
+
+
+td.picContainer {
+  /* Display & Sizing */
+  width: 18rem;
+  max-width: 18rem;
+  min-width: 10rem;
+
+  height: 18rem;
+  max-height: 18rem;
+  min-height: 10rem;
+
+  /* Positioning & Alignment */
+  text-align: center;
+
+  /* Margins & Padding */
+  padding: 0.5rem;
+}
+
+img.sysPic {
+  /* Display & Sizing */
+  width: 16rem;
+  max-width: 16rem;
+  min-width: 8rem;
+
+  height: 16rem;
+  max-height: 16rem;
+  min-height: 8rem;
+
+  /* Margins & Padding */
+  margin: 0.5rem;
+  padding: 0rem;
+
+  /* Borders */
+  border-radius: 1rem;
+}
+
+td > ul {
+  /* Display & Sizing */
+  display: inline;
+
+  /* Padding & Margins */
+  padding: 0rem;
+
+  /* Other Properties */
+  list-style-position: inside;
+}
+
+/******************************************************************************/
+
+.txtB {
+  /* Font Properties */
+  font-weight: bold;
+}
+
+.txtI {
+  /* Font Properties */
+  font-style: italic;
+}
+
+/* "Clearfix" hack from w3schools.com/howto/howto_css_clearfix.asp */
+/* Read more at https://css-tricks.com/snippets/css/clear-fix/ */
+.clearFix::after {
+  /* Display & Sizing */
+  display: table;
+
+  /* Other Properties */
+  content: "";
+  clear: both;
+}

@@ -1,0 +1,72 @@
+<!-- Emily Comes - CSD112 - Final Project -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Local Files (CSS + JS) -->
+    <link rel="stylesheet" href="./../css/main.css" type="text/css">
+    <script src="./../js/main.js" defer></script>
+
+    <link rel="icon" href="./../img/favicon.png" type="image/png">
+
+    <title>PNW Budget Computers - Contact</title>
+  </head>
+
+  <body>
+    <header id="header">
+      <div id="logoContainer">
+        <a href="./../index.html"><img src="./../img/computer-nord6.png" id="logoImg" alt="Logo" title="Logo"></a>
+      </div>
+      <h1>PNW Budget Computers, LLC</h1>
+      <div id="headerNoteContainer">
+        <p id="headerPicNote">(Photo by user <a target="_blank" rel="external" href="https://pixabay.com/users/bru-no-1161770/">"Bru-nO"</a> on <a target="_blank" rel="external" href="https://pixabay.com/photos/cpu-processor-chip-motherboard-4393376/">Pixabay</a>.)</p>
+      </div>
+    </header>
+
+    <div class="clearFix wrap">
+      <aside>
+        <h2>Site Map</h2>
+        <nav>
+          <ul>
+            <li><a href="./../index.html">Home</a></li>
+            <li><a href="./inventory.html">Inventory</a></li>
+            <li id="currentPage">Contact</li>
+            <li><a href="./credits.html">Site Credits</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main>
+        <h2>Contact</h2>
+        <hr>
+        <p>
+          For any inquiries, please <a href="mailto:S-Emily.Comes@lwtech.edu">send us an email directly</a> or fill out the form below.<br>
+          We require that you provide your full name, email, and phone number in order to send us a message.
+        </p>
+        <form>
+          <label for="name">Full Name:</label><br>
+          <input type="text" id="name" name="name" minlength="1" pattern="[a-zA-Z \-]+ [a-zA-Z \-]+" required autofocus><span></span>
+          <br>
+          <label for="email">Email Address:</label><br>
+          <input type="email" id="email" name="email" minlength="6" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-z]{2,}$" required><span></span>
+          <br>
+          <label for="tel">Phone Number:</label><br>
+          <input type="tel" id="tel" name="tel" minlength="10" maxlength="17" pattern="[0-9 +\(\)\-]+" required><span></span>
+          <br>
+          <label for="subject">Subject:</label><br>
+          <input type="text" id="subject" name="subject" minlength="1" pattern="[a-zA-Z \-]+" required><span></span>
+          <br>
+          <label for="msg">Message:</label><br>
+          <textarea id="msg" name="msg" rows="6" cols="40" required></textarea>
+          <br>
+          <input type="submit" value="Send"><input type="reset" value="Clear">
+        </form>
+      </main>
+    </div>
+    <footer class="clearFix">
+      <div id="copyright">Copyright &copy; 2024 <a href="mailto:S-Emily.Comes@lwtech.edu" id="mailto">Emily Comes.</a> All Rights Reserved.</div>
+    </footer>
+  </body>
+</html>
