@@ -1,0 +1,132 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+body {
+    background-image: linear-gradient(to right, #5de0e6, #004aad);
+    background-color :#004aad;
+}
+li {
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    border-radius: 35px;
+    padding: 25px 15px;
+    margin: 5px;
+    color: black;
+    font-size: 2.1em;
+    background-image: linear-gradient(to right, #cdffd8,#94b9ff);
+    text-align: center;
+    width: 15%;
+    text-decoration: none;
+}
+a:link {
+    text-decoration: none;
+}
+a:hover {
+    color: #004aad;
+    text-decoration: underline;
+}
+a:visited {
+    color: #004aad;
+}
+.text {
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 15px;
+    background-image: linear-gradient(to right, #cdffd8,#94b9ff);
+    text-align: justify;
+    width: 50%;
+    float:none;
+    opacity: 0.8;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  
+}
+.container {
+    border: 1px solid black;
+    padding: 15px;
+    margin: 15px;
+    display: flex;
+    margin-top: auto;
+    overflow: auto;
+    background-image: url('../images/background-cubes.jpg');
+    background-size: cover;   
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    width: auto;
+    border-radius: 15px;
+    min-height: 800px;
+    align-items: center;
+    justify-content: center;
+}
+p {
+    font-family: 'Poppins', serif;
+    font-size: 30px;
+    text-indent: 50px;
+    line-height: 1.6;
+    text-align: justify;   
+}
+h1 {
+    font-family: 'Poppins', serif;
+    font-size: 55px;
+    text-align: center;
+    text-shadow: 0 0 5px #94b9ff;
+}   
+footer p {
+    color: white;
+    text-align: center;
+    padding: 5px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 15px;
+}
+
+@media (max-width: 800px) {
+    li {
+        width: 90%; 
+        text-align: center; 
+        font-size: 1.5em;
+        padding: 15px 10px; 
+    }
+    img {
+        max-width: 80%; 
+        width: 90%; 
+        height: auto; 
+        margin-top: 20px;
+        margin-left: 0;
+        float: none; 
+        display: block; 
+        margin: 0 auto; 
+    }
+
+    h1 {
+        font-size: 2em; 
+    }
+
+    p {
+        font-size: 18px; 
+        text-indent: 30px; 
+    }
+
+    footer {
+        font-size: 12px;  
+        padding: 15px;
+    }
+
+    .container {
+        padding: 10px;        
+        margin: 10px;          
+        min-height: 600px;       
+    }
+    .text {
+        width: 80%;            
+        padding: 10px;          
+        font-size: 16px;        
+    }
+    
+}
+

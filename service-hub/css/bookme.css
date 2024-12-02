@@ -1,0 +1,225 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+body {
+    background-color :#004aad;
+    background-image: linear-gradient(to right, #5de0e6, #004aad);  
+    font-family: 'Poppins', sans-serif;  
+}
+li {
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    border-radius: 35px;
+    padding: 25px 15px;
+    margin: 5px;
+    color: black;
+    font-size: 2.1em;
+    background-image: linear-gradient(to right, #cdffd8,#94b9ff);
+    text-align: center;
+    width: 15%;
+    text-decoration: none;
+}
+a:link {
+    text-decoration: none;
+}
+a:hover {
+    color: #004aad;
+    text-decoration: underline;
+}
+a:visited {
+    color: #004aad;
+}
+.container {
+    align-items: center;
+    display: flex;
+    max-width: 1000px;
+    width: 50%;
+    background-color: #cdffd8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 25%;
+    border: 1px solid black;
+}
+.form-container {
+    padding-right: 20px;
+}
+h1 {
+    color: black;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 0 0 5px #94b9ff;
+    font-family: 'Poppins', serif;
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #004aad;
+    font-weight: bold;
+}
+input, select, textarea {
+    width: 75%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+button {
+    width: 40%;
+    padding: 12px;
+    background-color: #004aad;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #003b8e;
+}
+footer {
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: 14px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.calendar {
+    float: right;
+    width: 450px;
+    border: 1px solid #007bff;
+    background-color: #94b9ff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.calendar-header {
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background-color: #007bff;
+    color: white;
+}
+.calendar-days div {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+.calendar-dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+.calendar-dates div {
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+.today {
+    background-color: #5de0e6;
+    font-weight: bold;
+}
+@media (max-width: 800px) {
+
+    .container {
+        width: 85%; 
+        margin-left: 7.5%; 
+        padding: 20px;
+        display: flex; 
+        flex-direction: column; 
+        justify-content: space-between; 
+        min-height: 80vh; 
+        margin-bottom: 20px; 
+    }
+
+    .form-container {
+        padding-right: 20px;
+    }
+    h1 {
+        font-size: 2em;  
+        text-align: center;
+    }
+
+    li {
+        width: 90%; 
+        text-align: center; 
+        font-size: 1.5em;
+        padding: 15px 10px; 
+    }
+
+    input, select, textarea {
+        width: 100%; 
+        font-size: 16px;
+        padding: 12px;  
+    }
+
+    button {
+        width: 60%; 
+        font-size: 16px;  
+        padding: 15px;  
+    }
+    .calendar {
+        width: 100%; 
+        margin-top: 20px; 
+        float: none;  
+        box-sizing: border-box;  
+        margin-bottom: 20px;  
+    }
+
+    .calendar-header {
+        text-align: center;
+        background-color: #007bff;
+        color: white;
+        padding: 10px;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+    .calendar-days {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr); 
+        background-color: #007bff;
+        color: white;
+    }
+
+    .calendar-days div {
+        padding: 10px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .calendar-dates {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr); 
+    }
+
+    .calendar-dates div {
+        padding: 15px;
+        font-size: 0.9em;
+        text-align: center;
+        border: 1px solid #ddd;
+    }
+
+    .today {
+        background-color: #5de0e6;
+        font-weight: bold;
+    }
+    footer {
+        font-size: 12px;  
+        padding: 15px;
+    }
+}

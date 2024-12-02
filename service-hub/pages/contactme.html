@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="EN">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Contact me</title>
+    <link href="../css/contactme.css" rel="stylesheet" type="text/css">
+    <body>
+        <nav>
+            <ul>
+                <li><a href="../home.html" target="_self">Home</a></li>
+                <li><a href="../pages/aboutme.html" target="_self">About me</a></li>
+                <li><a href="../pages/services.html" target="_self">Services</a></li>
+                <li><a href="../pages/contactme.html" target="_self">Contact me</a></li>
+                <li><a href="../pages/booknow.html" target="_self">Book now</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <h1>Contact Me</h1>
+            <form action="submit_form.php" method="POST">
+                
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first_name" required>
+    
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last_name" required>
+    
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+    
+              
+                <label for="cell-phone">Cell Phone</label>
+                <input type="tel" id="cell-phone" name="cell_phone" pattern="[0-9]{10}" required placeholder="123-456-7890">
+    
+                <label for="service">Which service do you have a question about?</label>
+                <select id="service" name="service" required>
+                    <option value="">Choose</option>
+                    <option value="babysitting">Babysitting</option>
+                    <option value="dog-walking">Dog Walking</option>
+                    <option value="landscaping">Landscaping</option>
+                </select>
+    
+                <label for="contact-time">Any details about you want to know.</label>
+                <input type="text" id="contact-time" name="contact_time" placeholder="Text..." required>
+    
+                <button type="submit">Submit</button>
+                <br>
+                
+                <a href="https://discord.com/users/awena1957" class="icon-link" target="_blank">
+                    <img src="../images/discordlogo.png" alt="Discord" class="icon discord-icon">
+                </a>
+                <a href="https://join.skype.com/invite/ledyavanta" class="icon-link" target="_blank">
+                    <img src="../images/skypelogo.png" alt="Skype" class="icon skype-icon">
+                </a>
+            
+            </form>
+        </div>
+        <footer>
+            <p>&copy; 2024 Dmitry G. All rights reserved.</p> 
+        </footer>
+    </body>
+</html>
