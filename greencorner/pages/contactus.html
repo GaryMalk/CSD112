@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="benefits.html">Benefits of Plants</a>
+            <a href="plantcare.html">Plant Care</a>
+        </nav>
+    </header>
+    <main>
+        <form action="#" method="post" style="max-width: 400px; margin: 0 auto; display: flex; flex-direction: column; gap: 15px;">
+            <label for="name" style="font-weight: bold;">Name:</label>
+            <input type="text" id="name" name="name" required style="padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+        
+            <label for="email" style="font-weight: bold;">Email:</label>
+            <input type="email" id="email" name="email" required style="padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+        
+            <label for="message" style="font-weight: bold;">Message:</label>
+            <textarea id="message" name="message" rows="5" style="padding: 10px; border: 1px solid #ccc; border-radius: 5px;"></textarea>
+        
+            <div style="display: flex; align-items: center; gap: 10px;">
+                <input type="checkbox" id="subscribe" name="subscribe" style="width: auto;">
+                <label for="subscribe" style="font-weight: bold; margin: 0;">Subscribe to our newsletter</label>
+            </div>
+        
+            <button type="submit" style="background-color: #2f8f4e; color: white; padding: 10px; margin-bottom: 10px; border: white; border-radius: 5px; cursor: pointer; font-size: 16px;">
+                Submit
+            </button>
+        </form>
+        
+    </main>
+    <footer>
+        <p>&copy; 2024 Green Corner</p>
+    </footer>
+</body>
+</html>

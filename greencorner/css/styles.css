@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5dc;
+    color: #2e8b57;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+header { 
+    background-image: url('../images/background.jpg'); 
+    background-size: cover; 
+    text-align: center; 
+    padding: 2rem; 
+    color: rgb(77, 3, 3); 
+}
+nav a {
+    margin: 0 1rem;
+    color: rgb(5, 45, 5);
+    text-decoration: none;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #2e8b57;
+    color: white;
+}
+main{
+    text-align: center;
+}
+/*index.html only*/
+
+#basicinstructionpic {
+    max-width: 50%;
+
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    
+    
+}
+
+.gallery img {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
