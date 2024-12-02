@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" href="../img/icon_rocket_fork_best.ico" sizes="any">
+    <link rel="icon" href="../img/icon_rocket_fork_best.ico" sizes="any" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon_16px.png">
+    <link rel="apple-touch-icon-precomposed" href="../img/icon_rocket_fork_best.ico?v=M44lzPylqQ" sizes="any">
+	<link href="../css/main.css" rel="stylesheet" type="text/css">    
+    <title>Welcome to the Cooking Odyssey</title>
+    <script>
+        function go_home() {
+            window.location.href = "../index.html"; // Redirects to the home page
+        }
+        function toggle_menu() {
+            const navLinks = document.querySelector('.nav_links');
+            navLinks.classList.toggle('show');
+        }
+    </script>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="body_container">
+		<nav>
+            <div>
+                <h1 onclick="go_home()">Cooking Odyssey</h1>
+                <p class="slogan">Savor the Past, Cook for the Future</p>
+            </div>
+            <button class="menu_toggle" aria-label="Toggle menu" onclick="toggle_menu()">☰</button>
+            <ul class="nav_links">
+                <li><a href="../pages/nutrition_facts.html">Nutrition Facts</a></li>
+                <!-- Dropdown Menu -->
+                <li class="dropdown">
+                    <a href="#">Vintage Inspirations<span class="dropdown-symbol">&#8964;</span></a>
+                    <ul class="dropdown-content">
+                        <li>
+                            <a href="https://vintagerecipecards.com" target="_blank">Vintage Recipe Cards</a>
+                        </li>
+                        <li>
+                            <a href="https://foodtimeline.org" target="_blank">Food Timeline History</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../pages/about.html">About</a></li>
+                <li><a href="../pages/contacts.html">Contacts</a></li>
+                <li><a href="../pages/registration.html">Sign-up</a></li>
+            </ul>
+        </nav>
+        <div class="content_wrapper">
+            <div class="transparent_layer">
+				<div class="individual_recipe_grid">
+					<h3>Cosmic Veggie Stir-Fry</h3>
+					<div class="recipe_image_wrapper"><img src="../img/Cosmic_Veggie_Stir_Fry_small.png" alt="Veggie stir-fry"></div>
+					<p>A quick and colorful veggie stir-fry with a tangy soy-ginger sauce that's perfect for weeknights.</p>
+					<div class="ingredients">
+						<h4>Ingredients</h4>
+						<pre>
+							1 tbsp olive oil
+							1 bell pepper, sliced
+							1 carrot, julienned
+							1 zucchini, sliced
+							1 cup broccoli florets
+							1/4 cup soy sauce
+							1 tbsp ginger, minced
+							1 tbsp garlic, minced
+							1 tsp sesame seeds
+						</pre>
+					</div>
+					<div class="cooking_directions">			
+						<h4>Directions</h4>
+						<pre>
+							1.	Heat olive oil in a large skillet over medium heat.
+							2.	Add minced garlic and ginger, sautéing for about 1 minute until fragrant.
+							3.	Toss in the bell pepper, carrot, zucchini, and broccoli. Stir-fry for 5-7 minutes or until vegetables are tender-crisp.
+							4.	Pour in the soy sauce, stirring everything to coat evenly.
+							5.	Sprinkle sesame seeds on top, give it one last stir, and serve warm. Enjoy your veggie adventure!
+
+							Nutrition Facts (per serving):
+							•	Protein: 6g
+							•	Fat: 5g
+							•	Carbohydrates: 15g
+							•	Calories: 120
+						</pre>
+					</div>
+                </div>
+            </div> 
+            <footer>
+                <p>&copy;2024 Cooking Odyssey. All rights reserved.</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

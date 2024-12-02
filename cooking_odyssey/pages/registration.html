@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" href="../img/icon_rocket_fork_best.ico" sizes="any">
+    <link rel="icon" href="../img/icon_rocket_fork_best.ico" sizes="any" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon_16px.png">
+    <link rel="apple-touch-icon-precomposed" href="../img/icon_rocket_fork_best.ico?v=M44lzPylqQ" sizes="any">
+	<link href="../css/main.css" rel="stylesheet" type="text/css">    
+    <title>Welcome to the Cooking Odyssey</title>
+    <script>
+        function go_home() {
+            window.location.href = "../index.html"; // Redirects to the home page
+        }
+        function togglePassword() {
+            const passwordField = document.getElementById("password");
+            const eye_opened = document.getElementById("eye_opened");
+            const eye_closed = document.getElementById("eye_closed");
+            const type = passwordField.type;
+
+            if(type == "password") {
+                passwordField.type = "text";
+                eye_opened.className = "hide_image";
+                eye_closed.className = "show_image";
+            }else {
+                passwordField.type = "password";
+                eye_opened.className = "show_image";
+                eye_closed.className = "hide_image";
+            }
+        }
+        function toggle_menu() {
+            const navLinks = document.querySelector('.nav_links');
+            navLinks.classList.toggle('show');
+        }
+    </script>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="body_container">
+        <nav>
+            <div>
+                <h1 onclick="go_home()">Cooking Odyssey</h1>
+                <p class="slogan">Savor the Past, Cook for the Future</p>
+            </div>
+            <button class="menu_toggle" aria-label="Toggle menu" onclick="toggle_menu()">☰</button>
+            <ul class="nav_links">
+                <li><a href="../pages/nutrition_facts.html">Nutrition Facts</a></li>
+                <!-- Dropdown Menu -->
+                <li class="dropdown">
+                    <a href="#">Vintage Inspirations<span class="dropdown-symbol">&#8964;</span></a>
+                    <ul class="dropdown-content">
+                        <li>
+                            <a href="https://vintagerecipecards.com" target="_blank">Vintage Recipe Cards</a>
+                        </li>
+                        <li>
+                            <a href="https://foodtimeline.org" target="_blank">Food Timeline History</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../pages/about.html">About</a></li>
+                <li><a href="../pages/contacts.html">Contacts</a></li>
+                <li><a href="../pages/registration.html">Sign-up</a></li>
+            </ul>
+        </nav>
+        <div class="content_wrapper">
+            <div class="transparent_layer">
+                <div class="wallpaper_primer">
+                    <div class="wallpaper_layer">
+                        <div class="registration_form_grid">
+                            <h2>Create an Account</h2>
+                            <form method="post" onsubmit="handle_form_submit(event)">
+                                <div class="registration_fields_grid">
+                                    <div><label for="first_name" class="required_field">First Name:</label><input type="text" name="first_name" id="first_name" placeholder="Enter your name..." required  ></div>
+                                    <div><label for="last_name" class="required_field">Last Name:</label><input type="text" name="last_name" id="last_name" placeholder="Enter your last name..." required ></div>
+                                    <div><label for="email" class="required_field">E-mail:</label><input type="email" name="email" id="email" placeholder="example@domain.com" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required ></div>
+                                    <div>
+                                        <label for="password" class="required_field">Password:</label>
+                                        <div class="password_container">
+                                            <input type="password" id="password" name="password" placeholder="Enter your password" required >
+                                            <span id="togglePassword" onclick="togglePassword()">
+                                                <img id="eye_opened" src="../img/eye_opened.png"  class="show_image" title="Show password">
+                                                <img id="eye_closed" src="../img/eye_closed.png" class="hide_image" title="Hide password">
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div><label for="phone_name">Phone:</label><input type="tel" name="phone_name" id="phone_name" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12"></div>
+                                    <div>
+                                        <label for="selection">Recipe Categories:</label>
+                                        <select id="selection">
+                                            <option>---</option>
+                                            <option>Quick & Easy</option>
+                                            <option>Healthy</option>
+                                            <option>Desserts</option>
+                                            <option>Family Meals</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <div class="button_group">
+                                            <div><label for="check_sel">Subscribe for news</label><input type="checkbox" name="check_sel" id="check_sel" ></div>
+                                            <div><button type="submit">Join Us</button><!--button type="reset" title="This will clear all fields">Oops, Reset!</button-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <footer>
+                <p>&copy;2024 Cooking Odyssey. All rights reserved.</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

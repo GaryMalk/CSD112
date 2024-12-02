@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" href="../img/icon_rocket_fork_best.ico" sizes="any">
+    <link rel="icon" href="../img/icon_rocket_fork_best.ico" sizes="any" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon_16px.png">
+    <link rel="apple-touch-icon-precomposed" href="../img/icon_rocket_fork_best.ico?v=M44lzPylqQ" sizes="any">
+	<link href="../css/main.css" rel="stylesheet" type="text/css">    
+    <title>Welcome to the Cooking Odyssey</title>
+    <script>
+        function go_home() {
+            window.location.href = "../index.html"; // Redirects to the home page
+        }
+        function go_recipe_card(num) {
+            window.location.href = "../pages/recipe" + num + ".html";
+        }
+        function toggle_menu() {
+            const navLinks = document.querySelector('.nav_links');
+            navLinks.classList.toggle('show');
+        }
+    </script>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="body_container">
+        <nav>
+            <div>
+                <h1 onclick="go_home()">Cooking Odyssey</h1>
+                <p class="slogan">Savor the Past, Cook for the Future</p>
+            </div>
+            <button class="menu_toggle" aria-label="Toggle menu" onclick="toggle_menu()">☰</button>
+            <ul class="nav_links">
+                <li><a href="../pages/nutrition_facts.html">Nutrition Facts</a></li>
+                <!-- Dropdown Menu -->
+                <li class="dropdown">
+                    <a href="#">Vintage Inspirations<span class="dropdown-symbol">&#8964;</span></a>
+                    <ul class="dropdown-content">
+                        <li>
+                            <a href="https://vintagerecipecards.com" target="_blank">Vintage Recipe Cards</a>
+                        </li>
+                        <li>
+                            <a href="https://foodtimeline.org" target="_blank">Food Timeline History</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../pages/about.html">About</a></li>
+                <li><a href="../pages/contacts.html">Contacts</a></li>
+                <li><a href="../pages/registration.html">Sign-up</a></li>
+            </ul>
+        </nav>
+        <div class="content_wrapper">
+            <div class="transparent_layer">
+                <div class="wallpaper_primer">
+                    <div class="wallpaper_layer">
+                        <div class="aboutpage_text">
+                            <h2>About Cooking Odyssey</h2>
+                            <p>Welcome to <span>Cooking Odyssey</span>, a joyful journey through the flavors of life!</p>
+                            <h3>A Retro-Future Dream</h3>
+                            <p>Inspired by the boundless optimism of the 1950s and 60s, <span>Cooking Odyssey</span> blends the charm of retro-futuristic style with the timeless delight of home-cooked meals. 
+                                Back then, the future looked bright, colorful, and full of possibilities—just like the recipes you'll find here.</p>
+                            <h3>A Personal Recipe Collection</h3>
+                            <p>It all started with a simple idea: I needed a place to gather my growing collection of favorite recipes. 
+                                A book seemed too ordinary, and formal recipe sites felt too serious. 
+                                That's when the thought struck me: Why not create something fun, happy, and entirely my own? Thus, Cooking Odyssey was born—a home for delicious meals and a celebration of joy.
+                            </p>
+                            <h3>More Than Just Recipes</h3>
+                            <p>Here, every recipe isn't just about food—it's about sparking happiness. 
+                                Each dish is wrapped in a layer of positivity, designed to bring a smile to your face while inspiring you to cook, taste, and explore. Think of it as cooking with a side of good vibes!
+                            </p>
+                            <h3>Join the Journey</h3>
+                            <p>Whether you're here to whip up something tasty or just soak in the retro-futuristic charm, you're in the right place. 
+                                Let's cook, smile, and savor the adventure together!
+                            </p>
+                            <div class="button_container">
+                                <button onclick="go_home()">Explore Recipes</button>
+                            </div>
+                        </div>
+                    </div>           
+                </div>
+            </div> 
+            <footer>
+                <p>&copy;2024 Cooking Odyssey. All rights reserved.</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
