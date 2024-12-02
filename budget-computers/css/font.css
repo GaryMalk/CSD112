@@ -1,0 +1,15 @@
+:root {
+  /* Font Properties */
+  font-family: "Liberation Sans", "Noto Sans", "Arial", "Verdana", ui-sans-serif, sans-serif;
+  font-size: 16px;
+}
+
+.txtB {
+  /* Font Properties */
+  font-weight: bold;
+}
+
+.txtI {
+  /* Font Properties */
+  font-style: italic;
+}

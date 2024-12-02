@@ -1,0 +1,88 @@
+/* NAVIGATION SIDE ************************************************************/
+
+aside#siteMap {
+  /* Display & Sizing */
+  display: inline-block;
+  width: 12rem;
+  min-width: 12rem;
+
+  /* Positioning & Alignment */
+  float: left;
+
+  /* Colors */
+  background-color: #434C5E; /* IE Fallback */
+  background-color: var(--nord2);
+}
+
+nav {
+  /* Display & Sizing */
+  display: inline-block;
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+
+  /* Margins & Padding */
+  margin: 0rem;
+  padding: 0rem;
+}
+
+nav > ul {
+  /* Display & Sizing */
+  display: inline-block;
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+
+  /* Positioning & Alignment */
+  text-align: center;
+
+  /* Margins & Padding */
+  margin: 0rem;
+  padding: 0rem;
+
+  /* Other Properties */
+  list-style-type: none;
+}
+
+li#currentPage {
+  /* Font Properties */
+  font-weight: bold;
+
+  /* Colors */
+  color: #ECEFF4;
+  color: var(--nord6);
+}
+
+li#currentPage::before {
+  /* Font Properties */
+  font-weight: bold;
+
+  /* Other Properties */
+  content: "► ";
+}
+
+li#currentPage::after {
+  /* Font Properties */
+  font-weight: bold;
+
+  /* Other Properties */
+  content: " ◄";
+}
+
+aside > h2 {
+  /* Display & Sizing */
+  display: inline-block;
+  width: 100%;
+
+  /* Positioning & Alignment */
+  text-align: center;
+
+  /* Margins & Padding */
+  margin: 0rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  /* Colors */
+  color: #D8DEE9;
+  color: var(--nord4);
+}

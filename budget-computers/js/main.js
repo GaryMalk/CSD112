@@ -17,7 +17,7 @@ function randomHeaderBackground()
   {
       const htmlPageFileName = location.pathname.substring(location.pathname.lastIndexOf("/") + 1);
       var goUp = ""
-      if (htmlPageFileName != "index.html")
+      if ((htmlPageFileName != "index.html") && (htmlPageFileName != ""))
       {
         goUp = "../"
       }

@@ -1,0 +1,29 @@
+/* STANDARD TEXT LINK *********************************************************/
+
+a, a:link {
+  /* Colors */
+  color: #81A1C1; /* IE Fallback */
+  color: var(--nord9);
+
+  /* Transitions & Animation */
+  transition-timing-function: linear;
+  transition-duration: 0.125s;
+}
+
+a:hover {
+  /* Colors */
+  color: #88C0D0; /* IE Fallback */
+  color: var(--nord8);
+}
+
+a:active {
+  /* Colors */
+  color: #5E81AC; /* IE Fallback */
+  color: var(--nord10);
+}
+
+a:visited {
+  /* Colors */
+  color: #B48EAD; /* IE Fallback */
+  color: var(--nord15);
+}

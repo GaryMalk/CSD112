@@ -1,0 +1,110 @@
+table {
+  /* Display & Sizing */
+  display: inline-table;
+  width: 48rem;
+
+  /* Margins & Padding */
+  margin: 0rem;
+  margin-right: 0.75rem;
+  margin-left: 0rem;
+}
+
+table.desktopPC {
+  /* Display & Sizing */
+  height: 40rem;
+}
+
+table, th, td {
+  /* Margins & padding */
+  padding: 0.375rem;
+
+  /* Colors */
+  background-color: #3B4252; /* IE Fallback */
+  background-color: var(--nord1);
+
+  /* Borders */
+  border-width: 0.125rem;
+  border-style: solid;
+  border-color: #434C5E; /* IE Fallback */
+  border-color: var(--nord2);
+  border-collapse: collapse;
+}
+
+th, td {
+  /* Positioning & Alignment */
+  vertical-align: middle;
+}
+
+td.txtB {
+  /* Display & Sizing */
+  width: 6.25rem;
+  max-width: 6.25rem;
+  min-width: 6.25rem;
+
+  /* Positioning & Alignment */
+  text-align: right;
+
+  /* Colors */
+  color: #E5E9F0;
+  color: var(--nord5);
+}
+
+td > img.sysPic {
+  /* Display & Sizing */
+  width: 16rem;
+  max-width: 16rem;
+  min-width: 8rem;
+
+  height: 16rem;
+  max-height: 16rem;
+  min-height: 8rem;
+
+  /* Margins & Padding */
+  margin: 0.5rem;
+  padding: 0rem;
+
+  /* Borders */
+  border-radius: 1rem;
+}
+
+th {
+  /* Positioning & Alignment */
+  text-align: center;
+
+  /* Font Properties */
+  font-size: 1.25rem;
+  font-weight: bold;
+
+  /* Colors */
+  color: #ECEFF4; /* IE Fallback */
+  color: var(--nord6);
+}
+
+
+td.picContainer {
+  /* Display & Sizing */
+  width: 18rem;
+  max-width: 18rem;
+  min-width: 10rem;
+
+  height: 18rem;
+  max-height: 18rem;
+  min-height: 10rem;
+
+  /* Positioning & Alignment */
+  text-align: center;
+
+  /* Margins & Padding */
+  padding: 0.5rem;
+}
+
+td > ul {
+  /* Display & Sizing */
+  display: inline;
+
+  /* Padding & Margins */
+  padding: 0rem;
+
+  /* Other Properties */
+  list-style-position: inside;
+}
