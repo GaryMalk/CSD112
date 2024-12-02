@@ -1,1 +1,97 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" href="img/icon_rocket_fork_best.ico" sizes="any">
+    <link rel="icon" href="img/icon_rocket_fork_best.ico" sizes="any" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_16px.png">
+    <link rel="apple-touch-icon-precomposed" href="img/icon_rocket_fork_best.ico?v=M44lzPylqQ" sizes="any">
+    <link href="css/main.css" rel="stylesheet" type="text/css">    
+    <title>Welcome to the Cooking Odyssey</title>
+    <script>
+        function go_home() {
+            window.location.href = "index.html"; // Redirects to the home page
+        }
+        function go_recipe_card(num) {
+            window.location.href = "pages/recipe" + num + ".html";
+        }
+        function toggle_menu() {
+            const navLinks = document.querySelector('.nav_links');
+            navLinks.classList.toggle('show');
+        }
+    </script>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="body_container">
+        <nav>
+            <div>
+                <h1 onclick="go_home()">Cooking Odyssey</h1>
+                <p class="slogan">Savor the Past, Cook for the Future</p>
+            </div>
+            <button class="menu_toggle" aria-label="Toggle menu" onclick="toggle_menu()">☰</button>
+            <ul class="nav_links">
+                <li><a href="pages/nutrition_facts.html">Nutrition Facts</a></li>
+                <!-- Dropdown Menu -->
+                <li class="dropdown">
+                    <a href="#">Vintage Inspirations<span class="dropdown-symbol">&#8964;</span></a>
+                    <ul class="dropdown-content">
+                        <li>
+                            <a href="https://vintagerecipecards.com" target="_blank">Vintage Recipe Cards</a>
+                        </li>
+                        <li>
+                            <a href="https://foodtimeline.org" target="_blank">Food Timeline History</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="pages/about.html">About</a></li>
+                <li><a href="pages/contacts.html">Contacts</a></li>
+                <li><a href="pages/registration.html">Sign-up</a></li>
+            </ul>
+        </nav>
+        <div class="content_wrapper">
+            <div class="transparent_layer">
+                <div class="recipe_collection_grid">
+                    <div class="recipe_card">
+                        <h3>Cosmic Veggie Stir-Fry</h3>
+                        <div class="recipe_image_wrapper" onclick="go_recipe_card(1)"><img src="img/Cosmic_Veggie_Stir_Fry_small.png" alt="Veggie stir-fry"></div>
+                        <div class="card_footer">A quick and colorful veggie stir-fry with a tangy soy-ginger sauce that's perfect for weeknights.</div>
+                    </div>
+                    <div class="recipe_card">
+                        <h3>Space Traveler's Chicken Wrap</h3>
+                        <div class="recipe_image_wrapper" onclick="go_recipe_card(2)"><img src="img/Space_Travelers_Chicken_Wr_small.png" alt="Chicken wrap"></div>
+                        <div class="card_footer">A protein-packed chicken wrap with creamy avocado and crunchy veggies, ideal for a meal on the go.</div>
+                    </div>
+                    <div class="recipe_card">
+                        <h3>Martian Meatballs</h3>
+                        <div class="recipe_image_wrapper" onclick="go_recipe_card(3)"><img src="img/Martian_Meatballs_small.png" alt="Baked meatballs"></div>
+                        <div class="card_footer">Juicy and flavorful meatballs with a hint of garlic and herbs, baked to perfection.</div>
+                    </div>
+                    <div class="recipe_card">
+                        <h3>Galactic Greek Salad</h3>
+                        <div class="recipe_image_wrapper" onclick="go_recipe_card(4)"><img src="img/Galactic_Greek_Salad_small.png" alt="Mediterranean salad"></div>
+                        <div class="card_footer">A fresh, vibrant salad with a zesty vinaigrette, featuring classic Mediterranean ingredients.</div>
+                    </div>
+                    <div class="recipe_card">
+                        <h3>Interstellar Salmon Bowl</h3>
+                        <div class="recipe_image_wrapper" onclick="go_recipe_card(5)"><img src="img/Interstellar_Salmon_small.png" alt="Salmon with rice and veggies"></div>
+                        <div class="card_footer">A hearty bowl of salmon, rice, and veggies, drizzled with a lemon-herb sauce.</div>
+                    </div>
+                    <div class="recipe_card">
+                        <h3>Planetary Pasta Primavera</h3>
+                        <div class="recipe_image_wrapper" onclick="go_recipe_card(6)"><img src="img/Planetary_Pasta_Primavera_small.png" alt="Pasta with vegetables"></div>
+                        <div class="card_footer">A light pasta dish with fresh vegetables and a garlic-lemon sauce, perfect for a comforting yet healthy meal.</div>
+                    </div>
+                </div>
+            </div> 
+            <footer>
+                <p>&copy;2024 Cooking Odyssey. All rights reserved.</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
