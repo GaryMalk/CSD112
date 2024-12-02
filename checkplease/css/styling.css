@@ -1,0 +1,432 @@
+/* Main (Index)*/
+header {
+    background-image: url("../image/africanfood.jpg");
+    height: 150px;
+    position: sticky;
+    top: 0;
+}
+
+body {
+    background-image: url("../image/wooden.jpg");
+    background-size: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+}
+
+.call, #top{
+    text-decoration: none;
+    gap: 20px;
+    font-size: 17px;
+    width: 100%;
+    color: white;
+    background-color: darkblue;
+    padding-left: 20px;
+}
+.media{
+    color: white;
+}
+footer {
+    background-image: url("../image/food-image.jpg");
+    background-size: 100%;
+    background-position-y: top;
+    color: white;
+    padding-bottom: 20px;
+    position: relative;
+    height: 126px;
+}
+
+.contact {
+    width: 300px;
+    height: 136px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: #d3d7e2;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    gap: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+section {
+    grid-column: 2 /span 2;
+    grid-row: 1;
+}
+
+.item1 {
+    grid-column: 2;
+    grid-row: 5;
+    padding-left: 30px;
+}
+
+.item2 {
+    grid-column: 2;
+    grid-row: 6;
+    text-align: justify;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.item3 {
+    grid-column: 3;
+    grid-row: 5;
+    padding-left: 30px;
+}
+
+.item4 {
+    grid-column: 3;
+    grid-row: 6;
+    text-align: justify;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.item5 {
+    grid-column: 2;
+    grid-row: 7;
+}
+
+.item6 {
+    grid-column: 2;
+    grid-row: 8;
+    text-align: justify;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.item7 {
+    grid-column: 3;
+    grid-row: 7;
+}
+
+.item8 {
+    grid-column: 3;
+    grid-row: 8;
+    text-align: justify;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.item-b,
+.item-c {
+    text-align: justify;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+h1 {
+    text-align: center;
+    color: mediumslateblue;
+    padding-top: 30px;
+}
+
+.sign {
+    text-align: right;
+    color: rgb(255, 238, 0);
+    margin-right: 20px;
+    clear: both;
+    text-decoration: none;
+}
+
+.nav {
+    color: gold;
+    text-decoration: none;
+}
+
+#link {
+    text-align: center;
+}
+
+footer {
+    background-color: dodgerblue;
+}
+
+#bottom {
+    text-align: center;
+}
+.nsima-types::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+@media only screen and (max-width: 900px) {
+    .white {
+        width: 40%;
+    }
+
+    .chambo {
+        width: 40%;
+    }
+
+    .text1 {
+        width: 40%;
+    }
+
+    .text2 {
+        width: 40%;
+    }
+
+    .navs {
+        width: 40%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="auto"] {
+      width: 100%;
+    }
+}
+
+/* Nsima Type*/
+.navigation {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-basis: content;
+    column-gap: 3%;
+    position: sticky;
+    top: 150px;
+    background-color: cornflowerblue;
+    height: 40px;
+    justify-content: center;
+    margin-left: 0px;
+    margin-right: 0%;
+}
+
+.list, .homu{
+    height: 50px;
+    padding-top: 10px;
+}
+
+.navs, .action{
+    border: solid;
+    border-color: rgb(89, 138, 230);
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 70%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.nsima-types {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 10px;
+    padding: 10px;
+}
+
+.white {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: center;
+}
+
+.chambo {
+    grid-column: 2;
+    grid-row: 1;
+
+}
+
+.text1 {
+    grid-column: 1;
+    grid-row: 2;
+    text-align: justify;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.text2 {
+    grid-column: 2;
+    grid-row: 2;
+    text-align: justify;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#yellow {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+#cassava {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+h1 {
+    text-align: center;
+    color: blueviolet;
+}
+
+.yellow {
+    width: 60%;
+}
+
+.white {
+    width: 60%;
+}
+
+.signs,
+#contucts {
+    color: gold;
+}
+
+/* Pictures*/
+#pictures {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    row-gap: 0px;
+    column-gap: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.come {
+    background-color: darkblue;
+    padding-left: 50px;
+}
+
+.item1a {
+    grid-column: 1;
+    grid-row: 1;
+    padding-top: 50px;
+}
+
+.item2a {
+    grid-column: 2;
+    grid-row: 1;
+    padding-top: 50px;
+    padding-left: 40px;
+}
+
+.item4a {
+    grid-column: 3;
+    grid-row: 1;
+    padding-top: 50px;
+}
+
+.item5a {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.item6a {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.item7a,
+.item8a,
+.good {
+    text-align: justify;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.active {
+    background-color: limegreen;
+    text-decoration: none;
+    font-size: 17px;
+    padding-top: 12px;
+}
+
+/*Nsima Process*/
+.i-mcontainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    column-gap: 20px;
+}
+
+.article1 {
+    grid-column: auto;
+    grid-row: auto;
+    padding-left: 50px;
+    text-align: justify;
+}
+
+.image1 {
+    grid-column: auto;
+    grid-row: auto;
+    padding-top: 40px;
+}
+
+.article2 {
+    grid-column: auto;
+    grid-row: auto;
+    text-align: justify;
+    padding-left: 50px;
+    padding-right: 20px;
+}
+
+.image2 {
+    grid-column: auto;
+    grid-row: auto;
+}
+
+/*MOREFOOD*/
+fieldset {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    text-align: center;
+    width: 72%;
+    margin-left: 14%;
+}
+
+h1 {
+    grid-column: 1 /span 2;
+    grid-row: 1;
+}
+
+.firstm {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.text1m {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.text2m {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.secondm {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.text3m {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.text4m {
+    grid-column: 2;
+    grid-row: 4;
+}
+.called{
+    padding-left: 70px;
+    background-color: darkblue;
+    text-align: center;
+}
+.more{
+    padding-left: 20px;
+    text-decoration: none;
+    font-size: 17px;
+    
+}
+/*FEEDBACK*/

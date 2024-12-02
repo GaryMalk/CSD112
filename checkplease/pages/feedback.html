@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <style>
+        body {
+            background-image: url("../image/wooden.jpg");
+        }
+
+        .enter {
+            margin-left: 50%;
+            background-color: rgb(44, 232, 44);
+            border-color: greenyellow;
+
+        }
+
+        .reset {
+            margin-left: 2%;
+            background-color: rgb(243, 33, 10);
+            border-color: red;
+        }
+
+        .Submit {
+            background-color: rgb(0, 106, 255);
+            border-color: blue;
+        }
+
+        .text {
+            margin-left: 18px;
+        }
+
+        .surname {
+            margin-left: 30px;
+        }
+
+        #password {
+            margin-left: 26px;
+        }
+
+        #first-name {
+            margin-left: 18px;
+        }
+
+        .feedback {
+            text-align: center;
+        }
+
+        #feedback {
+            height: 60px;
+            margin-left: 26px;
+        }
+
+        fieldset {
+            border-color: blueviolet;
+        }
+
+        header {
+            background-image: url("../image/africanfood.jpg");
+            height: 150px;
+            position: sticky;
+            top: 0;
+            text-align: center;
+        }
+        .come{
+            text-align: center;
+            background-color: darkblue;
+            height: 30px;
+            padding-top: 15px;
+        }
+        .call{
+            padding-left: 30px;
+            text-decoration: none;
+            color: white;
+        }
+        .active{
+            background-color: limegreen;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="head">
+        <h1 style="color: chocolate;">Feedback</h1>
+    </header>
+    <nav class="come">
+        <a class="active" style="height: 40px; text-decoration: none;" href="../index.html">Home</a>
+        <a class="call" href="../pages/malawi.html">About Malawi</a>|
+        <a class="call" href="../pages/nsima_process.html">Food recipes</a>|
+        <a class="call" href="../pages/nsima-types.html">Nsima Types</a>|
+        <a class="call" href="../pages/morefood.html">More African Foods</a>|
+        <a class="call" href="../pages/pitures.html">Pictures</a>
+    </nav>
+    <fieldset style="width: 50%; background-color: cadetblue;">
+        <form action="/action_page.php" method="post">
+            <p class="feedback">Feedback</p>
+            <br>
+            <br>
+            <label for="first-name">First Name:</label>
+            <input class="text" type="text" id="first-name" size="92" name="first-name">
+            <br>
+            <br>
+            <label for="surname"> Surname:</label>
+            <input class="surname" type="text" id="surname" size="92" name="surname">
+            <br>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" size="92" name="password">
+            <br>
+            <br>
+            <label for="password">Feedback:</label>
+            <input type="text" id="feedback" size="92" name="password">
+            <input class="enter" type="submit" value="SEND">
+        </form>
+    </fieldset>
+    <footer style="text-align: center;">
+        <div class="contact">
+            <p id="link"><b>Contucts:</b><br>lumbanichalemba26@yahoo.com<br>mobile: 4255520072</p>
+            <p><a class="media" style="text-decoration: none;" href="https://www.youtube.com/">Youtube</a><a class="media" style="text-decoration: none;" href="https://www.facebook.com/"> Facebook</a></p>
+            <P style="padding-bottom: 20px;">Lumbani W. Chalemba <b style="color: darkblue;">2024&copy;</b></P>
+        </div>
+    </footer>
+</body>
+
+</html>

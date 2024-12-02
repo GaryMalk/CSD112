@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <style>
+        .enter {
+            margin-left: 45%;
+            background-color: rgb(44, 232, 44);
+            border-color: greenyellow;
+        }
+
+        .reset {
+            margin-left: 2%;
+            background-color: rgb(243, 33, 10);
+            border-color: red;
+        }
+
+        .Submit {
+            background-color: rgb(0, 106, 255);
+            border-color: blue;
+        }
+
+        .text {
+            margin-left: 18%;
+        }
+
+        .surname {
+            margin-left: 10%;
+        }
+
+        #password {
+            margin-left: 10%;
+        }
+
+        #first-name {
+            margin-left: 10%;
+        }
+
+        #email {
+            margin-left: 10%;
+        }
+
+        .email {
+            margin-left: 15%;
+        }
+
+        #phone {
+            margin-left: 10%;
+        }
+
+        .go {
+            background-color: rgb(0, 106, 255);
+            border-color: blue;
+        }
+
+        #zipcode {
+            margin-left: 20px;
+        }
+
+        .sign {
+            margin-left: 25%;
+            color: white;
+        }
+
+        body {
+            background-image: url("../image/African_Apetite.jpg");
+        }
+
+        fieldset {
+            background-color: cadetblue;
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <form action="/action_page.php" method="post">
+            <p class="sign">Sign-In</p>
+            <br>
+            <br>
+            <label for="first-name">First Name:</label>
+            <input class="text" type="text" id="first-name" size="48%" name="first-name">
+            <br>
+            <br>
+            <label for="surname"> Surname:</label>
+            <input class="surname" type="text" id="surname" size="48%" name="surname">
+            <br>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" size="48%" name="password">
+            <br>
+            <br>
+            <input class="enter" type="submit" value="ENTER">
+            <input class="reset" type="reset" value="Reset">
+            <div>
+                <br>
+                <p class="sign">-OR-</p>
+                <p class="sign">Sign-Up</p>
+            </div>
+            <div>
+                <br><br>
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" size="48%" name="first-name">
+                <br>
+                <br>
+                <label for="surname">Surname:</label>
+                <input class="surname" type="text" id="surname" size="48%" name="surname">
+            </div>
+            <br>
+            <label for="surname">Email:</label>
+            <input class="email" type="text" id="email" size="48%" name="email">
+            <br>
+            <br>
+            <label for="surname">Phone:</label>
+            <input type="text" id="phone" size="48%" name="phone">
+            <br>
+            <br>
+            <input type="submit" value="Submit" class="Submit">
+            </div>
+            <footer class="foot" style=" bottom: 0%; text-align: center;">
+                <p id="bottom"><a style="text-decoration: none;" href="../index.html">Home</a></p>
+                <p id="link"><b>Contucts:</b><br>lumbanichalemba26@yahoo.com<br>mobile: 4255520072</p>
+                <P style="padding-bottom: 20px;">Lumbani W. Chalemba <b style="color: blue;">2024&copy;</b></P>
+            </footer>
+    </fieldset>
+    </form>
+</body>
+
+</html>
