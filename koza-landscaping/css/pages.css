@@ -5,13 +5,9 @@
 
 #home_images{
     width:100%;
-    height:300px;
     align-items:center;
     padding-top:3%;
     padding-bottom:3%;
-    background-image: url(../img/lawn_with_big_house.jpg);
-    
-
 }
 
 #home_images img{
@@ -65,9 +61,14 @@ header li{
 
 }
 
-header li a:hover{
+header li:hover{
     background-color:#474636;
     color:azure;
+}
+
+header li a:hover{
+    color:azure;
+
 }
 
 header h1{
