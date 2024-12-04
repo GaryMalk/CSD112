@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example - Assistant Hybrid</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="style1.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <form action="#" method="post">
+        <div class="feedback"></div>
+        <h1> FEEDBACK</h1>
+        <p>your thoughts are much valued here, please feel free to comment on this website.<br>Your positive feedback encourages us to do more, and also your negative comments<br>
+            help us to know where to focus and change.</p>
+
+        <label for="F-name">F-name:</label>
+        <input type="text" id="F-name" name="F-name" required> <br>
+        <br>
+        <label for="L-name">L-name:</label>
+        <input type="text" id="L-name" name="L-name" required><br>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        <br>
+        <label for="dob">Date:</label>
+        <input type="date" id="dob" name="dob"> <br>
+        <br>
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender"> <br>
+            <br>
+            <option value="">Select...</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select> <br>
+        <br>
+        <label for="comments">Comments:</label> <br>
+        <textarea id="comments" name="comments" rows="4"></textarea> <br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
