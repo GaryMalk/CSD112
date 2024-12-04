@@ -1,0 +1,204 @@
+.wrapper{
+    background-image:linear-gradient(#3E6740,#8FC03F,#4B7823);
+    min-width:900px;
+}
+
+#home_images{
+    width:100%;
+    height:300px;
+    align-items:center;
+    padding-top:3%;
+    padding-bottom:3%;
+    background-image: url(../img/lawn_with_big_house.jpg);
+    
+
+}
+
+#home_images img{
+    width:100%;
+    filter:grayscale(60%);
+    opacity: 0.5;
+}
+
+
+header{
+    display:flex;
+    justify-content:flex-end;
+    padding:0;
+    position:sticky;
+    
+}
+
+
+header a{
+    text-decoration:none;
+    color:black;
+}
+
+header img{
+    height:150px;
+}
+
+header nav{
+    text-align:center;
+    align-content:center;
+    padding-right:5%;
+
+
+}
+
+header ul{
+    padding:0;
+    margin:0;
+    align-items:center;
+    flex-grow:2;
+    list-style-type:none;
+    text-align:center;
+}
+
+header li{
+    padding:0 30px;
+    display:inline-block;
+    font-size:30px;
+    border:solid 5px;   
+    background-color:#DBD7AD;
+
+}
+
+header li a:hover{
+    background-color:#474636;
+    color:azure;
+}
+
+header h1{
+    margin-right:auto;
+    align-items:center;
+}
+
+#logo{
+    font-size:50px;
+    color:antiquewhite
+}
+
+
+.wrapper{
+    background-image:linear-gradient(#3E6740,#8FC03F,#4B7823)
+    
+}
+
+footer{
+    background-color:gray;
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    
+}
+
+footer p{
+    color:azure;
+    font-size:30px;
+}
+
+footer a{
+    color:azure;
+    font-size:30px;
+    padding:2%
+}
+
+
+
+form{
+    width: 50%;
+    border:5px dashed #DBD7AD;
+    display:flex;
+    flex-direction:column;
+    margin:auto;
+    text-align:center;
+    padding:2%
+}
+
+.form_elements{
+    padding:2%;
+    margin:auto;
+    font-size:large;
+    color:#f6f5e9;
+
+}
+
+.service_imgtext{
+    padding:2%;
+    display:flex;
+    flex-direction:column;
+
+
+}
+
+.service_item{
+    display: flex;
+    padding:2%;
+    margin:3px;
+    justify-content:space-between;
+    align-items:center;
+    border:2px solid #DBD7AD;
+    box-shadow:5px 5px 5px;
+}
+
+.service_item_vert_img{
+    display:flex;
+    padding:2%;
+    margin:3px;
+    justify-content:space-between;
+    align-items:center;
+    border:2px solid #DBD7AD;
+    box-shadow:5px 5px 5px;
+}
+
+.service_item_vert_img img{
+    height:500px;
+
+}
+
+.service_item img{
+    width:40%;
+}
+
+.service_imgtext h2, .service_imgtext p, .service_item_vert_img h2, .service_item_vert_img p{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:large;
+    padding:2%;
+    vertical-align:middle;
+}
+
+.service_item h2, .service_item_vert_img h2{
+    font-size:35px;
+}
+
+.about_content{
+    display:flex;
+    padding:2%;
+    margin:auto;
+    justify-content:space-between;
+    align-items:center;
+    flex-direction:column;
+    width:60%;
+    border: 5px dashed #DBD7AD;
+}
+
+.about_content img{
+    width:80%;
+    margin:auto;
+}
+
+.about_content p{
+    font-size:large;
+}
+.about_content h2{
+    font-size:45px;
+
+}
+
+.copyright{
+    font-size:10px;
+    
+}
+

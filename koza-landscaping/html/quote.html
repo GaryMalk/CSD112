@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get a Quote</title>
+    <link href="../css/pages.css" rel="stylesheet" type="text/css">
+
+
+</head>
+<body>
+
+<div class="wrapper">
+    <header>
+        <img src="../img/goat_silhouette.webp" alt="goat logo">
+        <h1><a href=../index.html id="logo">Koza Landscaping</a></h1>
+        <nav>
+            <ul>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="quote.html">Get a Quote</a></li>
+                <li><a href="about_me.html">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <form action="#" method="post" id="quote_parameters">
+        <div class="form_elements">
+            <h2>Property Size</h2>
+            <input type="radio" id="small" name="property_size">
+            <label for="small">Small (less than 200 sqr ft.)</label><br>
+            <input type="radio" id="medium" name="property_size">
+            <label for="medium">Medium (less than 200 sqr ft. and greater than 500 sqr ft)</label><br>
+            <input type="radio" id="large" name="property_size">
+            <label for="large">Large (greater than 500 sqr ft.)</label>
+        </div>
+
+        <div class="form_elements">
+            <h2>Desired Services</h2>
+            <input type="checkbox" id="mow/trim" name="mow">
+            <label for="mow/trim">Mowing/String-trimming</label><br>
+            <input type="checkbox" id="weeding" name="weeding">
+            <label for="weeding">Weeding</label><br>
+            <input type="checkbox" id="hedge" name="hedge">
+            <label for="hedge">Hedge trimming/tree trimming</label><br>
+            <input type="checkbox" id="leaf" name="leaf">
+            <label for="leaf">Leaf cleanup</label><br>
+            <input type="checkbox" id="other" name="other">
+            <label for="other">Other (please explain in email)</label><br>
+        </div>
+
+        <div class="form_elements">
+            <h2>City of Residence</h2>
+            <input list="city" name="city">
+            <datalist id="city">
+                <option value="kirkland">
+                <option value="woodinville">
+                <option value="grace">
+                <option value="redmond">
+                <option value="kingsgate">
+                <option value="mill_creek">
+                <option value="other">
+            </datalist>
+        </div>
+
+        <div class="form_elements">
+            <h2>Preferred Email</h2>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="koza@gmail.com">
+            <br>
+        </div>
+
+        <div id="subclearbuttons">
+            <input type="submit" value="enter">
+            <input type="reset" value=clear>
+        </div>
+
+        
+        </form>
+
+
+    
+
+    <footer>
+        <p>Primary location: Woodinville</p>
+        <a href="https://www.facebook.com/share/1BCvtYT2pd/">Facebook: koza.landscaping</a>
+        <a href="mailto:koza.landscaping@gmail.com">Email: koza.landscaping@gmail.com</a>
+        <p class="copyright">&copy; Val Koklic, 2024</p>
+    </footer>
+
+
+
+</div>
+
+</body>
+</html>
