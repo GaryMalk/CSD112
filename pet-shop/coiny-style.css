@@ -160,7 +160,6 @@ at home, product, servies, about the view cart should shift to a new page*/
   height: 58px;
   top: 2%;
   left: 2%;
-  text-stroke: 3px #17181b;
   font-family: 'Coiny-Regular', san-serif;
   font-weight: 400;
   color: #6dca33;
@@ -174,19 +173,16 @@ at home, product, servies, about the view cart should shift to a new page*/
 a:link{
 	color: #6dca33;
 	width:50px;
-	text-stroke: 3px #17181b;
 	text-decoration: none;
 	background-color: transparent;
 }
 a:visited{
 	color: #6dca33;
-	text-stroke: 3px #17181b;
 	text-decoration: none;
 	background-color: transparent;
 }
 a:active{
 	color: #6dca33;
-	text-stroke: 3px #17181b;
 	text-decoration: none;
 	background-color: transparent;
 }
@@ -215,7 +211,6 @@ a:active{
 
 .navbar ul li a {
     color: #17181b;
-	bottom-border: 1px;
 	border-color:#17181b;
 	font-family: 'Coiny-Regular', san-serif;
     text-decoration: none;
@@ -383,7 +378,7 @@ h2{ font-size:35px;}
 /*ABOUT US MISSION STATEMENT*/
 
 .img-container{
-  width: 25%;
+  width: 300px;
   height: 450px;
   border-radius:20px;
 }
@@ -395,10 +390,9 @@ h2{ font-size:35px;}
 }
 
 .img-container2{
-		width:500px;
+		width:400px;
 		justify-content:center;
 		height:auto;
-		margin:0 0 80px;
 	}
 .img-container2 img{
   width:100%;
@@ -412,7 +406,7 @@ h2{ font-size:35px;}
 .article-container{
   height: 500px;
   display: flex;
-  align-item: center;
+  align-items: center;
   gap:5%;
   justify-content: center;
   margin-top:50px;
@@ -420,10 +414,11 @@ h2{ font-size:35px;}
 }
 
 .article-container2{
-  width:70%;
+  width:80%;
+  height:450px;
   display:inline-block;
   gap:5%;
-  margin:50px 5% 80px;
+  margin:50px 10% 20px;
 }
 
 .text-container {
@@ -510,7 +505,6 @@ h2{ font-size:35px;}
 }
 /*Article section for the overnight daycare service*/
 .comfy-h1 {
-  width: 30%px;
   margin-top: 36.00px;
   margin-bottom: 16.00px;
   margin-left: 6.00px;
@@ -592,6 +586,9 @@ h2{ font-size:35px;}
 	background-image: url("public-domain-photo-stock/ayla-verschueren-products-unsplash.jpg");
 }
 
+.save-h1{
+	font-size:40px;
+}
 .text-wrapper-shop{
 	color: #17181b;
 	font-size: 30px;

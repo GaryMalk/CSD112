@@ -41,7 +41,7 @@ html{
 }
 
 .desktop .div-2 {
-  	positoin: relative;
+  	position: relative;
 	display:flex;
 	flex:auto;
   	width: 100%;
@@ -109,7 +109,6 @@ at home, product, servies, about the view cart should shift to a new page*/
   height: 58px;
   top: 2%;
   left: 2%;
-  text-stroke: 3px #17181b;
   font-family: 'Coiny-Regular', san-serif;
   font-weight: 400;
   color: #6dca33;
@@ -123,7 +122,6 @@ at home, product, servies, about the view cart should shift to a new page*/
 a:link{
 	color: #6dca33;
 	text-stroke: 3px #17181b;
-	text-decoration: none;
 	background-color: transparent;
 }
 a:visited{
@@ -134,7 +132,6 @@ a:visited{
 }
 a:active{
 	color: #6dca33;
-	text-stroke: 3px #17181b;
 	text-decoration: none;
 	background-color: transparent;
 }
@@ -163,7 +160,6 @@ a:active{
 
 .navbar ul li a {
     color: #17181b;
-	bottom-border: 1px;
 	border-color:#17181b;
 	font-family: 'Coiny-Regular', san-serif;
     text-decoration: none;
@@ -760,7 +756,6 @@ footer-r {
 }
 	
 	.product-card {
-  height:;
   background-color: white;
   border: 1px solid #ddd;
   border-radius:20px;
