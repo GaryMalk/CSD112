@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Assignment #7 Forms</title>
+		
+	<style>
+	/*Form info CSS styles*/
+
+@font-face{
+	font-family: 'Coiny-Regular';
+	src: url("Font/Coiny/Coiny-Regular.ttf") format('truetype');
+	font-weight: normal;
+	font-style: normal;
+		}
+html{
+		scroll-behavior: smooth;
+		scroll-padding-top: 150px;
+	}
+	
+	h1{
+		font-size: 35px;
+		text-align:center;
+		text-decoration-line: underline;
+		padding-top:25px;
+	}
+	
+	body{
+		background-color:dimgrey; 
+		background-image:url("public-domain-photo-stock/vintage-grunge-Green-concrete-texture.jpg");
+		background-size:cover;
+		background-repeat: no-repeat;
+		margin-top:50px;
+		margin-right: 15%;
+		margin-left: 15%;
+		margin-bottom:3%;
+		color:#fafafa;
+		text-align: left;
+			
+			/*css form glass box*/
+		border-radius: 16px;
+		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+		backdrop-filter: blur(6px);
+		-webkit-backdrop-filter: blur(6px);
+		border: 1px solid rgba(251, 247, 247, 0.57);
+			
+		}
+	form{
+		margin:5%;
+		font-family: 'Arial Rounded MT Bold-Regular', "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", "sans-serif";
+		}
+		.form-img{
+			width:90%;
+			margin-right:45px;
+		}
+	img{
+		float:right;
+		margin-right:5%;
+		margin-left:2%;
+		margin-top:5%;
+		border-radius:16px;
+		width:50%;
+	}
+	
+	p{
+		margin-top:25px;
+		margin-bottom:5px;
+		font-size:20px;
+	}
+	label{
+	margin:8px 0px;
+	font-size:16px;
+	}
+	input{
+	margin-right:10px;
+	}
+	.add-to-cart-btn{
+		font-family: 'Coiny-Regular';
+		background-color:#6dca33;
+		color:#0d5a19;
+		padding: 1px 8px;
+		border: 2px solid #6dca33;
+		border-radius:10px;
+		font-size:20px;
+		transition: background-color 0.3s;
+	}
+	.add-to-cart-btn:hover{
+		color:#fafafa;
+		background-color: #0d5a19;
+	}
+		
+/*End of Form CSS*/
+@media (max-width:1200px){	
+	h1{
+		font-size: 30px;
+		text-align:center;
+		text-decoration-line: underline;
+		padding-top:25px;
+		}
+	.form-img{
+		width: 90%;
+	}
+	}
+	/*Form Mobile*/
+@media (max-width:800px){
+	img{
+		align-items:flex-end;
+		float:inherit;
+		width: 175px;
+		}
+	.form-img{
+		display: none;
+		}
+	h1{
+		font-size:20px;
+		padding: 5px;
+	}
+	form{
+		margin:8%;
+		align-content: center;
+		align-items:center;
+		justify-content: center;
+		font-family: 'Arial Rounded MT Bold-Regular', "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", "sans-serif";
+		}
+	body{
+		margin: 8%
+		}
+	}
+	</style>
+</head>
+
+<body>
+	
+	<a href="index.htm"><img src="icons-logo/Icon-cancel.png" alt="x" style="width:30px"></a>
+	<h1 style="font-family:Coiny-Regular">Overnight Pet Care Reservation</h1>
+	
+	<div class="form-img">
+		<img src="public-domain-photo-stock/lifestyle-person-creating-content-with-their-pet.jpg" alt="pet-care">
+	</div>
+
+	<form action="/action_page.php">
+		<label for="fname">First name:</label><br>
+			<input type="text" id="fname" name="fname" placeholder="John">
+	  <br><br>
+			<input type="hidden" id="custId" name="custId" value="3487">
+		<label for="lname">Last name:</label><br>
+			<input type="text" id="lname" name="lname" placeholder="Doe">
+			<input type="hidden" id="custId2" name="custId2" value="3487" >
+	  <br><br>
+		
+		<label for="lname">Pet Name:</label><br>
+			<input type="text" id="spot" name="spot" placeholder="'Spot'">
+			<input type="hidden" id="petname" name="petname" value="3487"><br><br>
+		
+<p>Select any that apply:</p> <br>
+ 		<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+		<label for="vehicle1"> I would like to book a <b>Dog</b></label><br><br>
+		<input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+	  <label for="vehicle2"> I would like to book a <b>Cat</b></label><br><br>
+		<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+			<label for="vehicle3"> I would like to book a <b>Bird</b></label>
+		<br><br><br>
+		
+<label for="lname">What Breed is your pet:</label><br>
+			<input type="text" id="breed" name="breed" placeholder="'Shiba Inu'">
+			<input type="hidden" id="breed1" name="breed1" value="3487"><br><br><br>
+
+<label for="lname">Medical issues we should be made aware of ? :</label><br><br>
+			<input type="text" id="medical" name="medical" placeholder="'Mobility Issues'">
+			<input type="hidden" id="health" name="health" value="3487"><br><br>
+
+<input type="text" id="medical2" name="medical2" placeholder="'Special Diet'">
+			<input type="hidden" id="health2" name="health2" value="3487"><br><br>
+		
+<p>What is the age range of pet that will be staying with us ? :</p><br>
+		<input type="radio" id="Puppy" name="fav_language" value="Puppy">
+			<label for="Puppy">Puppy / Kitten / Etc.</label><br><br>
+		<input type="radio" id="Adult" name="fav_language" value="Adult">
+			<label for="Adult">Adult</label><br><br>
+		<input type="radio" id="Elderly" name="fav_language" value="Elderly">
+			<label for="Elderly">Elderly</label><br><br>
+		
+		
+	<br><br>
+		<button type="reset" value="Reset" class="add-to-cart-btn" style="margin:8px">Reset</button>
+		<button type="submit" value="Submit" class="add-to-cart-btn" style="margin:8px">Submit</button>
+</form> 
+
+</body>
+</html>
