@@ -1,0 +1,89 @@
+
+:root{
+  --navy:#002366;
+  --blue:#1e3799;
+  --light:#f7fbff;
+  --green:#4CAF50;
+  --text:#333;
+  --muted:#6b7280;
+  --white:#fff;
+}
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);line-height:1.6;background:var(--white);}
+a{color:var(--blue);}a:hover{color:var(--green);}
+.container{width:90%;max-width:1200px;margin:0 auto;}
+
+header{position:sticky;top:0;z-index:100;background:var(--white);box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:.75rem 0;}
+.logo{display:flex;gap:.75rem;align-items:center;}
+.logo img{height:64px;width:auto;border-radius:6px;}
+.logo .brand{font-weight:800;font-size:1.5rem;color:var(--navy);letter-spacing:.5px;}
+nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1.25rem;}
+nav a{color:var(--navy);text-decoration:none;font-weight:600;}nav a:hover{color:var(--green);}
+.menu-btn{display:none;background:none;border:none;font-size:1.8rem;color:var(--navy);}
+.mobile{display:none;position:absolute;left:0;right:0;top:100%;background:var(--white);box-shadow:0 6px 12px rgba(0,0,0,.06);}
+.mobile ul{display:block;}.mobile li{border-top:1px solid #e5e7eb;}
+.mobile a{display:block;padding:1rem;color:var(--navy);} .mobile.active{display:block;}
+@media (max-width: 768px){nav.desktop{display:none;}.menu-btn{display:block;}}
+
+.hero{color:var(--white);
+  background: linear-gradient(rgba(0,35,102,.70),rgba(0,35,102,.70)), url('../assets/img/hero.jpg') center/cover no-repeat;
+  text-align:center;padding:6rem 0 5rem;border-bottom:4px solid var(--green);}
+.hero h1{font-size:2.4rem;margin:0 0 .5rem;}
+.hero p{max-width:780px;margin:0 auto 1.5rem;font-size:1.1rem;color:#eaf2ff;}
+.btn{display:inline-block;background:var(--green);color:#fff;text-decoration:none;padding:.85rem 1.25rem;border-radius:.5rem;font-weight:700;border:0;cursor:pointer;}
+.btn:hover{filter:brightness(.95);}
+
+.section{padding:3.5rem 0;}
+.section h2{text-align:center;color:var(--navy);margin:0 0 1.25rem;}
+.lead{max-width:900px;margin:0 auto 2rem;text-align:center;color:var(--muted);}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.25rem;}
+.card{background:var(--white);border:1px solid #eef2f7;border-radius:12px;overflow:hidden;box-shadow:0 6px 16px rgba(2,8,20,.06);display:flex;flex-direction:column;}
+.card img{display:block;width:100%;height:auto;}
+.card-body{padding:1rem 1.1rem;}
+.card h3{margin:.25rem 0 .5rem;color:var(--navy);}
+
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:1rem;}
+.feature{background:var(--light);border:1px solid #e5e7eb;border-radius:12px;padding:1rem;text-align:center;}
+
+.form{max-width:720px;margin:0 auto;background:var(--white);border:1px solid #e5e7eb;border-radius:12px;padding:1.25rem;box-shadow:0 6px 16px rgba(2,8,20,.06);}
+.form .row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;}
+.form label{font-weight:600;color:var(--navy);display:block;margin:.35rem 0;}
+.form input,.form textarea,.form select{width:100%;padding:.75rem;border:1px solid #d1d5db;border-radius:8px;font:inherit;}
+.form textarea{min-height:140px;resize:vertical;}
+.form .actions{margin-top:1rem;text-align:right;}
+
+footer{background:var(--navy);color:#dbeafe;margin-top:3rem;}
+footer .footer-inner{padding:2.25rem 0;display:grid;gap:1.5rem;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));}
+footer h4{margin:.25rem 0 .75rem;color:#fff;border-bottom:2px solid var(--green);display:inline-block;padding-bottom:.25rem;}
+footer a{color:#bfe3ff;text-decoration:none;}footer a:hover{text-decoration:underline;}
+footer .copy{border-top:1px solid rgba(255,255,255,.15);text-align:center;padding:1rem 0;color:#c7d2fe;}
+
+/* Accessibility improvements */
+:root{
+  --focus:#ffbf47; /* high-contrast amber */
+}
+
+/* Visible focus outline for keyboard users */
+a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+/* Ensure sufficient contrast on hero buttons/links */
+.hero .btn { box-shadow: 0 0 0 3px rgba(0,0,0,.1); }
+
+/* Skip link */
+.skip-link{
+  position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;
+}
+.skip-link:focus{
+  position:fixed;left:1rem;top:1rem;width:auto;height:auto;background:#111;color:#fff;
+  padding:.5rem .75rem;border-radius:.5rem;z-index:1000;
+}
+
+/* Increase contrast for footer links on navy background */
+footer a{ color:#e3efff; }
+footer a:focus-visible, footer a:hover{ color:#fff; text-decoration:underline; }

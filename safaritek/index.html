@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta name="description" content="SafariTek Solution - Professional IT services: computer repair, networking, and support in Washington.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SafariTek Solution – Professional IT Services</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  
+<header>
+  <div class='container header-inner'>
+    <div class='logo'>
+      <img src='assets/img/logo.jpg' alt='SafariTek Solution logo'>
+      <span class='brand'>SafariTek Solution</span>
+    </div>
+    <nav class='desktop'>
+      <ul>
+        <li><a href='index.html'>Home</a></li>
+        <li><a href='pages/services.html'>Services</a></li>
+        <li><a href='pages/about.html'>About</a></li>
+        <li><a href='pages/contact.html'>Contact</a></li>
+      </ul>
+    </nav>
+    <button class='menu-btn' aria-expanded="false" aria-controls="mobileNav" aria-label='Toggle menu'>☰</button>
+  </div>
+  <nav class='mobile' id='mobileNav' role="navigation" aria-label="Mobile">
+    <ul>
+      <li><a href='index.html'>Home</a></li>
+      <li><a href='pages/services.html'>Services</a></li>
+      <li><a href='pages/about.html'>About</a></li>
+      <li><a href='pages/contact.html'>Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <main id="main">
+  <section class="hero">
+    <div class="container">
+      <h1>Professional IT Solutions for Your Home & Business</h1>
+      <p>From computer repair to network setup and ongoing support, SafariTek keeps your tech fast, secure, and reliable.</p>
+      <a class="btn" href="pages/contact.html">Get a Free Consultation</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>What We Do</h2>
+      <p class="lead">Fast, friendly service with clear pricing. We focus on practical solutions that keep you productive.</p>
+      <div class="grid">
+        <article class="card">
+          <img src="assets/img/img-computer-repair.jpg" alt="Computer repair illustration">
+          <div class="card-body">
+            <h3>Computer Repair</h3>
+            <p>Diagnostics, tune‑ups, malware removal, data backup & recovery for Windows and macOS.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="assets/img/img-network-wifi.jpg" alt="Network and Wi‑Fi optimization illustration">
+          <div class="card-body">
+            <h3>Network & Wi‑Fi</h3>
+            <p>Router setup, mesh Wi‑Fi, cabling, and troubleshooting to eliminate dead zones.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="assets/img/img-remote-support.jpg" alt="Remote support illustration">
+          <div class="card-body">
+            <h3>Remote Support</h3>
+            <p>Quick remote help for software issues and configuration without a site visit.</p>
+          </div>
+        </article>
+      </div>
+      <p class="lead">Explore more on our <a href="pages/services.html">Services page</a>.</p>
+    </div>
+  </section>
+  
+<footer>
+  <div class="container footer-inner">
+    <div>
+      <h4>SafariTek Solution</h4>
+      <p>Reliable, friendly IT support for homes and small businesses across Washington.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <p><a href="pages/services.html">Services</a><br><a href="pages/about.html">About</a><br><a href="pages/contact.html">Contact</a></p>
+    </div>
+    <div>
+      <h4>Helpful Resources</h4>
+      <p><a href="https://support.microsoft.com/windows">Microsoft Windows Support</a><br>
+         <a href="https://www.consumer.ftc.gov/articles/how-recognize-and-avoid-phishing-scams">FTC: Avoid Phishing Scams</a></p>
+    </div>
+  </div>
+  <div class="copy">© 2025 SafariTek Solution. All rights reserved.</div>
+
+  <section class="section testimonials">
+    <div class="container">
+      <h2>Testimonials</h2>
+      <p class="lead">A few words from recent customers.</p>
+      <div class="grid">
+        <article class="card" aria-label="Testimonial from Anna K.">
+          <div class="card-body">
+            <h3>“Fast and reliable!”</h3>
+            <p>“SafariTek fixed my Wi‑Fi issues the same day. Clear pricing and great communication.”</p>
+            <p><strong>— Anna K., Kirkland</strong></p>
+          </div>
+        </article>
+        <article class="card" aria-label="Testimonial from Marco D.">
+          <div class="card-body">
+            <h3>“Saved our files”</h3>
+            <p>“They recovered our project data and set up an automatic backup so this won’t happen again.”</p>
+            <p><strong>— Marco D., Bellevue</strong></p>
+          </div>
+        </article>
+        <article class="card" aria-label="Testimonial from Lynn P.">
+          <div class="card-body">
+            <h3>“Great remote support”</h3>
+            <p>“Quick remote session solved my software problem in minutes. Highly recommend.”</p>
+            <p><strong>— Lynn P., Redmond</strong></p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</footer>
+</main>
+<script>
+  document.querySelector('.menu-btn').addEventListener('click',()=>{
+    const m=document.getElementById('mobileNav');m.classList.toggle('active');const b=document.querySelector('.menu-btn');b.setAttribute('aria-expanded', m.classList.contains('active'));
+  });
+</script>
+
+</body>
+</html>

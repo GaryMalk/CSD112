@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Photo Gallery</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+  <nav id="contact-navbar">
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="places.html">Places</a></li>
+      <li><a href="photo-video-gallery.html">Gallery</a></li>
+      <li><a href="weather.html">Weather</a></li>
+      <li class="current"><a href="contactus.html">Contact Me</a></li>
+    </ul>
+  </nav>
+  <main class="contact-me-body">
+    <header>
+
+      <h1 class="fas fa-comments">Connect With ME</h1>
+      <p class="welcome"> I would Love to Hear From You</p>
+
+    </header>
+
+    <form>
+      <h4> Contact Me</h4>
+      <div class="container">
+
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your Name">
+
+        <label for="lname">Your Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Last Name">
+        <label for="country"></label>
+        <select id="country">
+          <option value="USA">USA</option>
+          <option value="Canada">Canada</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something"></textarea>
+        <input type="submit" value="Submit">
+      </div>
+
+    </form>
+    <footer>
+      <p>Thank you for visiting my website! I hope you find inspiration and useful information for your adventures in
+        Washington State.</p>
+      <p>&copy; 2025 I hike Washington State</p>
+    </footer>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,708 @@
+ /*this is for paragraphs font*/
+ @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
+
+ @font-face {
+   font-family: "playwriterus";
+   src: url(./font/Playwrite_US_Modern/PlaywriteUSModern-VariableFont_wght.ttf);
+ }
+
+ @font-face {
+   font-family: "Pacifico-Regular";
+   src: url(../font/Pacifico/Pacifico-Regular.ttf);
+ }
+
+
+ @font-face {
+   font-family: "Montserrat";
+   src: url(./font/Montserrat/Montserrat-VariableFont_wght.ttf);
+ }
+
+ /* I used this font for headings in nav bar */
+ @font-face {
+   font-family: "RalewayExtraBold";
+   src: url(./font/Raleway/Raleway-ExtraBold.ttf);
+ }
+
+ @media screen and (max-width: 768px) {
+   .video-gallery-container {
+     display: flex;
+     position: relative;
+     top: 100px;
+     flex-direction: column;
+     grid-template-columns: 1fr;
+     grid-template-rows: repeat(10, 1fr);
+     flex-direction: column;
+     grid-template-columns: 1fr;
+     grid-template-rows: repeat(10, 1fr);
+     gap: 0px;
+
+   }
+ }
+
+ @media only screen and (max-width: 600px) {
+   nav a {
+     padding: 10px;
+     text-align: center;
+     width: 100%;
+   }
+ }
+
+ header h1 {
+   font-size: 1.5em;
+ }
+
+ header p {
+   font-size: 1em;
+ }
+
+ /* Welcome to my journey through the most beautiful corners of the Pacific Northwest */
+ header {
+   background: #F4F2ED;
+   padding: 10px;
+   margin: 1%;
+   text-align: center;
+   border-radius: 20px;
+   box-shadow: 0px 3px 3px 0px #070303;
+   width: 60%;
+   margin: 0 auto;
+   margin-bottom: 10px;
+ }
+
+ header p {
+   color: #070303;
+   text-align: center;
+   font-family: "Pacifico-Regular";
+   text-align: center;
+   font-size: 1.2em;
+   text-shadow: 0px 0px 1px #100808;
+   line-height: 1.2;
+ }
+
+ /*navbar style start here */
+ nav ul {
+   list-style-type: none;
+   margin: 1%;
+   padding: 0px;
+   overflow: hidden;
+   display: flex;
+   text-align: center;
+   width: 100%;
+   position: relative;
+   right: 6px;
+ }
+
+ nav a {
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   align-items: center;
+   color: white;
+   background-color: #2c3e50;
+   text-decoration: none;
+   padding: 10px;
+   border-radius: 20px;
+   height: 40px;
+   width: 100%;
+   margin: 5px 0;
+ }
+
+ nav a:hover {
+   background-color: #26ab5e;
+   /*#1abc9c;*/
+   text-decoration: none;
+   border: #ab8126;
+   border-radius: 20px;
+   box-shadow: 0px 2px 2px 0px #26ab5e;
+ }
+
+ .current {
+   font-weight: bold;
+   text-transform: uppercase;
+   border: #26ab5e;
+   border-radius: 70px;
+   border-style: double;
+   background-color: #26ab5e;
+   font-size: smaller;
+   text-align: justify;
+ }
+
+ nav li {
+   text-decoration: none;
+   border-bottom-color: #F4F2ED;
+   border-spacing: 20px;
+   width: 40%;
+ }
+
+ /*navbar style ends here */
+
+ /* =================================*/
+ /* index page style starts here */
+
+
+
+ /*index body style starts here */
+ .index-body {
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   background-image: url("../images/background/home-page-background.jpg");
+   border-radius: 10px;
+   padding: 20px;
+   margin-left: 3%;
+   margin-right: 3%;
+   box-shadow: 0px 50px 50px 0px #000a03;
+   line-height: 1;
+ }
+
+ /* index body style ends here */
+
+
+
+
+ /* All paragraphs style starts here */
+ .paragraphs {
+   text-indent: 20px;
+   margin-left: 6%;
+   margin-right: 6%;
+   padding-left: 2.5%;
+   padding-right: 2.5%;
+   border: 1px solid #070303;
+   border-radius: 20px;
+   box-shadow: 0px 2px 2px 0px #070303;
+   font-family: "Merriweather";
+   background-color: rgba(255, 255, 255, 0.6);
+   line-height: 1.5;
+   text-align: justify;
+   color: #0a0a0a;
+   text-shadow: 1px 4px 20px #fcf9f9, 1px 4px 10px #e1e1c7, 1px 4px 5px #f2e2e2;
+ }
+
+ /* All paragraphs ends here */
+ h1 {
+   font-family: "RalewayExtraBold";
+ }
+
+ h2 {
+   /* include heading for places paragraphs */
+   color: #1b1707;
+   align-items: center;
+   text-align: center;
+   text-transform: capitalize;
+   font-family: "playwriterus";
+   text-shadow: 1px 10px 10px #242406;
+   border-style: ridge;
+   border-color: #eddede;
+   border-width: 2px;
+   padding: 1px;
+   background-color: #F4F2ED;
+   border-radius: 5px;
+   width: 90%;
+   margin: 0 auto;
+ }
+
+ h3 {
+   /* used for some tips on places */
+   font-style: italic;
+   text-decoration: underline;
+   color: rgb(243, 201, 98);
+   border: 2px solid goldenrod;
+   border-radius: 10px;
+   background-color: rgba(255, 255, 255, 0.8);
+   text-align: center;
+   text-transform: capitalize;
+   font-family: "RalewayExtraBold";
+   text-shadow: 0px 2px 1px #232403;
+ }
+
+ h4 {
+   /* used for map links */
+   font-style: italic;
+   text-decoration: none;
+   color: rgb(243, 201, 98);
+   border: 2px solid goldenrod;
+   border-radius: 10px;
+   background-color: rgba(255, 255, 255, 0.8);
+   text-align: center;
+   text-transform: capitalize;
+   font-family: "RalewayExtraBold";
+   text-shadow: 0px 2px 1px #232403;
+ }
+
+ /* index paragraphs grid style starts here */
+ .index-paragraphs-grid {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 2px;
+   margin: 1%;
+   text-align: center;
+   border: #070303;
+ }
+
+ .index-paragraphs-grid>div {
+
+   border: 1px solid #070303;
+   border-radius: 10px;
+   box-shadow: 0px 2px 2px 0px #070303;
+ }
+
+ .index-paragraphs-grid>div h2 {
+   color: #030806;
+   text-transform: capitalize;
+   font-family: "RalewayExtraBold";
+   margin: 10px 0;
+ }
+
+ .index-paragraphs-about {
+   grid-column: 1 / 2;
+   background-color: rgba(255, 255, 255, 0.8);
+   font-family: 'Merriweather';
+   text-align: center;
+ }
+
+ .index-paragraphs-explore {
+   grid-column: 2 / 3;
+   background-color: rgba(255, 255, 255, 0.8);
+   font-family: 'Merriweather';
+ }
+
+ .index-paragraphs-photo-gallery {
+   grid-column: 3 / 4;
+   background-color: rgba(255, 255, 255, 0.8);
+   font-family: 'Merriweather';
+ }
+
+ .index-paragraphs-weather {
+   grid-column: 4 / 5;
+   background-color: rgba(255, 255, 255, 0.8);
+   font-family: 'Merriweather';
+ }
+
+ /* index paragraphs grid style ends here */
+
+ /* index grid navigation-photo style starts here */
+ .index-grid-nav {
+   display: grid;
+   grid-template-columns: repeat(3, 130px);
+   margin: 2px;
+   gap: 8px;
+   padding: 20px;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .index-grid-nav img {
+   width: 100%;
+   height: 100px;
+   border: #030907;
+   border-style: groove;
+   border-radius: 4px;
+ }
+
+ .index-grid-nav :hover {
+   cursor: pointer;
+   transform: scale(1.1);
+ }
+
+ /* index grid navigation-photo style ends here */
+ .index-highlights {
+   background-color: rgba(255, 255, 255, 0.8);
+   border: 1px solid #070303;
+   border-radius: 20px;
+   box-shadow: 0px 2px 2px 0px #070303;
+   padding: 20px;
+   margin: 20px 1%;
+   font-family: "Merriweather";
+ }
+
+ .index-highlights h2 {
+   color: #0c744f;
+   text-align: center;
+   text-transform: capitalize;
+ }
+
+ .index-highlights ul {
+   list-style-type: none;
+   padding: 0;
+ }
+
+ .index-highlights li {
+   padding: 5px 0;
+ }
+
+ /* ================================*/
+ /*second page style starts here */
+ .places-body {
+   padding: 20px;
+   background-image: url(../images/background/places-background.webp);
+   background-repeat: no-repeat;
+   background-size: cover;
+   border-radius: 10px;
+   background-attachment: fixed;
+   box-shadow: 0px 50px 50px 0px #000a03;
+   margin-left: 3%;
+   margin-right: 3%;
+ }
+
+ /* link styles for maps */
+ .map-link {
+   color: rgb(243, 203, 28);
+   text-shadow: 1px 2px 4px #232403, 0 2px 6px rgba(0, 0, 0, 0.08);
+   text-decoration: none;
+   font-family: 'Times New Roman', Times, serif;
+   font-weight: bold;
+   font-size: 20px;
+   display: block;
+   text-align: center;
+   border-bottom: 2px solid #000a03;
+   padding: 10px;
+   border-radius: 60px;
+ }
+
+ /* for list of some places I have visited */
+ .places-list ul {
+   margin: 20px 0;
+   padding: 1px;
+   color: rgb(6, 6, 5);
+   text-align: center;
+   text-transform: capitalize;
+   font-family: "Merriweather";
+   text-shadow: 0px 5px 2px rgba(0, 0, 0, 0.5);
+   list-style-type: none;
+ }
+
+ .places-list li {
+   margin: 1px 0;
+   font-size: 18px;
+   border: 1px solid #070303;
+   border-radius: 10px;
+   box-shadow: 0px 2px 2px 0px #070303;
+   background-color: #F4F2ED;
+   justify-content: center;
+   align-items: center;
+   line-height: 1.8;
+   padding: 1px;
+ }
+
+ .places-list h2 {
+   margin: 6%;
+   color: #120f03;
+   text-align: center;
+   text-transform: capitalize;
+   font-family: "playwriterus";
+   text-shadow: 1px 10px 10px #242406;
+   border-style: ridge;
+   border-color: #F4F2ED;
+   border-width: 3px;
+   padding: 1px;
+
+   border-bottom-left-radius: 100px;
+   border-bottom-right-radius: 100px;
+ }
+
+ /* places page style ends here */
+
+ /* ====================================== */
+ /* ++++++++++++++++++++++++++++++++++++ */
+
+ /*  This part is used for the photo gallery grid, but I had problem with validating it. So I did multiple sections for each location.
+
+
+.photo-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+  justify-items: center;
+  
+}
+*/
+
+ /* +++++++++++++++++++++++++++++++++++++++++ */
+
+
+ /* This part for gallery page */
+
+
+ /* photo gallery body style starts here */
+ .photo-gallery-body {
+   padding: 20px;
+   background-image: linear-gradient(rgba(224, 203, 203, 0.5), rgba(255, 255, 255, .1)), url(../images/background/gallery-page-background.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   border-radius: 10px;
+   box-shadow: 0px 50px 50px 0px #000a03;
+   background-attachment: fixed;
+   margin-left: 3%;
+   margin-right: 3%;
+ }
+
+ #photo-gallery-description {
+   font-family: "Merriweather";
+   color: #f7f5f2;
+   text-align: center;
+   text-shadow: 0px 3px 1px #0e0e02, 1px 3px 1px #0c0314, 0px 3px 3px #0f0f01;
+
+   font-size: 1.2em;
+
+ }
+
+ /* grid part */
+ .image-section {
+   width: 100%;
+   margin: 1%;
+   border-style: solid;
+   border-radius: 15px;
+   border-color: #F4F2ED;
+   border-width: 5px;
+   box-shadow: 2px 4px 4px 2px #070303;
+ }
+
+ .Baker-Hot-Springs-Images {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   align-items: center;
+   gap: 1.5rem;
+   width: 100%;
+   justify-items: center;
+ }
+
+ .Baker-Hot-Springs-Images h2 {
+   grid-column: 1 / -1;
+   text-align: center;
+   background-color: #F4F2ED;
+   border-radius: 10px;
+   width: 400px;
+ }
+
+ .Paradise-at-Mount-Rainier-grid {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   align-items: center;
+   gap: 1.5rem;
+   width: 100%;
+   justify-items: center;
+ }
+
+ .Paradise-at-Mount-Rainier-grid h2 {
+   grid-column: 1 / -1;
+   text-align: center;
+   border-radius: 10px;
+   width: 400px;
+ }
+
+ .Lewis-Falls-Lower-River-grid {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   align-items: center;
+   gap: 1.5rem;
+   width: 100%;
+   justify-items: center;
+ }
+
+ .Lewis-Falls-Lower-River-grid h2 {
+   grid-column: 1 / -1;
+   text-align: center;
+   border-radius: 10px;
+   width: 400px;
+ }
+
+ .Snow-Lake-grid {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   align-items: center;
+   gap: 1.5rem;
+   width: 100%;
+   justify-items: center;
+ }
+
+ .Snow-Lake-grid h2 {
+   grid-column: 1 / -1;
+   text-align: center;
+   border-radius: 10px;
+   width: 400px;
+ }
+
+ .Ocean-Shores-grid {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   align-items: center;
+   gap: 1.5rem;
+   width: 100%;
+   justify-items: center;
+ }
+
+ .Ocean-Shores-grid h2 {
+   grid-column: 1 / -1;
+   text-align: center;
+   border-radius: 10px;
+   width: 400px;
+ }
+
+ .image-section img {
+   aspect-ratio: 1/1;
+   width: 100%;
+   object-fit: cover;
+   display: block;
+   border-radius: 10px;
+   box-shadow: 0px 2px 2px 0px #070303;
+ }
+
+ .image-section:hover {
+   cursor: pointer;
+   transform: scale(1.5, 1.5);
+   object-fit: cover;
+ }
+
+ /* grid part ends here */
+
+ /* video gallery styles */
+ .photo-video-gallery-heading {
+   font-family: "playwriterus";
+   color: #0d0b01;
+   text-align: center;
+   text-transform: capitalize;
+   font-size: 2em;
+   border-style: ridge;
+   border-color: #eddede;
+   border-width: 3px;
+   padding: 1px;
+   background-color: #F4F2ED;
+   width: 60%;
+   margin: 0 auto;
+   border-top-left-radius: 100px;
+   border-top-right-radius: 100px;
+ }
+
+ div.youtube-video {
+   width: 100%;
+   margin-top: 0px;
+   margin-right: 1%;
+   margin-bottom: 0px;
+   vertical-align: center;
+   padding: 5%;
+
+ }
+
+ div.youtube-video>div {
+   position: relative;
+   padding-bottom: 56.25%;
+   border-bottom: 20px solid #000a03;
+   border-bottom-left-radius: 40px;
+   border-bottom-right-radius: 40px;
+   /* 16:9 ratio required for YouTube videos */
+ }
+
+ div.youtube-video>div>iframe {
+   vertical-align: center;
+   border: none;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   border-radius: 20px;
+ }
+
+ /* gallery style ends here */
+
+ /* contact page styles */
+ .fas.fa-comments {
+   background-image: url(../images/background/contact-me-background.jpg);
+   color: #f7efd8;
+   border-radius: 20px;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   padding: 8%;
+   padding-top: 20px;
+   text-shadow: 0px 2px 40px #232403;
+ }
+
+ .contact-me-body {
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: 0px 2px 5px 0px #070303;
+   background-image: url(../images/background/contact-page-body-background.JPG);
+   margin-left: 3%;
+   margin-right: 3%;
+ }
+ form h4 {
+   text-align: center;
+   font-family: "playwriterus";
+   color: #0d0b01;
+   text-transform: capitalize;
+   font-size: 2em;
+   border-style: ridge;
+   border-color: #eddede;
+   border-width: 3px;
+   padding: 1px;
+   background-color: #F4F2ED;
+   width: 200px;
+   margin: 0 auto;
+   border-top-left-radius: 100px;
+   border-top-right-radius: 100px;
+   margin-bottom: 20px;
+ }
+
+ .contact {
+   font-family: Arial, Helvetica, sans-serif;
+
+ }
+
+ * {
+   box-sizing: border-box;
+ }
+
+ input[type=text],
+ select,
+ textarea {
+   width: 100%;
+   padding: 12px;
+   border: 1px solid goldenrod;
+   border-radius: 4px;
+   box-sizing: border-box;
+   margin-top: 6px;
+   margin-bottom: 16px;
+   resize: vertical
+ }
+
+ input[type=submit]:hover {
+   background-color: #45a049;
+ }
+
+ .cotainer {
+   border-radius: 5px;
+   background-color: #f2f2f2;
+   padding: 20px;
+
+ }
+
+ form {
+
+   max-width: 600px;
+   border: 3px solid #f1f1f1;
+   border-radius: 20px;
+   box-shadow: 0px 2px 2px 0px #070303;
+   background-color: #F4F2ED;
+   padding: 20px;
+   width: 90%;
+   margin: 0 auto;
+   border-width: 5px;
+   border-bottom-left-radius: 500px;
+   border-top-right-radius: 500px;
+   box-shadow: 20px 20px 20px #232403;
+
+ }
+
+ footer {
+   background-color: #F4F2ED;
+   text-align: center;
+   padding: 1em;
+   margin-top: 2em;
+   border-radius: 20px;
+   margin-left: 5%;
+   margin-right: 4%;
+   margin-bottom: 3%;
+ }

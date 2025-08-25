@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta name="description" content="SafariTek Solution - Professional IT services: computer repair, networking, and support in Washington.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact – SafariTek Solution</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  
+<header>
+  <div class='container header-inner'>
+    <div class='logo'>
+      <img src='../assets/img/logo.jpg' alt='SafariTek Solution logo'>
+      <span class='brand'>SafariTek Solution</span>
+    </div>
+    <nav class='desktop'>
+      <ul>
+        <li><a href='../index.html'>Home</a></li>
+        <li><a href='../pages/services.html'>Services</a></li>
+        <li><a href='../pages/about.html'>About</a></li>
+        <li><a href='../pages/contact.html'>Contact</a></li>
+      </ul>
+    </nav>
+    <button class='menu-btn' aria-expanded="false" aria-controls="mobileNav" aria-label='Toggle menu'>☰</button>
+  </div>
+  <nav class='mobile' id='mobileNav' role="navigation" aria-label="Mobile">
+    <ul>
+      <li><a href='../index.html'>Home</a></li>
+      <li><a href='../pages/services.html'>Services</a></li>
+      <li><a href='../pages/about.html'>About</a></li>
+      <li><a href='../pages/contact.html'>Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+  
+<section class="section">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <p class="lead">Have questions or need support? Send a message and we’ll get back shortly.</p>
+    <form class="form" action="#" method="post">
+      <div class="row">
+        <div>
+          <label for="name">Full Name</label>
+          <input id="name" name="name" required>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required>
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" aria-describedby="phoneHelp">
+        </div>
+        <div>
+          <label for="service">Service Needed</label>
+          <select id="service" name="service">
+            <option value="">Select a service</option>
+            <option>Computer Repair</option>
+            <option>Network/Wi‑Fi</option>
+            <option>Remote Support</option>
+            <option>Other</option>
+          </select>
+        </div>
+      </div>
+      <label for="msg">Your Message</label>
+      <textarea id="msg" name="message" required></textarea>
+      <div class="actions">
+        <button class="btn" type="submit">Send Message</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+  
+<footer>
+  <div class="container footer-inner">
+    <div>
+      <h4>SafariTek Solution</h4>
+      <p>Reliable, friendly IT support for homes and small businesses across Washington.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <p><a href="../pages/services.html">Services</a><br><a href="../pages/about.html">About</a><br><a href="../pages/contact.html">Contact</a></p>
+    </div>
+    <div>
+      <h4>Helpful Resources</h4>
+      <p><a href="https://support.microsoft.com/windows">Microsoft Windows Support</a><br>
+         <a href="https://www.consumer.ftc.gov/articles/how-recognize-and-avoid-phishing-scams">FTC: Avoid Phishing Scams</a></p>
+    </div>
+  </div>
+  <div class="copy">© 2025 SafariTek Solution. All rights reserved.</div>
+</footer>
+</main>
+<script>
+  document.querySelector('.menu-btn').addEventListener('click',()=>{
+    const m=document.getElementById('mobileNav');m.classList.toggle('active');const b=document.querySelector('.menu-btn');b.setAttribute('aria-expanded', m.classList.contains('active'));
+  });
+</script>
+
+</body>
+</html>

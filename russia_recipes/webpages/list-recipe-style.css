@@ -1,0 +1,199 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-VariableFont_wdth_wght.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Italic-VariableFont_wdth_wght.ttf) format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+html, body {
+    height: 100%;
+}
+
+#container {
+    display: grid;
+    grid-template-rows: 70px 90%; /* I'm using a fixed px value because I never want the top bar to squish */
+    grid-template-columns: 90% 10%;
+    height: 100%;
+    font-family: "Roboto";
+}
+
+#container::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 70px;
+    height: 4px;
+    background-color: black;
+}
+
+#container header {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    align-self: center;
+    padding-bottom: 0.75rem;
+    padding-left: 1rem;
+}
+
+summary {
+    font-size: 3rem;
+    cursor: pointer;
+    list-style: none;
+    display: inline-block;
+    padding-right: 0.5rem;
+    padding-bottom: 1.25rem;
+    user-select: none;
+    line-height: 1;
+}
+
+#container details {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    position: relative;
+    display: inline-block;
+    align-self: center;
+    justify-self: end;
+}
+
+nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    border: 2px solid #333;
+    border-radius: 40px;
+    padding: 0.5rem 1rem;
+    background: #f9f9f9;
+    display: none;
+    white-space: nowrap;
+    z-index: 2;
+}
+
+details[open] nav {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    padding: 0.25rem 0;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/*recipe container stuff starts here*/
+
+#recipe-container {
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+    margin: 2rem 8rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    gap: 2rem;
+    justify-items: center;
+    height: 100%;
+}
+
+.recipe-container-element {
+    display: grid;
+    grid-template-rows: 15% 60% 25%;
+    grid-template-columns: 50% 50%;
+    background-color: whitesmoke;
+    border-radius: 40px;
+    margin: 0;
+    width: 100%;
+    max-width: 600px;
+}
+
+/*css for every recipe container*/
+
+.recipe-name {
+    grid-row: 1 / 2;
+    grid-column: 1 / 3;
+    justify-self: center;
+    font-size: clamp(1rem, 3vw, 2.5rem);
+    margin-top: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.recipe-name a {
+    color: #0096FF;
+}
+
+.recipe-image {
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+    height: 100%;
+    width: 90%;
+    object-fit: cover;
+    justify-self: center;
+    border-radius: 40px;
+}
+
+.recipe-cook-time {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+    justify-self: center;
+    align-self: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    font-size: clamp(0.75rem, 2vw, 1.5rem);
+    padding: clamp(0.25rem, 1vw, 0.5rem) clamp(0.5rem, 3vw, 2rem);
+    border-radius: 40px;
+    box-sizing: border-box;
+    background-color: #FAA0A0;
+}
+
+.recipe-calories {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+    justify-self: center;
+    align-self: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    font-size: clamp(0.75rem, 2vw, 1.5rem);
+    padding: clamp(0.25rem, 1vw, 0.5rem) clamp(0.5rem, 3vw, 2rem);
+    border-radius: 40px;
+    box-sizing: border-box;
+    background-color: #A7C7E7;
+}
+
+@media (max-width: 900px) {
+    #recipe-container {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 2rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+        justify-items: center;
+    }
+
+    .recipe-container-element {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .recipe-name {
+        font-size: clamp(2rem, 4vw, 4rem);
+    }
+
+    .recipe-cook-time,
+    .recipe-calories {
+        font-size: clamp(1.5rem, 3vw, 3rem);
+    }
+}
