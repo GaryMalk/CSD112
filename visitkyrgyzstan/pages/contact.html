@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Get in Touch</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="brand">Visit Kyrgyzstan</div>
+    <nav class="nav">
+      <a href="../index.html">Home</a>
+      <a href="./destinations.html">Destinations</a>
+      <a href="./contact.html" aria-current="page">Contact</a>
+    </nav>
+  </header>
+
+  <section class="contact-hero">
+    <video src="../videos/contact.mp4" autoplay muted loop playsinline></video>
+    <div class="overlay">
+      <div class="container">
+        <h2 class="h2">Get in Touch</h2>
+        <p class="tagline">Have questions or need more tips? We can help plan your visit.</p>
+        <p><a class="btn" href="mailto:youremail@example.com" aria-label="Contact us by email">Contact Us</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="text-box">
+        <form action="#" method="post" onsubmit="alert('This is a demo form. Connect to your backend.'); return false;">
+          <label class="label" for="name">Name</label><br>
+          <input class="input" id="name" name="name" required><br>
+
+          <label class="label" for="email">Email</label><br>
+          <input class="input" id="email" name="email" type="email" required><br>
+
+          <label class="label" for="subject">Subject</label>
+          <input class="input" id="subject" name="subject" required>
+
+          <label class="label" for="msg">Message</label><br>
+          <textarea class="textarea" id="msg" name="message" rows="5" required></textarea><br>
+
+          <button class="btn" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer"><div class="container">© 2025 Kyrgyz Travel Guide</div></footer>
+</body>
+</html>
