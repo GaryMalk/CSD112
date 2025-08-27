@@ -1,0 +1,152 @@
+/* ----- Base ----- */
+:root{
+  --bg:#0b1c26;        /* deep blue */
+  --text:#ffffff;
+  --muted:#dbe7ee;
+  --accent:#90e0ef;    /* light blue */
+  --card-bg:#0f2430cc; /* translucent card */
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%}
+body{
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  color:var(--text);
+  background:#081319;
+  line-height:1.5;
+}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.container{width:min(1100px,92%);margin:auto}
+
+/* ----- Header / Nav ----- */
+.header{
+  position:fixed; inset:0 0 auto 0; height:64px;
+  display:flex; align-items:center; z-index:10;
+  background:linear-gradient(180deg, rgba(0,0,0,.55), rgba(0,0,0,0));
+  padding:0 20px;
+}
+.brand{font-weight:700; letter-spacing:.4px}
+.nav{margin-left:auto; display:flex; gap:18px}
+.nav a{opacity:.9}
+.nav a:hover{opacity:1; text-decoration:underline}
+
+/* ----- Hero with video bg ----- */
+.hero{
+  position:relative; min-height:100vh; display:grid; place-items:center;
+  text-align:left; overflow:hidden;
+}
+.hero video{
+  position:absolute; inset:0; width:100%; height:100%;
+  object-fit:cover; filter:brightness(.65) saturate(1.1);
+}
+.hero .content{
+  position:relative; z-index:2; width:min(900px,92%);
+}
+.title{font-size:clamp(40px,7vw,84px); margin:0 0 8px}
+.tagline{font-size:clamp(16px,2.2vw,22px); color:var(--muted); margin:0 0 22px}
+.btn{
+  display:inline-block; padding:12px 18px; border-radius:10px;
+  background:var(--accent); color:#03161c; font-weight:700;
+}
+.btn:hover{filter:brightness(1.1)}
+
+/* -- Destinations grid buttons ---- */
+.section{padding:80px 0; background:#0b1c26}
+.h2{font-size:clamp(28px,4vw,40px); margin:0 0 22px}
+.grid{
+  display:grid; gap:22px; grid-template-columns:repeat(3,1fr);
+}
+@media (max-width:900px){ .grid{grid-template-columns:1fr} }
+
+.card-link{display:block; border-radius:22px; overflow:hidden; position:relative; min-height:320px}
+.card-link .bg{
+  position:absolute; inset:0; background-size:cover; background-position:center;
+  transform:scale(1.02); transition:transform .35s ease;
+}
+.card-link::after{
+  content:""; position:absolute; inset:0; background:linear-gradient(180deg, rgba(0,0,0,.15), rgba(0,0,0,.55));
+}
+.card-link:hover .bg{transform:scale(1.06)}
+.card-caption{
+  position:absolute; inset:auto 18px 18px 18px; z-index:1;
+  background:var(--card-bg); padding:16px; border-radius:14px;
+}
+.card-caption h3{margin:0 0 6px; font-size:24px}
+.card-caption p{margin:0; color:#d7ecf4; font-size:15px}
+
+/* --- Inner page header ----- */
+.banner{
+  min-height:50vh; position:relative; display:grid; place-items:end start;
+  padding:24px; background:#0b1c26; overflow:hidden;
+}
+.banner img, .banner video{
+  position:absolute; inset:0; width:100%; height:100%; object-fit:cover; filter:brightness(.7);
+}
+.banner .caption{position:relative; z-index:2; font-size:clamp(28px,5vw,56px); font-weight:800}
+
+/* ----- Content ---- */
+.content-wrap{padding:40px 0 80px;}
+.text-box{background:#0d1f29; border:1px solid #163445; padding:24px; border-radius:14px}
+
+/* ----- Contact with tall video ----- */
+.contact-hero{position:relative; min-height:60vh; overflow:hidden}
+.contact-hero video{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; filter:brightness(.6)}
+.contact-hero .overlay{position:relative; z-index:1; padding:40px 0}
+
+/* ----- Footer ----- */
+.footer{padding:26px 0; color:#b6cbd6; border-top:1px solid #163445; background:#0a1b24}
+
+
+/* ----- Destinations hero background ---- */
+.destinations-hero {
+  min-height: 250px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: white;
+  background-image: url('images/issyk.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.destinations-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+}
+.destinations-hero h2 {
+  position: relative;
+  z-index: 1;
+  font-size: 2em;
+}
+
+
+/* ----- Form controls  ----- */
+.input, .textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #163445;
+  background: #0b1c26;
+  color: #fff;
+  margin: 6px 0 14px;
+}
+.textarea { min-height: 140px; resize: vertical; }
+.label { display: inline-block; margin: 10px 0 6px; color: #dbe7ee; }
+
+
+/* ----- External link buttons ----- */
+.link-button {
+  display: inline-block;
+  padding: 10px 16px;
+  margin: 6px;
+  border-radius: 8px;
+  background: var(--accent);
+  color: #03161c;
+  font-weight: 600;
+  text-decoration: none;
+}
+.link-button:hover {
+  filter: brightness(1.1);
+}
