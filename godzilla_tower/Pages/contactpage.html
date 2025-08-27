@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style type="text/css">    
+    </style>
+    <link href="../CSS/contactpage.CSS" rel="stylesheet" type="text/css">
+</head>
+<body>
+        
+    <header>
+        <h2 id="headerTitle">Godzilla Tower</h2>
+        <ul class="nav">
+            <li><a href="../index.html"><button type="button" class="navbutton">Home</button></a></li>
+            <li><a href="monsters.html"><button type="button" class="navbutton">Monsters</button></a></li>
+            <li><a href="films.html"><button type="button" class="navbutton">Movies</button></a></li>
+            <li><a href="contactpage.html"><button type="button" class="navbutton">Contact Us</button></a></li>
+        </ul>
+    </header>
+    
+        <h1 id="pageTitle">Contact Us</h1>
+
+        <p class="introtext">Here at Godzilla Tower, we greatly value your input and feedback in regards to our site! If you have any questions, concerns, have something you would like to add, or just want to tell us how much you like Godzilla, please fill out our form here!</p>
+
+        <form method="post" class="contactform">
+            <p class="formtitle">Name (First and Last)</p>
+            <input class="forminput" type="text" id="firstname" name="firstname" placeholder="Type Here">
+            <input class="forminput" type="text" id="lastname" name="lastname" placeholder="Type Here">
+            <br>
+
+            <p class="formtitle">Email</p>
+            <input class="forminput" type="email" id="email" name="email" size="46" placeholder="your@email.com">
+            <br>
+
+            <p class="formtitle">Who is your favorite monster?</p>
+            <input class="forminput" type="text" id="favemon" name="favemon" size="46" placeholder="Type Here">
+            <br>
+
+            <p class="formtitle">Feedback</p>
+            <textarea class="forminput" name="feedback" rows="12" cols="46" placeholder="Enter feedback here"></textarea>
+            <br>
+
+            <p class="formtitle">How did you find Godzilla Tower?</p>
+            <input class="forminput" type="checkbox" id="option1" name="option1" value="Google or a similar search engine">
+            <label for="option1">Google or a similar search engine</label>
+            <br>
+            <input class="forminput" type="checkbox" id="option2" name="option2" value="Social media">
+            <label for="option2">Social Media</label>
+            <br>
+            <input class="forminput" type="checkbox" id="option3" name="option3" value="Other">
+            <label for="option3">Other</label>
+            <br>
+
+            <p class="formtitle">Would you like us to contact you?</p>
+            <input class="forminput" type="radio" id="yes" name="contactQ" value="Yes">
+            <label for="yes">Yes</label>
+            <input class="forminput" type="radio" id="no" name="contactQ" value="No">
+            <label for="no">No</label>
+            <br>
+            <br>
+
+            <input class="formclear" type="reset" id="clear" value="Clear">
+            <input class="formsubmit" type="submit" id="submit" value="Submit">
+
+        </form>
+
+        <article class="infobottom">
+            <p>
+                All images are sourced from <a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a>, <a href="https://wikizilla.org/wiki/Main_Page">Wikizilla</a>, and <a href="https://godzilla.fandom.com/wiki/Gojipedia">Gojipedia</a> and are screenshots from the films. The older Godzilla films tended to reuse footage to save money so the exact film each came from is sometimes unknown, but the ones I can identify are: 
+            </p>
+            <ul>
+                <li>Godzilla Tower: <i>Godzilla vs. Gigan</i></li>
+                <li>B&W Godzilla: <i>Gojira</i></li>
+                <li>Angirus: <i>Godzilla vs. Gigan</i> at the earliest</li>
+                <li>King Ghidorah: <i>Ghidorah, the Three-Headed Monster</i> at the earliest</li>
+                <li>Mothra: <i>Godzilla vs. Mothra</i></li>
+                <li>Gigan: <i>Godzilla vs. Gigan</i></li>
+                <li>Jet Jaguar: <i>Godzilla vs. Megalon</i></li>
+            </ul>
+        </article>
+   
+
+    <footer>
+        <p>&copy;2025 Sollenberger</p>
+        <p>All images used under Fair Use</p>
+    </footer>
+</body>
+</html>

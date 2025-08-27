@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monsters</title>
+    <style type="text/css">    
+    </style>
+    <link href="../CSS/monsters.CSS" rel="stylesheet" type="text/css">
+</head>
+<body>
+    
+    <header>
+        <h2 id="headerTitle">Godzilla Tower</h2>
+        <ul class="nav">
+            <li><a href="../index.html"><button type="button" class="navbutton">Home</button></a></li>
+            <li><a href="monsters.html"><button type="button" class="navbutton">Monsters</button></a></li>
+            <li><a href="films.html"><button type="button" class="navbutton">Movies</button></a></li>
+            <li><a href="contactpage.html"><button type="button" class="navbutton">Contact Us</button></a></li>
+        </ul>
+    </header>
+    
+    <div class="pagebody">
+        <h1 id="pageTitle">Monsters</h1>
+
+        <article class="introtext">
+            <p>Here you can learn about different monsters in the series. This page is currently under construction so most of these are placeholders, however the Godzilla button does work and will open up a small info page about him!</p>
+        </article>
+
+        <div class="row1blocks">
+        <!-- A single monster unit -->
+            <div class="gzbk">
+                <div class="monsterblock">
+                    <img class="monsterimage" src="../Images/4621393474_3e21910f93.jpg" alt="A shot of Godzilla from the original 1954 film">
+                
+                    <button id="godzillabutton" class="monsterbutton">Godzilla</button>
+
+                    <div id="godzillamodal" class="modal">
+                        <div class="monstercontent">
+                            <div class="modalheader">   
+                                <span class="close">&times;</span>
+                                <h2>Godzilla</h2>
+                            </div>
+                                <img class="monsterimagebig" src="../Images/4621393474_3e21910f93.jpg" alt="A shot of Godzilla from the original 1954 film">
+                                <article class="blocktext">
+                                    <p>
+                                        First appearing in the original film of the franchise, 1954's <i>Gojira</i>, Godzilla is a monster who needs no introduction. 
+                                        This king of the monsters is massive, amphibious, breathes blue atomic breath, destroys cities, curshes rival monsters, and can even regenerate from individual cells in some canons.
+                                        Godzilla is as ruthless as they come in combat, but has been known to form alliances with other monsters and even has a few friendships that last the majority of the Showa era. 
+                                        His incredible durability and regenerative power mean most human efforts to fight him are more attempts to convince him to turn around than they are serious pushes to kill him, even when the latter is their intention.
+                                        This does not mean Godzilla is unbreatable, however. The king of monsters has long had a weakness to electricity, making attacks that electrocute much more affective than most. 
+                                        Furthermore, Godzilla has even been killed a handful of times in the series, with the most notable of these being his death in the first film to an experimental superweapon called Oxygen Destroyer. 
+                                    </p>
+                                </article>
+                        </div>
+                    </div>
+
+                    <script>
+                        var modal = document.getElementById("godzillamodal");
+
+                        var btn = document.getElementById("godzillabutton");
+
+                        var span = document.getElementsByClassName("close")[0];
+
+                        btn.onclick = function() {
+                            modal.style.display = "block";
+                        }
+
+                        span.onclick = function() {
+                            modal.style.display = "none";
+                        }
+
+                        window.onclick = function(event) {
+                            if (event.target == modal) {
+                                modal.style.display = "none";
+                            }
+                        }
+
+                    </script>
+
+                </div>
+            </div>
+
+            <!--This monster block and all others are just for show. They mostly would work with the scripting but each one would require a LOT of TLC to look good (every modal has to have its own custom layout) and I think one works for now as a proof of concept-->
+            <div class="agbk">
+                <div class="monsterblock">
+                    <img class="monsterimage" src="../Images/Angilas2.jpg" alt="A shot of Angirus from the Showa era">
+                
+                    <button id="angirusbutton" class="monsterbutton">Angirus</button>
+
+                    <div id="angirusmodal" class="modal">
+                        <div class="monstercontent">
+                            <div class="modalheader">   
+                                <span class="close">&times;</span>
+                                <h2>Angirus</h2>
+                            </div>
+                                <img class="monsterimagebig" src="../Images/Angilas2.jpg" alt="A shot of Angirus from the Showa era">
+                                <article class="blocktext">
+                                    <p>
+                                        Under Construction!
+                                    </p>
+                                </article>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="kgbk">
+                <div class="monsterblock">
+                    <img class="monsterimage" src="../Images/Godzilla.jp_-_9_-_SoshingekiGhido_King_Ghidorah_1968.jpg" alt="A shot of King Ghidorah from the Showa era">
+                
+                    <button id="ghidorahbutton" class="monsterbutton">King Ghidorah</button>
+
+                    <div id="ghidorahmodal" class="modal">
+                        <div class="monstercontent">
+                            <div class="modalheader">   
+                                <span class="close">&times;</span>
+                                <h2>King Ghidorah</h2>
+                            </div>
+                                <img class="monsterimagebig" src="../Images/Godzilla.jp_-_9_-_SoshingekiGhido_King_Ghidorah_1968.jpg" alt="A shot of King Ghidorah from the Showa era">
+                                <article class="blocktext">
+                                    <p>
+                                        Under Construction!
+                                    </p>
+                                </article>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row2blocks">
+            <div class="mobk">
+                <div class="monsterblock">
+                    <img class="monsterimage" src="../Images/GVMTBFE_-_Mothra.jpg" alt="A shot of Mothra from the Heisei era">
+                
+                    <button id="mothrabutton" class="monsterbutton">Mothra</button>
+
+                    <div id="mothramodal" class="modal">
+                        <div class="monstercontent">
+                            <div class="modalheader">   
+                                <span class="close">&times;</span>
+                                <h2>Mothra</h2>
+                            </div>
+                                <img class="monsterimagebig" src="../Images/GVMTBFE_-_Mothra.jpg" alt="A shot of Mothra from the Heisei era">
+                                <article class="blocktext">
+                                    <p>
+                                        Under Construction!
+                                    </p>
+                                </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="gibk">
+                <div class="monsterblock">
+                    <img class="monsterimagegigan" src="../Images/ZF_-_Showa_Gigan_(cropped).png" alt="A shot of Gigan from the Showa era">
+                
+                    <button id="giganbutton" class="monsterbutton">Gigan</button>
+
+                    <div id="giganmodal" class="modal">
+                        <div class="monstercontent">
+                            <div class="modalheader">   
+                                <span class="close">&times;</span>
+                                <h2>Gigan</h2>
+                            </div>
+                                <img class="monsterimagebig" src="../Images/ZF_-_Showa_Gigan_(cropped).png" alt="A shot of Gigan from the Showa era">
+                                <article class="blocktext">
+                                    <p>
+                                        Under Construction!
+                                    </p>
+                                </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="jjbk">
+                <div class="monsterblock">
+                    <img class="monsterimage" src="../Images/Jet_Jaguar_2.jpg" alt="A shot of Jet Jaguar from the Showa era">
+                
+                    <button id="jjbutton" class="monsterbutton">Angirus</button>
+
+                    <div id="jjmodal" class="modal">
+                        <div class="monstercontent">
+                            <div class="modalheader">   
+                                <span class="close">&times;</span>
+                                <h2>Jet Jaguar</h2>
+                            </div>
+                                <img class="monsterimagebig" src="../Images/Jet_Jaguar_2.jpg" alt="A shot of Jet Jaguar from the Showa era">
+                                <article class="blocktext">
+                                    <p>
+                                        Under Construction!
+                                    </p>
+                                </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+
+     <footer>
+        <p>&copy;2025 Sollenberger</p>
+        <p>All images used under Fair Use</p>
+    </footer>
+
+</body>
+</html>

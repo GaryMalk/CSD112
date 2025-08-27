@@ -1,0 +1,506 @@
+/*** GLOBALS ──────────────────────────────────────────────────────────────***/
+:root {
+  /* colors: Gruvbox Dark */
+  --dark0   : #282828;
+  --dark1   : #3c3836;
+  --dark2   : #504945;
+  --dark3   : #665c54;
+  --dark4   : #7c6f64;
+  --gray    : #928374;
+  --light4  : #a89984;
+  --light3  : #bdae93;
+  --light2  : #d5c4a1;
+  --light1  : #ebdbb2;
+  --light0  : #fbf1c7;
+  --bred    : #fb4934;
+  --bgreen  : #b8bb26;
+  --byellow : #fabd2f;
+  --bblue   : #83a598;
+  --bpurple : #d3869b;
+  --baqua   : #8ec07c;
+  --borange : #fe8019;
+  --nred    : #cc241d;
+  --ngreen  : #98971a;
+  --nyellow : #d79921;
+  --nblue   : #458588;
+  --npurple : #b16286;
+  --naqua   : #689d6a;
+  --norange : #d65d0e;
+  --fred    : #9d0006;
+  --fgreen  : #79740e;
+  --fyellow : #b57614;
+  --fblue   : #076678;
+  --fpurple : #8f3f71;
+  --faqua   : #427b58;
+  --forange : #af3a03;
+  --link-color: var(--nblue);
+}
+/*** CLEANUP ──────────────────────────────────────────────────────────────***/
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+/*** GENERIC ──────────────────────────────────────────────────────────────***/
+
+html {
+  background-color: var(--dark0);
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: "JetBrains Mono";
+}
+
+body {
+  font-optical-sizing: auto;
+  min-height: 100vh;
+  max-width: 50em;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+}
+
+body,
+a {
+  color: var(--light1);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:not(.noformat) {
+  --link-color: var(--naqua);
+  text-decoration: 1pt solid var(--link-color) underline;
+  border-radius: 2px;
+}
+
+header a,
+footer a {
+  padding: 2px 5px 0 3px;
+}
+
+a:hover:not(.noformat) {
+  background-color: var(--link-color);
+  color: var(--light0);
+}
+
+img {
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px var(--dark0);
+}
+
+a > img:hover {
+  transform: scale(1.03);
+}
+
+.horizontal-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+hr {
+  color: var(--dark2);
+}
+
+main {
+  background-color: var(--dark1);
+  padding: 1em;
+}
+
+body > hr {
+  margin: 1em;
+}
+
+.copyright {
+  text-align: center;
+  display: block;
+  margin: 1em auto;
+
+  font-size: x-small;
+  color: var(--gray);
+}
+
+:focus {
+  outline: 2px solid var(--link-color);
+}
+
+/*** HEADER ───────────────────────────────────────────────────────────────***/
+
+header {
+  padding: 1px 0.5em 1px 0.5em;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.h1-secondary {
+  color: var(--gray);
+}
+
+h1 a:hover {
+  text-decoration: 2px solid var(--gray) underline;
+}
+
+nav {
+  align-self: center;
+  margin-left: auto;
+  padding: 0 10px;
+}
+
+
+nav li {
+  margin: 5px 1em 5px 0;
+}
+
+/*** FOOTER ───────────────────────────────────────────────────────────────***/
+
+footer {
+  padding: 1em;
+  clear: both;
+}
+
+#socials {
+  font-size: 10pt;
+  color: var(--light4);
+  padding: 0 20%;
+}
+
+#socials > li {
+  margin: 3pt auto;
+}
+
+#socials .icon {
+  margin-right: 5px;
+}
+
+#socials > li > a {
+  display: flex;
+}
+
+#socials #discord a {
+  --link-color: var(--nblue);
+}
+
+#socials #github a {
+  --link-color: var(--npurple);
+}
+
+#socials #email a {
+  --link-color: var(--ngreen);
+}
+
+/*** HOME ─────────────────────────────────────────────────────────────────***/
+
+.home-container {
+  display: flex;
+  min-height: 50vh;
+}
+
+#profile {
+  min-width: 30%;
+  display: flex;
+  flex-direction: column;
+
+  padding: 1em;
+  border: 2px solid var(--dark1);
+  margin-right: 2pt;
+}
+
+main.home {
+  display: flex;
+  max-width: 70%;
+}
+
+img.portrait {
+  width: 100pt;
+  max-width: 90%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+
+  border-radius: 1000px;
+  border: 2px solid var(--npurple);
+}
+
+ul.profile-info {
+  padding: 0;
+  list-style: none;
+}
+
+ul.profile-info > li {
+  margin-bottom: 0.5em;
+  padding-top: 3pt;
+  font-size: 0.9em;
+  text-align: right;
+}
+
+ul.profile-info .li-content::before {
+  content: "->";
+  float: left;
+  color: var(--gray);
+}
+
+ul.profile-info .label {
+  display: block;
+  width: 100%;
+  text-align: left;
+  font-size: 0.7em;
+  padding-bottom: 2pt;
+  margin-bottom: 2pt;
+  border-bottom: 2px solid var(--dark2);
+  color: var(--bred);
+}
+
+#profile-li-languages {
+  text-align: justify;
+}
+
+#profile-li-languages .li-content::before {
+  content: none;
+}
+
+#profile-li-languages span.subpar {
+  color: var(--gray);
+}
+
+/*** PROJECTS ─────────────────────────────────────────────────────────────***/
+
+.project {
+  padding: 0.5em;
+  min-height: 13em;
+  margin-bottom: 2em;
+
+  background-color: var(--dark2);
+  background-repeat: no-repeat;
+  background-position: 80% 50%;
+}
+
+.project p,
+.project img {
+  margin: 0.5em;
+}
+
+.project img {
+  display: block;
+  float: right;
+  height: 8.0em;
+  width: auto;
+}
+
+.project h3 > a {
+  --link-color: var(--borange);
+}
+
+#project-gravitysim {
+  background-image: url("../img/lang-zig.svg");
+}
+
+#project-tictactoe {
+  background-image: url("../img/lang-java.svg");
+}
+
+/*** COLOPHON ─────────────────────────────────────────────────────────────***/
+
+main.colophon {
+  padding-bottom: 3em;
+}
+
+#colophon a {
+  --link-color: var(--borange);
+}
+
+#colophon {
+  margin: auto;
+  width: 80%;
+  border-collapse: collapse;
+}
+
+#colophon td {
+  border-bottom: 2px dotted var(--dark3);
+  padding: 2pt;
+}
+
+#colophon td:last-of-type {
+  text-align: right;
+}
+
+#colophon td:first-of-type::after {
+  content: "->";
+  text-align: right;
+  float: right;
+  color: var(--gray);
+}
+
+/*** CONTACT ──────────────────────────────────────────────────────────────***/
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  flex-grow: 1;
+}
+
+textarea {
+  resize: none;
+}
+
+form input,
+textarea {
+  min-height: 2em;
+  font-size: 0.8em;
+  color: var(--light1);
+  border: none;
+  background-color: var(--dark2);
+}
+
+form label {
+  color: var(--light2);
+  margin-bottom: 0.5em;
+}
+
+form #name label {
+  font-size: 0.8em;
+}
+
+form #input-last-name {
+  margin-left: 1em;
+}
+
+#label-message {
+  margin-top: 1em;
+}
+
+form #buttons {
+  margin-top: 1em;
+  display: inline-flex;
+  flex-direction: row;
+}
+
+form .button {
+  border: none;
+  color: var(--dark0);
+}
+
+form #reset {
+  flex-grow: 1;
+  margin-left: 1em;
+  background-color: var(--gray);
+}
+
+form #reset:hover {
+  background-color: var(--bred);
+}
+
+form #submit {
+  background-color: var(--naqua);
+  flex-grow: 4;
+}
+
+form #submit:hover,
+form #submit:focus {
+  background-color: var(--faqua);
+}
+
+label.required::after,
+#required::before {
+  content: "*";
+  color: var(--bred);
+}
+
+#required {
+  text-align: right;
+  margin: 1em 0 0 0;
+  font-size: 0.8em;
+  color: var(--fg2);
+}
+
+form #rate {
+  margin: 1em 0 0 0;
+  flex-direction: row;
+  flex-wrap: wrap;
+  line-height: 2em;
+}
+
+form #rate label {
+  margin: 0 1em 0 0;
+  vertical-align: center;
+}
+
+.button,
+.star {
+  cursor: pointer;
+}
+
+.star::before {
+  content: "★";
+  font-size: 1.4em;
+}
+
+.star {
+  font-size: 1em;
+  background-color: transparent;
+
+  margin: 0 2pt;
+  appearance: none;
+  color: var(--nyellow);
+}
+
+.star:checked ~ .star {
+  color: var(--light1);
+}
+
+/*** COMPAT ───────────────────────────────────────────────────────────────***/
+
+@media(max-width:450px) {
+  .project img {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    float: none;
+  }
+
+  .horizontal-list {
+    text-align: center;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  nav {
+    margin: 0;
+  }
+
+  #colophon td:first-of-type::after {
+    content: "";
+  }
+}

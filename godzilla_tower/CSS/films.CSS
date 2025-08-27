@@ -1,0 +1,217 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 1fr 0.5fr 1fr;
+    grid-template-rows: 3.9% 12% 15% 63.1% 6%;
+    background-color: rgb(39, 41, 40);
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+header {
+    background-color: rgb(175, 5, 5);
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    position: relative;
+    display: flex;
+
+}
+
+#headerTitle {
+    font-size: 275%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    grid-row-start: 1;
+    grid-column-start: 3;
+    display: flex;
+    position: relative;
+    left: 43%;
+    bottom: 23.5%;
+    color: aqua;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    
+    
+}
+
+.nav {
+    list-style-type: none;
+    display: flex;
+    position: relative;
+    top: 22%;
+    left: 55%;
+    padding: 0%;
+    margin: 0%;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.nav li {
+    margin-left: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+
+}
+
+.navbutton {
+    background-color: aqua;
+    color: black;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+
+}
+
+.navbutton:hover {
+    background-color: darkturquoise;
+
+}
+
+#pageTitle {
+    font-size: 400%;
+    color: rgb(175, 5, 5);
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000,
+    5px 0px 0 #000;
+    position: relative;
+    grid-column-start: 3;
+    grid-row-start: 2;
+    width: 390px;
+    left: 118%;
+
+}
+
+.introtext {
+    background-color: aqua;
+    border-style: solid;
+    border-color: rgb(175, 5, 5);
+    border-width: 5px;
+    padding: 5px;
+    max-width: 500px;
+    max-height: fit-content;
+    position: relative;
+    grid-column-start: 3;
+    grid-row-start: 3;
+    text-align: center;
+    left: 99%;
+
+}
+
+table {
+    border-collapse: collapse;
+    border-style: solid;
+    border-color: rgb(175, 5, 5);
+    width: 700px;
+    grid-column-start: 3;
+    grid-row-start: 4;
+    position: relative;
+    left: 86%;
+        
+}
+
+.movietable a {
+    text-decoration: underline blue;
+    color: blue;
+
+}
+
+th, tr, tbody, td, caption {
+    border: 1px solid rgb(175, 5, 5);
+
+}
+
+th, td {
+    padding: 5px;
+}
+
+.tabletitles {
+    background-color: rgb(175, 5, 5);
+
+}
+
+.showa {
+    background-color: peru;
+
+}
+
+.showa2 {
+    background-color: rgb(223, 169, 116);
+
+}
+
+.heisei {
+    background-color: greenyellow;
+
+}
+
+.heisei2 {
+    background-color: rgb(204, 248, 137);
+
+}
+
+.millenium {
+    background-color: cornflowerblue;
+
+}
+
+.millenium2 {
+    background-color: rgb(148, 176, 228);
+
+}
+
+.reiwa {
+    background-color: violet;
+
+}
+
+.reiwa2 {
+    background-color: rgb(240, 188, 240);
+
+}
+
+.tristar {
+    background-color: burlywood;
+
+}
+
+.tristar2 {
+    background-color: rgb(222, 202, 176);
+
+}
+
+.monsterverse {
+    background-color: gold;
+
+}
+
+.monsterverse2 {
+    background-color: rgb(247, 229, 126);
+
+}
+
+
+footer {
+    background-color: rgb(175, 5, 5);
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 6;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: bold;
+
+}

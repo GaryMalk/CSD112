@@ -1,0 +1,298 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 1fr 0.5fr 1fr;
+    grid-template-rows: 6.8% 10.2% 10% 33.5% 33.5% 6%;
+    background-image: url("../Images/Monsterisland.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #cccccc;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+header {
+    background-color: rgb(175, 5, 5);
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    position: relative;
+    display: flex;
+
+}
+
+#headerTitle {
+    font-size: 275%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    grid-row-start: 1;
+    grid-column-start: 3;
+    display: flex;
+    position: relative;
+    left: 43%;
+    bottom: 23.5%;
+    color: aqua;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    
+    
+}
+
+.nav {
+    list-style-type: none;
+    display: flex;
+    position: relative;
+    top: 22%;
+    left: 55%;
+    padding: 0%;
+    margin: 0%;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.nav li {
+    margin-left: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+
+}
+
+.navbutton {
+    background-color: aqua;
+    color: black;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+
+}
+
+.navbutton:hover {
+    background-color: darkturquoise;
+
+}
+
+.pagebody {
+    grid-column-start: 3;
+}
+
+#pageTitle {
+    font-size: 400%;
+    color: rgb(175, 5, 5);
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000,
+    5px 0px 0 #000;
+    position: relative;
+    grid-column-start: 3;
+    grid-row-start: 2;
+    width: 390px;
+    left: 29%;
+
+}
+
+.introtext {
+    background-color: aqua;
+    border-style: solid;
+    border-color: rgb(175, 5, 5);
+    border-width: 5px;
+    padding: 5px;
+    max-width: 500px;
+    max-height: fit-content;
+    position: relative;
+    grid-column-start: 3;
+    grid-row-start: 3;
+    text-align: center;
+    left: 17%;
+
+}
+
+.monsterblock {
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(175, 5, 5);
+    max-width: 260px;
+    background-color: rgb(175, 5, 5);
+}
+
+.monsterbutton{
+    font-size: 200%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 260px;
+    background-color: aqua;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(175, 5, 5);
+    position: relative;
+
+}
+
+
+
+.monsterbutton:hover {
+    background-color: darkturquoise;
+    cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.monstercontent {
+  background-color: aqua;
+  margin: auto;
+  padding: 0px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgb(175, 5, 5);
+  width: 1200px;
+  height: 740px;
+  position: relative;
+}
+
+.modalheader {
+    background-color: rgb(175, 5, 5);
+    padding-top: 0.1px;
+    padding-bottom: 0.1px;
+    position: relative;
+
+}
+
+.modalheader h2 {
+    font-size: 250%;
+    color: aqua;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    position: relative;
+    left: 44%;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.monsterimage {
+    height: 250px;
+    width: 250px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(175, 5, 5);
+    object-fit: cover;
+
+}
+
+.monsterimagegigan {
+    height: 250px;
+    width: 250px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(175, 5, 5);
+    object-fit: cover;
+    object-position: 50% 0%;
+
+}
+
+.monsterimagebig {
+    height: auto;
+    width: 600px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: rgb(175, 5, 5);
+
+}
+
+.blocktext {
+    position: absolute;
+    left: 52%;
+    bottom: 21%;
+
+}
+
+.row1blocks {
+    grid-row-start: 4;
+    position: relative;
+    display: flex;
+    right: 16%;
+    
+}
+
+.row2blocks {
+    grid-row-start: 5;
+    position: relative;
+    display: flex;
+    right: 16%;
+
+}
+
+.gzbk {
+    padding: 5%;
+}
+
+.agbk {
+    padding: 5%;
+}
+
+.kgbk {
+    padding: 5%;
+}
+
+.mobk {
+    padding: 5%;
+}
+
+.gibk {
+    padding: 5%;
+}
+
+.jjbk {
+    padding: 5%;
+}
+
+footer {
+    background-color: rgb(175, 5, 5);
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 7;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: bold;
+
+}
