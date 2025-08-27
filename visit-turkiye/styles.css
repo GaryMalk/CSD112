@@ -1,0 +1,239 @@
+
+body {
+  
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fafafa url("images/background.jpg") ;
+  background-size: cover;
+  color: #222;
+  line-height: 1.6;
+ 
+}
+
+
+h1, h2, h3 {
+  color: #b30000;
+}
+
+
+header {
+  background:linear-gradient(to right, #ed6340, #5f98dd);;
+  background-size: cover;
+  padding: 2rem;
+  border-bottom: 2px solid #ddd;
+
+  text-align: center;
+  color: white;
+}
+
+header h1 {
+  margin: 0 auto;              
+  display: inline-block;       
+  text-align: center;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7); 
+}
+
+nav {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ffcc00; 
+}
+
+
+
+nav {
+  margin-top: 0.5rem;
+  background: #f0f0f0; 
+  border-radius: 6px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #222;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #b30000;
+}
+
+
+main {
+  padding: 1rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  margin: 1rem 0;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.card img {
+  width: 100%;
+  max-height: 350px;   
+  object-fit: cover;   
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+
+section {
+  margin: 2rem 0;
+  padding: 1rem;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+section img {
+  display: block;
+  width: 100%;
+  max-width: 500px;    
+  height: auto;        
+  border-radius: 8px;
+  margin: 0.5rem auto;
+}
+
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+
+footer {
+  background: #ffffff;
+  border-top: 2px solid #ddd;
+  padding: 1rem;
+  text-align: center;
+  color: #555;
+  margin-top: 2rem;
+}
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+  nav a {
+    display: inline-block;
+    margin: 5px;
+  }
+  .card img {
+    max-height: 180px; 
+  }
+}
+.slideshow-container{ position:relative; max-width:100%; margin:auto; }
+.slide{ display:none; }
+.slide img{ width:100%; max-height:420px; object-fit:cover; border-radius:8px; }
+
+.prev,.next{
+  cursor:pointer; position:absolute; top:50%; transform:translateY(-50%);
+  padding:10px 14px; color:#fff; background:rgba(0,0,0,.5);
+  border-radius:50%; font-weight:bold; font-size:22px; user-select:none;
+  z-index:10;  
+}              
+
+.prev { left: 8px; }
+.next { right: 8px; }
+.prev:hover, .next:hover { background: rgba(0,0,0,0.8); }
+
+.contact-hero{
+  padding: 3rem 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+
+  .contact-box {
+    width: 100%;
+    max-width: 520px;
+    background: rgba(255,255,255,0.9); 
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    padding: 1.5rem;
+    backdrop-filter: blur(2px); 
+  }
+
+.contact-box h2{ margin-top: 0; color: #b30000; }
+.contact-box p{ color:#333; }
+
+
+.contact-box label{
+  display:block;
+  margin:.6rem 0 .25rem;
+  color:#222;               
+  font-weight:600;
+}
+
+.contact-box input,
+.contact-box select,
+.contact-box textarea{
+  width:100%;
+  padding:.6rem .8rem;
+  border:1px solid #ccc;
+  border-radius:6px;
+  background:#fff;          
+  color:#111;
+  outline:none;
+}
+
+.contact-box input::placeholder,
+.contact-box textarea::placeholder{ color:#777; }
+
+.contact-box button{
+  margin-top: .8rem;
+  padding:.6rem 1rem;
+  border:none;
+  border-radius:6px;
+  background:#b30000;
+  color:#fff;
+  font-weight:700;
+  cursor:pointer;
+}
+.contact-box button:hover{ background:#8d0000; }
+
+
+.about-hero{
+  padding: 3rem 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+
+.about-box{
+  width: 100%;
+  max-width: 800px;
+  background: rgba(255,255,255,0.92);   
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  padding: 1.5rem 1.75rem;
+  backdrop-filter: blur(2px);           
+}
+
+
+.about-box h2{ margin-top:0; color:#b30000; }
+.about-box h3{ color:#b30000; margin-top:1.2rem; }
+.about-box p, .about-box li{ color:#222; }

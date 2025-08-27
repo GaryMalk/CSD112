@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Places to Visit in Turkiye</title>
+
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+<header>
+  <h1>Places to Visit in Turkiye</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="destinations.html">Destinations</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <h2>Featured Cities</h2>
+  <p>This site introduces six destinations: Istanbul, Izmir, Mardin,Gobeklitepe,Bodrum and Kapadokya.</p>
+
+  
+  <div class="card">
+  <div class="slideshow-container" id="istanbul-slider">
+    <div class="slide"><img src="images/istanbul1.jpg" alt="Istanbul 1"></div>
+    <div class="slide"><img src="images/istanbul2.jpg" alt="Istanbul 2"></div>
+    <div class="slide"><img src="images/istanbul3.jpg" alt="Istanbul 3"></div>
+    <div class="slide"><img src="images/istanbul4.jpg" alt="Istanbul 4"></div>
+    <div class="slide"><img src="images/istanbul5.jpg" alt="Istanbul 5" ></div>
+
+    <a class="prev" onclick="plusSlidesIst(-1)">❮</a>
+    <a class="next" onclick="plusSlidesIst(1)">❯</a>
+ 
+  <h3>Istanbul</h3>
+  <p>Istanbul, with its location straddling two continents, is a unique city bearing the marks of both East and West.
+       Exploring Hagia Sophia and Topkapi Palace in the historic peninsula while enjoying modern boulevards is unforgettable.
+       A ferry tour along the Bosphorus is the best way to see the city from the water.</p>
+</div>
+
+  
+<div class="slideshow-container" id="izmir-slider">
+  <div class="slide"><img src="images/izmir1.jpg" alt="Izmir 1"></div>
+  <div class="slide"><img src="images/izmir2.jpg" alt="Izmir 2"></div>
+  <div class="slide"><img src="images/izmir3.jpg" alt="Izmir 3"></div>
+  <div class="slide"><img src="images/izmir4.jpg" alt="Izmir 4"></div>
+  <div class="slide"><img src="images/izmir5.jpg" alt="Izmir 5"></div>
+  <a class="prev" onclick="plusSlidesIz(-1)">❮</a>
+  <a class="next" onclick="plusSlidesIz(1)">❯</a>
+
+
+    <h3>Izmir</h3>
+    <p>Izmir, the pearl of the Aegean, is famous for its coastline and friendly people.
+       Stroll along the Kordon and shop affordably in the Kemeraltı Bazaar.
+       The Clock Tower, a city landmark, is a must-see for every visitor.</p>
+  </div>
+
+  
+  <div class="slideshow-container" id="mardin-slider">
+  <div class="slide"><img src="images/mardin.jpg" alt="Mardin 1"></div>
+  <div class="slide"><img src="images/mardin2.jpg" alt="Mardin 2"></div>
+  <div class="slide"><img src="images/mardin3.jpg" alt="Mardin 3"></div>
+  <div class="slide"><img src="images/mardin4.jpg" alt="Mardin 4"></div>
+  <a class="prev" onclick="plusSlidesMar(-1)">❮</a>
+  <a class="next" onclick="plusSlidesMar(1)">❯</a>
+
+    <h3>Mardin</h3>
+    <p>With its stone houses and narrow streets, Mardin feels like time travel.
+       The Zinciriye Madrasa and the Grand Mosque give the city a historical identity.
+       The Ancient City of Dara is a fascinating stopover carrying traces of Mesopotamian civilizations.</p>
+  </div>
+
+  
+  <div class="card">
+    <img src="images/gobeklitepe.jpg" alt="Gobeklitepe" style="max-height:380px;width:100%;object-fit:cover;">
+
+    <h3>Gobeklitepe</h3>
+    <p>Gobeklitepe left its mark on archaeological history as the world’s oldest known temple complex.
+       Its T-shaped stone columns shed light on a 12,000-year-old past.
+       Visitors can discover the oldest traces of belief and life in human history here.</p>
+  </div>
+  
+
+<div class="card">
+  <div class="slideshow-container" id="bodrum-slider">
+    <div class="slide"><img src="images/bodrum1.jpg" alt="Bodrum 1"></div>
+    <div class="slide"><img src="images/bodrum2.jpg" alt="Bodrum 2"></div>
+    <div class="slide"><img src="images/bodrum3.jpg" alt="Bodrum 3"></div>
+
+    <a class="prev" onclick="plusSlidesBod(-1)">❮</a>
+    <a class="next" onclick="plusSlidesBod(1)">❯</a>
+  </div>
+
+  <h3>Bodrum</h3>
+  <p>Bodrum, with its white houses, azure bays, and vibrant nightlife, is one of the jewels of the Aegean. Bodrum Castle and the Ancient Theatre are a should see.</p>
+</div>
+
+
+<div class="card">
+  <div class="slideshow-container" id="kapadokya-slider">
+    <div class="slide"><img src="images/kapadokya1.jpg" alt="Kapadokya 1"></div>
+    <div class="slide"><img src="images/kapadokya2.jpg" alt="Kapadokya 2"></div>
+    <div class="slide"><img src="images/kapadokya3.jpg" alt="Kapadokya 3"></div>
+
+    <a class="prev" onclick="plusSlidesKap(-1)">❮</a>
+    <a class="next" onclick="plusSlidesKap(1)">❯</a>
+  </div>
+
+  <h3>Kapadokya</h3>
+  <p>Cappadocia is famous for its Peri Bacalari(fairy chimneys), underground cities, and balloon tours. Watching the sunrise from atop a balloon is an unforgettable experience.</p>
+</div>
+</main>
+<footer>
+  <p>© 2025 Student Project</p>
+</footer>
+<script>
+
+let slideIndexIst = 1;
+showSlidesIst(slideIndexIst);
+function plusSlidesIst(n){ showSlidesIst(slideIndexIst += n); }
+function showSlidesIst(n){
+  const slides = document.querySelectorAll('#istanbul-slider .slide');
+  if (!slides.length) return;
+  if (n > slides.length) slideIndexIst = 1;
+  if (n < 1) slideIndexIst = slides.length;
+  slides.forEach(s => s.style.display = 'none');
+  slides[slideIndexIst - 1].style.display = 'block';
+}
+
+
+let slideIndexIz = 1;
+showSlidesIz(slideIndexIz);
+function plusSlidesIz(n){ showSlidesIz(slideIndexIz += n); }
+function showSlidesIz(n){
+  const slides = document.querySelectorAll('#izmir-slider .slide');
+  if (!slides.length) return;
+  if (n > slides.length) slideIndexIz = 1;
+  if (n < 1) slideIndexIz = slides.length;
+  slides.forEach(s => s.style.display = 'none');
+  slides[slideIndexIz - 1].style.display = 'block';
+}
+
+
+let slideIndexMar = 1;
+showSlidesMar(slideIndexMar);
+function plusSlidesMar(n){ showSlidesMar(slideIndexMar += n); }
+function showSlidesMar(n){
+  const slides = document.querySelectorAll('#mardin-slider .slide');
+  if (!slides.length) return;
+  if (n > slides.length) slideIndexMar = 1;
+  if (n < 1) slideIndexMar = slides.length;
+  slides.forEach(s => s.style.display = 'none');
+  slides[slideIndexMar - 1].style.display = 'block';
+}
+
+
+let slideIndexGtb = 1;
+showSlidesGtb(slideIndexGtb);
+function plusSlidesGtb(n){ showSlidesGtb(slideIndexGtb += n); }
+function showSlidesGtb(n){
+  const slides = document.querySelectorAll('#gobeklitepe-slider .slide');
+  if (!slides.length) return;
+  if (n > slides.length) slideIndexGtb = 1;
+  if (n < 1) slideIndexGtb = slides.length;
+  slides.forEach(s => s.style.display = 'none');
+  slides[slideIndexGtb - 1].style.display = 'block';
+}
+
+
+let slideIndexBod = 1;
+showSlidesBod(slideIndexBod);
+function plusSlidesBod(n){ showSlidesBod(slideIndexBod += n); }
+function showSlidesBod(n){
+  const slides = document.querySelectorAll('#bodrum-slider .slide');
+  if (!slides.length) return;
+  if (n > slides.length) slideIndexBod = 1;
+  if (n < 1) slideIndexBod = slides.length;
+  slides.forEach(s => s.style.display = 'none');
+  slides[slideIndexBod - 1].style.display = 'block';
+}
+
+
+let slideIndexKap = 1;
+showSlidesKap(slideIndexKap);
+function plusSlidesKap(n){ showSlidesKap(slideIndexKap += n); }
+function showSlidesKap(n){
+  const slides = document.querySelectorAll('#kapadokya-slider .slide');
+  if (!slides.length) return;
+  if (n > slides.length) slideIndexKap = 1;
+  if (n < 1) slideIndexKap = slides.length;
+  slides.forEach(s => s.style.display = 'none');
+  slides[slideIndexKap - 1].style.display = 'block';
+}
+</script>
+</body>
+</html>
